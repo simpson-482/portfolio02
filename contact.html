@@ -30,7 +30,7 @@
         <br>
     </header>
     <!--Contact Forum Section-->
-<form action= "" style= "width: 600px; margin: auto">
+<form action="MAILTO: simpson.482@osu.edu" method= "post" enctype="text/plain" id="form_id" action= "" style= "width: 600px; margin: auto">
     <h1>
         Contact
     </h1>
@@ -38,25 +38,25 @@
         <div class="col">
             <div class="form-group">
                 <label for= "firstname">First Name</label>
-                <input type= "text" name= "John" class= "form-control">    
+                <input type= "text" name= "John" class= "form-control" id= "firstname">    
             </div>
         </div>
         <div class="col">
             <div class="form-group">
                 <label for= "lastname">Last Name</label>
-                <input type= "text" name= "Smith" class= "form-control">    
+                <input type= "text" name= "Smith" class= "form-control" id= "lastname">    
             </div>
         </div>
     </div>
     <div>
     <label for= "Email">Email</label>
-    <input type= "text" class= "form-control">
+    <input type= "text" class= "form-control" id= "email">
     </div>
     <div class="form-group">
         <label for= "Message">Message</label>
-        <textarea input type= "text" class= "form-control" rows= "5"></textarea>
+        <textarea input type= "text" class= "form-control" rows= "5" id= "message"></textarea>
     </div>
-    <button type="submit" class="btn btn-outline-success" style= "margin: auto">Submit</button>
+    <button type="submit" class="btn btn-outline-success" style= "margin: auto" id= "button" onclick="">Submit</button>
 </form>
 <br>
 <br>
@@ -95,3 +95,22 @@
     </div>
 </footer>
 </html>
+
+// Submit form with id function.
+<!-- <script>
+function sendMail() {
+
+var link = "mailto: simpson.482@osu.edu";
+location.href = link;
+}
+function submit_comment() {
+var firstname = document.getElementById("firstname").value;
+var lastname = document.getElementById("lastname").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
+}
+
+
+</script>
+
+!-->
