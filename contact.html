@@ -30,7 +30,7 @@
         <br>
     </header>
     <!--Contact Forum Section-->
-<form action="MAILTO: simpson.482@osu.edu" method= "post" enctype="text/plain" id="form_id" action= "" style= "width: 600px; margin: auto">
+<form id="form_id" action= "" style= "width: 600px; margin: auto">
     <h1>
         Contact
     </h1>
@@ -56,7 +56,7 @@
         <label for= "Message">Message</label>
         <textarea input type= "text" class= "form-control" rows= "5" id= "message"></textarea>
     </div>
-    <button type="submit" class="btn btn-outline-success" style= "margin: auto" id= "button" onclick="">Submit</button>
+    <button type="submit" class="btn btn-outline-success" style= "margin: auto" id= "button" onclick="sendMail">Submit</button>
 </form>
 <br>
 <br>
@@ -96,13 +96,13 @@
 </footer>
 </html>
 
-<!-- <script>
+<script>
 function sendMail() {
-
 var link = "mailto: simpson.482@osu.edu";
 location.href = link;
+submit_content().link
 }
-function submit_comment() {
+function submit_content() {
 var firstname = document.getElementById("firstname").value;
 var lastname = document.getElementById("lastname").value;
 var email = document.getElementById("email").value;
@@ -110,6 +110,6 @@ var message = document.getElementById("message").value;
 }
 
 
+
 </script>
 
-!-->
