@@ -1,3 +1,168 @@
+
+@media (min-width: 0px) {
+     .jaredrow2{
+        margin-top: 50px;
+     }
+     .jaredrow3{
+         margin-top: 50px;
+     }
+     .jaredrow4{
+        margin-top: 50px;
+     }
+     .jaredrow5{
+        margin-top: 50px;
+     }
+     .paperrow2{
+        margin-top: 50px;
+     }
+     .paperrow3{
+        margin-top: 50px;
+     }
+     .paperrow4{
+        margin-top: 50px;
+     }
+     .paperrow5{
+        margin-top: 50px;
+     }
+     .paperrow6{
+        margin-top: 50px;
+     }
+     .paperrow7{
+        margin-top: 50px;
+     }
+     .paperrow8{
+        margin-top: 50px;
+     }
+     .paperrow9{
+        margin-top: 50px;
+        margin-bottom: 50px;
+     }
+     .sportsrow2{
+        margin-top: 50px;
+     }
+     .sportsrow3{
+        margin-top: 50px;
+     }
+     .sportsrow4{
+        margin-top: 50px;
+     }
+     .sportsrow5{
+        margin-top: 50px;
+     }
+     .sportsrow6{
+        margin-top: 50px;
+     }
+     .sportsrow7{
+        margin-top: 50px;
+     }
+     .sportsrow8{
+        margin-top: 50px;
+     }
+     .wdrow2{
+        margin-top: 50px;
+     }
+     .wdrow3{
+         margin-top: 50px;
+     }
+}
+
+@media (min-width: 768px) {
+    .jaredrow1{
+        margin-top: 0px;
+     }
+     .jaredrow2{
+        margin-top: 0px;
+     }
+     .jaredrow3{
+        margin-top: 0px;
+     }
+    .jaredrow4{
+        margin-top: 50px;
+     }
+     .jaredrow5{
+         margin-top: 50px;
+     }
+     .paperrow1{
+        margin-top: 0px;
+     }
+     .paperrow2{
+        margin-top: 0px;
+     }
+     .paperrow3{
+        margin-top: 0px;
+     }
+     .paperrow4{
+        margin-top: 50px;
+     }
+     .paperrow5{
+        margin-top: 50px;
+     }
+     .paperrow6{
+        margin-top: 50px;
+     }
+     .paperrow7{
+        margin-top: 50px;
+     }
+     .paperrow8{
+        margin-top: 50px;
+     }
+     .paperrow9{
+        margin-top: 50px;
+        margin-bottom: 50px;
+     }
+     .sportsrow1{
+        margin-top: 0px;
+     }
+     .sportsrow2{
+        margin-top: 0px;
+     }
+     .sportsrow3{
+        margin-top: 0px;
+     }
+     .sportsrow4{
+        margin-top: 50px;
+     }
+     .sportsrow5{
+        margin-top: 50px;
+     }
+     .sportsrow6{
+        margin-top: 50px;
+     }
+     .sportsrow7{
+        margin-top: 50px;
+     }
+     .sportsrow8{
+        margin-top: 50px;
+     }
+     .wdrow1{
+         margin-top: 0px;
+     }
+     .wdrow2{
+        margin-top: 0px;
+     }
+     .wdrow3{
+         margin-top: 00px;
+     }
+}
+
+@media (min-width: 992px) {
+    .jaredrow4{
+        margin-top: 50px;
+     }
+     .jaredrow5{
+         margin-top: 50px;
+     }
+}
+
+@media (min-width: 1200px) {
+    .jaredrow4{
+        margin-top: 50px;
+     }
+     .jaredrow5{
+         margin-top: 50px;
+     }
+}
+
 .img_jared {
     width: 250px;
     height: 250px;
