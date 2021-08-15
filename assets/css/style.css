@@ -64,6 +64,18 @@
      .wdrow3{
          margin-top: 50px;
      }
+     .smrow2{
+      margin-top: 50px;
+   }
+   .smrow3{
+       margin-top: 50px;
+   }
+   .smrow4{
+      margin-top: 50px;
+   }
+   .smrow5{
+      margin-top: 50px;
+   }
 }
 
 @media (min-width: 768px) {
@@ -143,6 +155,21 @@
      .wdrow3{
          margin-top: 00px;
      }
+     .smrow1{
+      margin-top: 0px;
+   }
+   .smrow2{
+      margin-top: 0px;
+   }
+   .smrow3{
+      margin-top: 0px;
+   }
+  .smrow4{
+      margin-top: 50px;
+   }
+   .smrow5{
+       margin-top: 50px;
+   }
 }
 
 @media (min-width: 992px) {
