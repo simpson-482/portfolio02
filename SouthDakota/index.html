@@ -5,27 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carousel</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel= "stylesheet" href= "./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Click on the image to view</h1>
-    <h1>Click on the buttons to navigate the carousel</h1>
+    <link href= "./style.css">
         <div class="carousel">
-            <button class="carousel__button previous" id="previous"></button>
-            <div class= "carousel__images">
-                <img src="assets/images/SD1.png/">
-                <img src="assets/images/SD2.png/">
-                <img src="assets/images/SD3.png/">
-                <img src="assets/images/SD4.png/">
-                <img src="assets/images/SD5.png/">
-                <img src="assets/images/SD6.png/">
-                <img src="assets/images/SD7.png/">
-                <img src="assets/images/SD8.png/">
-                <img src="assets/images/SD9.png/">
-                <img src="assets/images/SD10.png/">
+            <button class="carousel__button carousel__button--left" id="previous">
+                
+            </button>
+            <div class="carousel__track-container">
+                <ul class="carousel__track">
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD01.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD02.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD03.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD04.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD05.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD06.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD07.png">
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD08.png">  
+                    </li>
+                    <li class="carousel__slide img-fluid">
+                        <img class="carousel_image img-fluid" src="../assets/images/SD09.png">
+                    </li>
+                </ul>
             </div>
-            <button class="carousel__button next" id="next"></button>
+            <button class="carousel__button carousel__button--right" id="next"></button>
+
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div>
         </div>
-    <script src="script.js"></script>
-    <style src= "style.css;"></style>
+        <script src="./script.js"></script>
 </body>
 </html>
