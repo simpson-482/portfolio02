@@ -13,18 +13,18 @@ const slideHeight = slides[0].getBoundingClientRect().height;
 
 slides.style.position = fixed;
 
-// slides[2].style.bottom = slideWidth * 2 + 'px';
-// slides[3].style.bottom = slideWidth * 3 + 'px';
-// slides[4].style.bottom = slideWidth * 4 + 'px';
-// slides[5].style.bottom = slideWidth * 5 + 'px';
-// slides[6].style.bottom = slideWidth * 6 + 'px';
-// slides[7].style.bottom = slideWidth * 7 + 'px';
-// slides[8].style.bottom = slideWidth * 8 + 'px';
-// const setSlidePosition = (slide, index) => {
-//     slide.style = slideHeight * index + 'px';
-// };
+slides[2].style.bottom = slideWidth * 2 + 'px';
+slides[3].style.bottom = slideWidth * 3 + 'px';
+slides[4].style.bottom = slideWidth * 4 + 'px';
+slides[5].style.bottom = slideWidth * 5 + 'px';
+slides[6].style.bottom = slideWidth * 6 + 'px';
+slides[7].style.bottom = slideWidth * 7 + 'px';
+slides[8].style.bottom = slideWidth * 8 + 'px';
+const setSlidePosition = (slide, index) => {
+    slide.style = slideHeight * index + 'px';
+};
 
-// slides.forEach(setSlidePosition);
+slides.forEach(setSlidePosition);
 
 
 
