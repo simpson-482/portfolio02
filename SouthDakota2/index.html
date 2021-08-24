@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
+    <title>South Dakota Photos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel= "stylesheet" href= "./style.css">
     <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
 </head>
 <body>
     <link href= "./style.css">
     <script src="./script.js"></script>
+    <!--Navigation Bar-->
+    <header>
+        <div class= "container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                    <a href="index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class= "navbar-nav ml-auto">
+                        <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
+                        <li class="nav-item" style="font-size: 20px"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
+                    </ul>
+                    </div>
+        </nav>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
 
 <style>
 
     .carousel-item {
         background: #777;
         margin: 0 auto;
+        padding-top: 25px;
     }
     .container {
         margin: 0 auto;
@@ -38,7 +60,7 @@
     }
     @media (min-width: 992px) {
         .carousel-item {
-        height: 50rem;
+            height: 55rem;
         }
     }
 
@@ -59,65 +81,63 @@
         <li data-target="#myCarousel" data-slide-to="8"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item active rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail img-responsive" src="../assets/images/SD01.png">
+                <img class="carousel-image img-fluid img-thumbnail img-responsive" src="../assets/images/SD01.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail img-responsive" src="../assets/images/SD02.png">
+                <img class="carousel-image img-fluid img-thumbnail img-responsive" src="../assets/images/SD02.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail img-responsive" src="../assets/images/SD03.png">
+                <img class="carousel-image img-fluid img-thumbnail img-responsive" src="../assets/images/SD03.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail" src="../assets/images/SD04.png">
+                <img class="carousel-image img-fluid img-thumbnail" src="../assets/images/SD04.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail" src="../assets/images/SD05.png">
+                <img class="carousel-image img-fluid img-thumbnail" src="../assets/images/SD05.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail" src="../assets/images/SD06.png">
+                <img class="carousel-image img-fluid img-thumbnail" src="../assets/images/SD06.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail" src="../assets/images/SD07.png">
+                <img class="carousel-image img-fluid img-thumbnail" src="../assets/images/SD07.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail" src="../assets/images/SD08.png">
+                <img class="carousel-image img-fluid img-thumbnail" src="../assets/images/SD08.png">
             </div>
         </div>
-        <div class="carousel-item d-flex p-2 rounded mx-auto d-block">
+        <div class="carousel-item rounded">
             <div class="container">
-                <img class="carousel_image img-fluid img-thumbnail" src="../assets/images/SD09.png">
+                <img class="carousel-image img-fluid img-thumbnail" src="../assets/images/SD09.png">
             </div>
         </div>
     </div>
-    <a href="myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+    <a href="#myCarousel" class="carousel-control-prev" role="button" data-slide="prev">
         <span class="sr-only">Previous</span>
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     </a>
-    <a href="myCarousel" class="carousel-control-next" role="button" data-slide="next">
+    <a href="#myCarousel" class="carousel-control-next" role="button" data-slide="next">
         <span class="sr-only">Next</span>
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
 </div>
 
 
-<br>
-<br>
 <br>
 <div class= "container">
     <div class= "row">
