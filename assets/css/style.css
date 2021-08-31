@@ -1,4 +1,7 @@
 
+
+
+
 @media (min-width: 0px) {
      .jaredrow2{
         margin-top: 50px;
@@ -190,7 +193,11 @@
      }
 }
 
-.img_jared {
+.img_jared:hover {
+   opacity: .75;
+}
+
+.img_jared3 {
     width: 250px;
     height: 250px;
 }
@@ -205,6 +212,19 @@ footer {
     width: 100%;
     text-align: center;
 }
+.fbimg:hover {
+   opacity: .75;
+}
+.linkedinimg:hover {
+   opacity: .75;
+}
+.twitterimg:hover {
+   opacity: .75;
+}
+.igimg:hover {
+   opacity: .75;
+}
+
 
 .footer1 {
    position: relative;
