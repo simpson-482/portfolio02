@@ -1,15 +1,13 @@
 
 
-
-
 @media (min-width: 0px) {
-     .jaredrow4{
+     .jaredrow2{
         margin-top: 50px;
      }
      .jaredrow3{
          margin-top: 50px;
      }
-     .jaredrow2{
+     .jaredrow4{
         margin-top: 50px;
      }
      .jaredrow5{
@@ -85,13 +83,13 @@
     .jaredrow1{
         margin-top: 0px;
      }
-     .jaredrow4{
+     .jaredrow2{
         margin-top: 0px;
      }
      .jaredrow3{
         margin-top: 0px;
      }
-    .jaredrow2{
+    .jaredrow4{
         margin-top: 50px;
      }
      .jaredrow5{
@@ -176,7 +174,7 @@
 }
 
 @media (min-width: 992px) {
-    .jaredrow2{
+    .jaredrow4{
         margin-top: 50px;
      }
      .jaredrow5{
@@ -185,7 +183,7 @@
 }
 
 @media (min-width: 1200px) {
-    .jaredrow2{
+    .jaredrow4{
         margin-top: 50px;
      }
      .jaredrow5{
