@@ -204,6 +204,11 @@
     width: 250px;
 }
 
+#togglebutton {
+   float: right;
+   margin-right: 50px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
