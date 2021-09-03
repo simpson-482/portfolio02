@@ -1,6 +1,18 @@
 
 
 @media (min-width: 0px) {
+      .sportsheadlines{
+         margin-left: 60px;
+      }
+      .indexheadlines{
+         margin-left: 90px;
+      }
+      .img_jared1 {
+         margin-left: 50px;
+      }
+      .headlines{
+         margin-left: 105px;
+      }
       .jaredrow1{
          margin-left: 60px;
       }
@@ -120,6 +132,12 @@
    }
 
 @media (min-width: 768px) {
+      .headlines {
+         margin-left: 20px;
+      }
+      .indexheadlines {
+         margin-left: 20px;
+      }
       .jaredrow1{
         margin-top: 0px;
         margin-left: 0px;
