@@ -1,175 +1,245 @@
 
 
 @media (min-width: 0px) {
+      .jaredrow1{
+         margin-left: 60px;
+      }
      .jaredrow2{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .jaredrow3{
          margin-top: 50px;
+         margin-left: 60px;
      }
      .jaredrow4{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .jaredrow5{
         margin-top: 50px;
+        margin-left: 60px;
      }
+     .paperrow1{
+         margin-left: 60px;
+      }
      .paperrow2{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow3{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow4{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow5{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow6{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow7{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow8{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .paperrow9{
         margin-top: 50px;
         margin-bottom: 50px;
+        margin-left: 60px;
      }
+     .sportsrow1{
+         margin-left: 60px;
+      }
      .sportsrow2{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .sportsrow3{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .sportsrow4{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .sportsrow5{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .sportsrow6{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .sportsrow7{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .sportsrow8{
         margin-top: 50px;
+        margin-left: 60px;
      }
+     .wdrow1{
+         margin-left: 60px;
+      }
      .wdrow2{
         margin-top: 50px;
+        margin-left: 60px;
      }
      .wdrow3{
          margin-top: 50px;
+         margin-left: 60px;
      }
+     .smrow1{
+         margin-left: 60px;
+      }
      .smrow2{
-      margin-top: 50px;
+         margin-top: 50px;
+         margin-left: 60px;
       }
       .smrow3{
-       margin-top: 50px;
+         margin-top: 50px;
+         margin-left: 60px;
       }
       .smrow4{
-      margin-top: 50px;
+         margin-top: 50px;
+         margin-left: 60px;
       }
       .smrow5{
-      margin-top: 50px;
+         margin-top: 50px;
+         margin-left: 60px;
       }
    }
 
 @media (min-width: 768px) {
       .jaredrow1{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .jaredrow2{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .jaredrow3{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .jaredrow4{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .jaredrow5{
          margin-top: 50px;
+         margin-left: 0px;
       }
       .paperrow1{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .paperrow2{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .paperrow3{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .paperrow4{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .paperrow5{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .paperrow6{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .paperrow7{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .paperrow8{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .paperrow9{
         margin-top: 50px;
         margin-bottom: 50px;
+        margin-left: 0px;
       }
       .sportsrow1{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .sportsrow2{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .sportsrow3{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .sportsrow4{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .sportsrow5{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .sportsrow6{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .sportsrow7{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .sportsrow8{
         margin-top: 50px;
+        margin-left: 0px;
       }
       .wdrow1{
          margin-top: 0px;
+         margin-left: 0px;
       }
       .wdrow2{
         margin-top: 0px;
+        margin-left: 0px;
       }
       .wdrow3{
-         margin-top: 00px;
+         margin-top: 0px;
+         margin-left: 0px;
       }
       .smrow1{
          margin-top: 0px;
+         margin-left: 0px;
       }
       .smrow2{
          margin-top: 0px;
+         margin-left: 0px;
       }
       .smrow3{
          margin-top: 0px;
+         margin-left: 0px;
       }
       .smrow4{
          margin-top: 50px;
+         margin-left: 0px;
       }
       .smrow5{
          margin-top: 50px;
+         margin-left: 0px;
       }
 }
 
@@ -190,6 +260,7 @@
          margin-top: 50px;
        }
 }
+
 
 
 .img_jaredsm {
