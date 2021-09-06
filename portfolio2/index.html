@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "../assets/css/style.css">
-    <script src= "script.js"></script>
+    <link rel= "stylesheet" href= "./style.css">
+    <script src= "./script.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <link rel= "shortcut icon" href= "../assets/images/Favicon1.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Jared Simpson's Portfolio</title>
@@ -45,58 +49,16 @@
         <hr style= "width: 100%; height: 5px">
         <br>
         <br>
-            <section class="pie_chart_content">
-
-                <div class="overlay">
-
-                    <div class="container">
-
-                        <div class="row"></div>
-
-                            <div class="col-md-6">
-                                <div class="main_box">
-                                    <h1>Covid-19 Corona Virus Pie Chart</h1>
-                                    <canvas id= "mychart"></canvas>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <div class="count_box">
-                                    <div class="form-group">
-                                        <label for="coronavirus-input">Total Number Of Cases</label>
-                                        <input type="text" value="0" class="total-input form-control"readonly>
-
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="coronavirus-input">Active Cases</label>
-                                        <input type="text" name="coronavirus-input" class="total-input form-control"readonly>
-                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="coronavirus-input">Deaths</label>
-                                        <input type="text" name="deaths-input" class="deaths-input form-control"readonly>
-                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="recovered-input">Recovered</label>
-                                        <input type="text" value="0" class="total-input form-control"readonly>
-                                        
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="coronavirus-input">Total Number Of Cases</label>
-                                        <input type="text" name="recovered-input" class="recovered-input form-control"readonly>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </section>
+    <div class="myDiv" id="myDiv"></div>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">
+          Pie chart showing a hollow semi-circle. This is a compact visualization,
+          often used in dashboards.
+        </p>
+      </figure>
+    </div>
+    
         <br>
         <br>
         <br>
