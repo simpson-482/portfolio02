@@ -22,6 +22,7 @@ var data = [
     },
 ];
 // draw
+
 var piechart = new Chart(ctx).Pie(data);
 
 highCharts.appendChild(piechart);
