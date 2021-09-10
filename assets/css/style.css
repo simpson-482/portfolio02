@@ -129,6 +129,9 @@
          margin-top: 50px;
          margin-left: 60px;
       }
+      .back-button {
+         margin-left: 60px;
+      }
    }
 
 @media (min-width: 768px) {
@@ -263,6 +266,9 @@
       }
       .smrow5{
          margin-top: 50px;
+         margin-left: 0px;
+      }
+      .back-button{
          margin-left: 0px;
       }
 }

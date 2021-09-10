@@ -1,4 +1,5 @@
 
+
 var button1 = document.getElementById('togglebutton');
 var img1 = document.getElementById('paperrow1');
 var img2 = document.getElementById('paperrow2');
@@ -9,6 +10,8 @@ var img6 = document.getElementById('paperrow6');
 var img7 = document.getElementById('paperrow7');
 var img8 = document.getElementById('paperrow8');
 var img9 = document.getElementById('paperrow9');
+
+
 
 function changeImage(){
     img1.setAttribute('src', "../assets/images/Papers-Electric1.png");
