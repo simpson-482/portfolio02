@@ -1,31 +1,7 @@
 
-var highCharts = document.getElementsById('myDiv');
 
-var data = [
-    {
-        value: 30,
-        color: "cornflowerblue",
-        highlight: "lightskyblue",
-        label: "Obese"
-    },
-    {
-        value: 90,
-        color: "chocolate",
-        highlight: "papayawhip",
-        label: "Over-weight"
-    },
-    {
-        value: 240,
-        color: "darkorange",
-        highlight: "orange",
-        label: "Normal weight"
-    },
-];
 // draw
 
-var piechart = new Chart(ctx).Pie(data);
-
-highCharts.append(piechart);
 
 
 

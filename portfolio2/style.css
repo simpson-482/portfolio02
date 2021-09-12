@@ -1,4 +1,18 @@
-.highcharts-figure, .highcharts-data-table table {
+
+.myChart {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 150px;
+}
+.back-button {
+  position: absolute;
+  top: 700px;
+}
+
+
+
+/* .highcharts-figure, .highcharts-data-table table {
     min-width: 320px; 
     max-width: 500px;
     margin: 1em auto;
@@ -34,4 +48,4 @@
   }
   .highcharts-data-table tr:hover {
     background: #f1f7ff;
-  }
+  } */
