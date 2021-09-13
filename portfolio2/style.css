@@ -1,13 +1,23 @@
 
+
+@media (min-width: 0px) {
+  .myChart{
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
+
 .myChart {
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  top: 150px;
+  top: 280px;
 }
 .back-button {
   position: absolute;
-  top: 700px;
+  top: 1000px;
 }
 
 
