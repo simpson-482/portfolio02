@@ -305,14 +305,22 @@
    width: 290px;
 }
 
-.img_jared1 {
-   width: 250px;
-}
-
 .img_jaredport {
     width: 290px;
     height: 260px;
 }
+/* .divImage1 {
+   width: 280px;
+   height: 280px;
+   background: url('../images/Papers-Electric2.png') no-repeat;
+   margin: auto;
+} */
+/* .divImage2 {
+   width: 280px;
+   height: 280px;
+   background: url('../images/Papers-Electric1.png') no-repeat;
+   margin: auto;
+} */
 
 #togglebutton {
    float: right;
