@@ -68,6 +68,17 @@
         margin-bottom: 50px;
         margin-left: 60px;
      }
+     .stocksrow1{
+      margin-left: 60px;
+      }
+      .stocksrow2{
+     margin-top: 50px;
+     margin-left: 60px;
+      }
+      .stocksrow3{
+      margin-top: 50px;
+      margin-left: 60px;
+      }
      .sportsrow1{
          margin-left: 60px;
       }
@@ -204,6 +215,18 @@
         margin-bottom: 50px;
         margin-left: 0px;
       }
+      .stocksrow1{
+         margin-top: 0px;
+         margin-left: 0px;
+      }
+      .stocksrow2{
+        margin-top: 0px;
+        margin-left: 0px;
+      }
+      .stocksrow3{
+         margin-top: 0px;
+         margin-left: 0px;
+      }
       .sportsrow1{
         margin-top: 0px;
         margin-left: 0px;
@@ -299,7 +322,7 @@
    width: 270px;
 }
 
-.img_jaredsports:hover, .img_jaredsm:hover, .img_jaredweb:hover, .img_jaredport:hover, .img_jaredschool:hover {
+.img_jaredsports:hover, .img_jaredsm:hover, .img_jaredweb:hover, .img_jaredport:hover, .img_jaredschool:hover, .img_jaredstocks:hover {
    opacity: .75;
 }
 
@@ -311,18 +334,18 @@
     width: 290px;
     height: 260px;
 }
-/* .divImage1 {
+.divImage1 {
    width: 280px;
    height: 280px;
    background: url('../images/Papers-Electric2.png') no-repeat;
    margin: auto;
-} */
-/* .divImage2 {
+} 
+.divImage2 {
    width: 280px;
    height: 280px;
    background: url('../images/Papers-Electric1.png') no-repeat;
    margin: auto;
-} */
+}
 
 #togglebutton {
    float: right;
