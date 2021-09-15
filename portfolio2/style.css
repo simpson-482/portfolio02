@@ -1,24 +1,113 @@
-
-
 @media (min-width: 0px) {
-  .myChart{
-    width: 10px;
-    height: 10px;
+  .myDivChart1{
+     margin-left: 60px;
+  }
+ .myDivChart2{
+    margin-top: 50px;
+    margin-left: 60px;
+ }
+ .myDivChart3{
+     margin-top: 50px;
+     margin-left: 60px;
+ }
+ .myDivChart4{
+    margin-top: 50px;
+    margin-left: 60px;
+ }
+ .myDivChart5{
+    margin-top: 50px;
+    margin-left: 60px;
+ }
+}
+@media (min-width: 768px) {
+  .myDivChart1{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100px;
+  }
+  .myDivChart2{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .myDivChart3{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .myDivChart4{
+    margin-top: 50px;
+    margin-left: 0px;
+  }
+  .myDivChart5{
+     margin-top: 50px;
+     margin-left: 0px;
   }
 }
-
-
-
-.myChart {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 280px;
+@media (min-width: 992px) {
+  .myDivChart4{
+     margin-top: 50px;
+  }
+  .myDivChart5{
+     margin-top: 50px;
+  }
 }
-.back-button {
-  position: absolute;
-  top: 1000px;
+@media (min-width: 1200px) {
+  .myDivChart4 {
+    margin-top: 50px;
+  }
+  .myDivChart5 {
+     margin-top: 50px;
+   }
 }
+
+
+/* @media (min-width: 0px) {
+  .myDivChart{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .myDivChart{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .myDivChart {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 280px;
+  }
+}
+@media (min-width: 0px) {
+  .myChart{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .myChart{
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 280px;
+  }
+}
+@media (min-width: 768px) {
+  .myChart {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: 280px;
+  }
+} */
 
 
 

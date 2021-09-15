@@ -6,10 +6,9 @@
     <link rel= "stylesheet" href= "../assets/css/style.css">
     <link rel= "stylesheet" href= "./style.css">
     <script src= "./script.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src= "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.min.js" integrity="sha512-+UYTD5L/bU1sgAfWA0ELK5RlQ811q8wZIocqI7+K0Lhh8yVdIoAMEs96wJAIbgFvzynPm36ZCXtkydxu1cs27w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel= "shortcut icon" href= "../assets/images/Favicon1.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Jared Simpson's Portfolio</title>
@@ -50,7 +49,47 @@
             <hr style= "width: 100%; height: 5px">
                 <br>
                 <br>
-            <canvas id="myChart" class="myChart" width="400" height="400"></canvas>
+            <div class="row">
+                <div class= "myDivChart1 col-md-4">
+                    <a href= "../socialmedia.html">
+                        <canvas id="myChart1" class="myChart"></canvas>
+                     </a>
+                </div>
+                <div class= "myDivChart2 col-md-4">
+                    <a href= "../Papers-School/papers.html">
+                        <canvas id="myChart2" class="myChart"></canvas>
+                     </a>
+                </div>
+                <div class= "myDivChart3 col-md-4">
+                    <a href= "../stocks.html">
+                        <canvas id="myChart3" class="myChart"></canvas>
+                     </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class= "myDivChart4 col-md-4">
+                    <a href= "../sports.html">
+                        <canvas id="myChart4" class="myChart"></canvas>
+                     </a>
+                </div>
+                <div class= "myDivChart5 col-md-4">
+                    <a href= "../webdevelopment.html">
+                        <canvas id="myChart5" class="myChart"></canvas>
+                     </a>
+                </div>
+            </div>
+                <br>
+                <br>
+                <br>
+                <div class= "container">
+                    <div class= "row">
+                        <div class= col-md-4>
+                        <button type="button" class="btn btn-light back-button" onclick="location.href='../index.html'">
+                            Back
+                        </button>
+                        </div>
+                    </div>
+                </div>
                 <br>
                 <br>
                 <br>
@@ -59,60 +98,221 @@
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                
     </div>
             <script>
-            var ctx = document.getElementById('myChart').getContext('2d');
+            // setup block
+            // const data = {
+            //     labels: ['Social Media'],
+            //         datasets: [{
+            //             label: 'Portfolio',
+            //             data: [1],
+            //             backgroundColor: [
+            //                 'rgba(255, 99, 132, 0.2)',
+            //             ],
+            //             borderColor: [
+            //                 'rgba(255, 99, 132, 1)',
+            //             ],
+            //             borderWidth: 2,
+            //             borderColor: 'grey',
+            //             hoverBorderWidth: 5,
+            //             hoverBorderColor: 'grey',
+            //             hoverOffset: 4,
+            //             cutout: '90%',
+            //         }]
+            // };
+            // // counter plugin block
+            // const counter = {
+            //     id: 'counter', 
+            //     beforeDraw(chart, args, options) {
+            //         const { ctx, chartArea: { top, right, bottom, left, width, height}} = chart
+            //         ;
+            //         ctx.save();
+            //         ctx.fillStyle = 'blue';
+            //         ctx.fillRect(x0, y0, x1, y1)
+            //         // x0 = starting point on the horizonal level l/r
+            //         // y0 = starting point on the vertical level t/b
+            //         // x1 = length of the shape in pixel horizonal level
+            //         // y1 = length of the shape in pixel vertical level
+            //     }
+            // };
+
+
+            // // config block
+            // const config = {
+            //     type: 'doughnut',
+            //     data,
+            //     options:{
+            //         responsive: true,
+            //         tooltips:{
+            //             enabled:false,
+            //         },
+            //     },
+            //     plugins: [counter]
+            //  }
+
+            // // render init block
+            // const myChart = new Chart(document.getElementById('myChart1'), 
+            //     config
+            // );
+
+
+
+            var ctx = document.getElementById('myChart1').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'doughnut',
                 data: {
-                    // labels: ['Social Media', 'Education', 'Stocks', 'Sports', 'Web Development'],
+                    labels: ['Social Media'],
                     datasets: [{
                         label: 'Portfolio',
-                        data: [1, 1, 1, 1, 1],
+                        data: [1],
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
-                            'rgba(54, 162, 235, 0.2)',
-                            'rgba(255, 206, 86, 0.2)',
-                            'rgba(75, 192, 192, 0.2)',
-                            'rgba(153, 102, 255, 0.2)',
-                            'rgba(255, 159, 64, 0.2)'
                         ],
                         borderColor: [
                             'rgba(255, 99, 132, 1)',
-                            'rgba(54, 162, 235, 1)',
-                            'rgba(255, 206, 86, 1)',
-                            'rgba(75, 192, 192, 1)',
-                            'rgba(153, 102, 255, 1)',
-                            'rgba(255, 159, 64, 1)'
                         ],
-                        borderWidth: 1,
-                        borderColor: '#777',
-                        hoverBorderWidth: 15,
-                        hoverBorderColor: '#777',
-                        // radius: [400, 400, 400, 400, 400],
-                        
-
+                        borderWidth: 2,
+                        borderColor: 'grey',
+                        hoverBorderWidth: 5,
+                        hoverBorderColor: 'grey',
+                        hoverOffset: 4,
+                        cutout: '90%',
                     }]
     
                 },
+                // plugins: [ChartDataLabels],
                 options:{
-                    // responsive: true,
+                    responsive: true,
                     tooltips:{
                         enabled:false,
                     },
                 },
             });
+            var ctx= document.getElementById('myChart2').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Education'],
+                    datasets: [{
+                        label: 'Portfolio',
+                        data: [1],
+                        backgroundColor: [
+                            'rgba(54, 162, 235, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(54, 162, 235, 1)',
+                        ],
+                        borderWidth: 2,
+                        borderColor: 'grey',
+                        hoverBorderWidth: 5,
+                        hoverBorderColor: 'grey',
+                        hoverOffset: 4,
+                        cutout: '90%',
+                    }]
+    
+                },
+                // plugins: [ChartDataLabels],
+                options:{
+                    responsive: true,
+                    tooltips:{
+                        enabled:false,
+                    },
+                },
+            });
+            var ctx = document.getElementById('myChart3').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Stocks'],
+                    datasets: [{
+                        label: 'Portfolio',
+                        data: [1],
+                        backgroundColor: [
+                            'rgba(255, 206, 86, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(255, 206, 86, 1)',
+                        ],
+                        borderWidth: 2,
+                        borderColor: 'grey',
+                        hoverBorderWidth: 5,
+                        hoverBorderColor: 'grey',
+                        hoverOffset: 4,
+                        cutout: '90%',
+                    }]
+    
+                },
+                // plugins: [ChartDataLabels],
+                options:{
+                    responsive: true,
+                    tooltips:{
+                        enabled:false,
+                    },
+                },
+            });
+            var ctx = document.getElementById('myChart4').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Sports'],
+                    datasets: [{
+                        label: 'Portfolio',
+                        data: [1],
+                        backgroundColor: [
+                            'rgba(75, 192, 192, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(75, 192, 192, 1)',
+                        ],
+                        borderWidth: 2,
+                        borderColor: 'grey',
+                        hoverBorderWidth: 5,
+                        hoverBorderColor: 'grey',
+                        hoverOffset: 4,
+                        cutout: '90%',
+                    }]
+              },
+                // plugins: [ChartDataLabels],
+                options:{
+                    responsive: true,
+                    tooltips:{
+                        enabled:false,
+                    },
+                },
+            });
+            var ctx = document.getElementById('myChart5').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Web Development'],
+                    datasets: [{
+                        label: 'Portfolio',
+                        data: [1],
+                        backgroundColor: [
+                            'rgba(153, 102, 255, 0.2)',
+                        ],
+                        borderColor: [
+                            'rgba(153, 102, 255, 1)',
+                        ],
+                        borderWidth: 2,
+                        borderColor: 'grey',
+                        hoverBorderWidth: 5,
+                        hoverBorderColor: 'grey',
+                        hoverOffset: 4,
+                        cutout: '90%',
+                    }]
+    
+                },
+                // plugins: [ChartDataLabels],
+                options:{
+                    responsive: true,
+                    tooltips:{
+                        enabled:false,
+                    },
+                },
+            });
+            </script>
             </script>
 
 
@@ -135,34 +335,7 @@
         </p>
       </figure>
     </div> -->
-    
-        <br>
-        <br>
-        <br>
-    <div class= "container">
-        <div class= "row">
-            <div class= col-md-4>
-            <button type="button" class="btn btn-light back-button" onclick="location.href='../index.html'">
-                Back
-            </button>
-            </div>
-        </div>
-    </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
     <!--Footer-->
     <footer class= "footer">
         <div class= "container">

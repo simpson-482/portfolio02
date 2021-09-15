@@ -297,15 +297,19 @@
    width: 270px;
 }
 
-.img_jared:hover, .img_jaredsm:hover {
+.img_jaredsports:hover, .img_jaredsm:hover, .img_jaredweb:hover, .img_jaredport:hover, .img_jaredschool:hover {
    opacity: .75;
+}
+
+.img_jaredweb {
+   width: 290px;
 }
 
 .img_jared1 {
    width: 250px;
 }
 
-.img_jared3 {
+.img_jaredport {
     width: 290px;
     height: 260px;
 }
