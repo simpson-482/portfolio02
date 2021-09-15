@@ -321,7 +321,9 @@
 .img_jaredsm {
    width: 270px;
 }
-
+.img_jaredstocks {
+   height: 260px;
+}
 .img_jaredsports:hover, .img_jaredsm:hover, .img_jaredweb:hover, .img_jaredport:hover, .img_jaredschool:hover, .img_jaredstocks:hover {
    opacity: .75;
 }
