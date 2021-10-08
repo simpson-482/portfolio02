@@ -43,7 +43,7 @@
 
 // Attempt 3
 
-var button1 = document.getElementById('togglebutton');
+var button1 = document.getElementById('toggle');
 var img1 = document.getElementById('paperrow1');
 var img2 = document.getElementById('paperrow2');
 var img3 = document.getElementById('paperrow3');
@@ -54,9 +54,7 @@ var img7 = document.getElementById('paperrow7');
 var img8 = document.getElementById('paperrow8');
 var img9 = document.getElementById('paperrow9');
 
-
-
-function changeImage(){
+button1.addEventListener('click', () => {
     img1.src = '../assets/images/Papers-Electric1.png';
     img2.src = '../assets/images/Papers-Hawaii2.png';
     img3.src = '../assets/images/Papers-Corals2.png';
@@ -66,6 +64,20 @@ function changeImage(){
     img7.src = '../assets/images/Papers-ClassMyth1.2.png';
     img8.src = '../assets/images/Papers-ClassMyth2.2.png';
     img9.src = '../assets/images/Papers-ClassMyth3.2.png';
-}
+})
 
-button1.addEventListener('click', changeImage());
+console.log(button1);
+
+// function changeImage(){
+//     img1.src = '../assets/images/Papers-Electric1.png';
+//     img2.src = '../assets/images/Papers-Hawaii2.png';
+//     img3.src = '../assets/images/Papers-Corals2.png';
+//     img4.src = '../assets/images/Papers-FBall2.png';
+//     img5.src = '../assets/images/Papers-VNWar2.png';
+//     img6.src = '../assets/images/Papers-SteelTown2.png';
+//     img7.src = '../assets/images/Papers-ClassMyth1.2.png';
+//     img8.src = '../assets/images/Papers-ClassMyth2.2.png';
+//     img9.src = '../assets/images/Papers-ClassMyth3.2.png';
+// }
+
+// button1.addEventListener('click', changeImage());
