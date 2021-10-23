@@ -349,7 +349,12 @@
    margin: auto;
 }
 
-#togglebutton {
+#togglebutton1 {
+   float: right;
+   margin-right: 50px;
+}
+
+#togglebutton2 {
    float: right;
    margin-right: 50px;
 }

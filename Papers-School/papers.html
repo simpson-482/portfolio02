@@ -48,8 +48,11 @@
     </div>
     <div class= "container">
         <hr style= "width: 100%; height: 5px">
-        <button type="button" class="btn btn-light toggle__button" id= "togglebutton">
-            Toggle
+        <button type="button" class="btn btn-light toggle-btn" id= "togglebutton2">
+            Toggle Images #2
+        </button>
+        <button type="button" class="btn btn-light toggle-btn" id= "togglebutton1">
+            Toggle Images #1
         </button>
         <br>
         <br>
@@ -105,6 +108,49 @@
                 </a>
             </div>
         </div>  
+        <script>
+        // Attempt 3
+
+            var button1 = document.getElementById('togglebutton1');
+            var button2 = document.getElementById('togglebutton2');
+
+            var img1 = document.getElementById('paperrow1');
+            var img2 = document.getElementById('paperrow2');
+            var img3 = document.getElementById('paperrow3');
+            var img4 = document.getElementById('paperrow4');
+            var img5 = document.getElementById('paperrow5');
+            var img6 = document.getElementById('paperrow6');
+            var img7 = document.getElementById('paperrow7');
+            var img8 = document.getElementById('paperrow8');
+            var img9 = document.getElementById('paperrow9');
+
+            button1.addEventListener('click', () => {
+                img1.src = '../assets/images/Papers-Electric3.png';
+                img2.src = '../assets/images/Papers-Hawaii2.png';
+                img3.src = '../assets/images/Papers-Corals2.png';
+                img4.src = '../assets/images/Papers-FBall3.png';
+                img5.src = '../assets/images/Papers-VNWar3.png';
+                img6.src = '../assets/images/Papers-SteelTown3.png';
+                img7.src = '../assets/images/Papers-ClassMyth1.3.png';
+                img8.src = '../assets/images/Papers-ClassMyth2.3.png';
+                img9.src = '../assets/images/Papers-ClassMyth3.3.png';
+            })
+
+            button2.addEventListener('click', () => {
+                img1.src = '../assets/images/Papers-Electric2.png';
+                img2.src = '../assets/images/Papers-Hawaii3.7.png';
+                img3.src = '../assets/images/Papers-Corals1.png';
+                img4.src = '../assets/images/Papers-FBall1.png';
+                img5.src = '../assets/images/Papers-VNWar1.png';
+                img6.src = '../assets/images/Papers-SteelTown1.png';
+                img7.src = '../assets/images/Papers-ClassMyth1.1.png';
+                img8.src = '../assets/images/Papers-ClassMyth2.1.png';
+                img9.src = '../assets/images/Papers-ClassMyth3.1.png';
+            })
+
+            console.log(button1);
+
+        </script>
         <!-- <div class="row">
             <a href="../mythology3.html">
                 <div class= "col-md-4 paperrow10 divImage1" id= "first-image">
