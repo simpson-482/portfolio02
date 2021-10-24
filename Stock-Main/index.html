@@ -45,6 +45,9 @@
     </div>
     <div class= "container">
         <hr style= "width: 100%; height: 5px">
+        <button type="button" class="btn btn-light toggle-btn" id= "togglebutton3">
+            Toggle #3
+        </button>
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton2">
             Toggle #2
         </button>
@@ -80,21 +83,28 @@
 
             var button1 = document.getElementById('togglebutton1');
             var button2 = document.getElementById('togglebutton2');
+            var button3 = document.getElementById('togglebutton3');
 
             var img1 = document.getElementById('stocksrow1');
             var img2 = document.getElementById('stocksrow2');
             var img3 = document.getElementById('stocksrow3');
 
-            button1.addEventListener('click', () => {
+            button2.addEventListener('click', () => {
                 img1.src = '../assets/images/Stocks-1980-Pres.2.png';
                 img2.src = '../assets/images/Stocks-CurrentYear.4.png';
                 img3.src = '../assets/images/Stocks-WatchList.3.png';
             })
 
-            button2.addEventListener('click', () => {
+            button1.addEventListener('click', () => {
                 img1.src = '../assets/images/Stocks-1980-Pres.3.png';
                 img2.src = '../assets/images/Stocks-CurrentYear.5.png';
                 img3.src = '../assets/images/Stocks-WatchList.1.png';
+            })
+
+            button3.addEventListener('click', () => {
+                img1.src = '../assets/images/Stocks-1980-Pres.6.png';
+                img2.src = '../assets/images/Stocks-CurrentYear.6.png';
+                img3.src = '../assets/images/Stocks-WatchList.7.png';
             })
 
             console.log(button1);
