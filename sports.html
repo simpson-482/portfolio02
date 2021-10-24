@@ -106,8 +106,8 @@
     <script>
         // Attempt 3
 
-            var button2 = document.getElementById('togglebutton1');
-            var button1 = document.getElementById('togglebutton2');
+            var button1 = document.getElementById('togglebutton1');
+            var button2 = document.getElementById('togglebutton2');
 
             var img1 = document.getElementById('sportsrow1');
             var img2 = document.getElementById('sportsrow2');
@@ -119,17 +119,6 @@
             var img8 = document.getElementById('sportsrow8');
 
             button1.addEventListener('click', () => {
-                img1.src = 'assets/images/Sports-WCHist1.png';
-                img2.src = 'assets/images/Sports-CFPHist3.png';
-                img3.src = 'assets/images/Sports-NCAAHist02.1.png';
-                img4.src = 'assets/images/Sports-CFBBowls4.1.png';
-                img5.src = 'assets/images/Sports-NFLHist4.2.png';
-                img6.src = 'assets/images/Sports-NBAHist2.png';
-                img7.src = 'assets/images/Sports-MLBHist2.1.png';
-                img8.src = 'assets/images/Sports-SCPHist2.0.png';
-            })
-
-            button2.addEventListener('click', () => {
                 img1.src = 'assets/images/Sports-WCHist2.png';
                 img2.src = 'assets/images/Sports-CFPHist5.1.1.png';
                 img3.src = 'assets/images/Sports-NCAAHist02.2.png';
@@ -138,6 +127,17 @@
                 img6.src = 'assets/images/Sports-NBAHist1.png';
                 img7.src = 'assets/images/Sports-MLBHist2.2.png';
                 img8.src = 'assets/images/Sports-SCPHist2.12.png';
+            })
+
+            button2.addEventListener('click', () => {
+                img1.src = 'assets/images/Sports-WCHist1.png';
+                img2.src = 'assets/images/Sports-CFPHist3.png';
+                img3.src = 'assets/images/Sports-NCAAHist02.1.png';
+                img4.src = 'assets/images/Sports-CFBBowls4.1.png';
+                img5.src = 'assets/images/Sports-NFLHist4.2.png';
+                img6.src = 'assets/images/Sports-NBAHist2.png';
+                img7.src = 'assets/images/Sports-MLBHist2.1.png';
+                img8.src = 'assets/images/Sports-SCPHist2.0.png';
             })
 
             console.log(button1);
