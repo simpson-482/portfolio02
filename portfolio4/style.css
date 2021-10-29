@@ -1,0 +1,60 @@
+@media (min-width: 0px) {
+    .myDivChart1{
+       margin-left: 60px;
+    }
+   .myDivChart2{
+      margin-top: 50px;
+      margin-left: 60px;
+   }
+   .myDivChart3{
+       margin-top: 50px;
+       margin-left: 60px;
+   }
+   .myDivChart4{
+      margin-top: 50px;
+      margin-left: 60px;
+   }
+   .myDivChart5{
+      margin-top: 50px;
+      margin-left: 60px;
+   }
+  }
+  @media (min-width: 768px) {
+    .myDivChart1{
+      margin-top: 0px;
+      margin-left: 0px;
+      width: 100px;
+    }
+    .myDivChart2{
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .myDivChart3{
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    .myDivChart4{
+      margin-top: 50px;
+      margin-left: 0px;
+    }
+    .myDivChart5{
+       margin-top: 50px;
+       margin-left: 0px;
+    }
+  }
+  @media (min-width: 992px) {
+    .myDivChart4{
+       margin-top: 50px;
+    }
+    .myDivChart5{
+       margin-top: 50px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .myDivChart4 {
+      margin-top: 50px;
+    }
+    .myDivChart5 {
+       margin-top: 50px;
+     }
+  }
