@@ -326,7 +326,7 @@
 }
 .img_jaredsports:hover, .img_jaredsm:hover, .img_jaredweb:hover, .img_jaredport:hover, .img_jaredschool:hover, .img_jaredstocks:hover {
    opacity: .75;
-   transform: scale(1.025);
+   transform: scale(1.03);
 }
 
 .img_jaredweb {
