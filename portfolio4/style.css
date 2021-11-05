@@ -60,5 +60,5 @@
   }
 
   #myChart1:hover, #myChart2:hover, #myChart3:hover, #myChart4:hover, #myChart5:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
  }
