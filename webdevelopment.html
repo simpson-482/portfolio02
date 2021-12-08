@@ -42,22 +42,39 @@
     </div>
     <div class= "container">
         <hr style= "width: 100%; height: 5px">
+        <button type="button" class="btn btn-light toggle-btn" id= "togglebutton3">
+            Toggle #3
+        </button>
+        <button type="button" class="btn btn-light toggle-btn" id= "togglebutton2">
+            Toggle #2
+        </button>
+        <button type="button" class="btn btn-light toggle-btn" id= "togglebutton1">
+            Toggle #1
+        </button>
+        <br>
         <br>
         <br>
         <div class="row">
             <div class= "col-md-4 wdrow1">
                 <a href="https://simpson-482.github.io/outdoor-itinerary/" target="_blank">
-                <img class="img_jaredweb" src= "assets/images/OutdoorItinerary1.png" alt= "Folder">
+                <img class="img_jaredweb" id= "webrow1" src= "assets/images/WebDevel-Outdoor14.1.png" alt= "Folder">
                 </a>
             </div>
             <div class= "col-md-4 wdrow2">
                 <a href="https://simpson-482.github.io/assignment05/" target="_blank">
-                <img class="img_jaredweb" src= "assets/images/WorkdayPlanner.png" alt= "Folder">
+                <img class="img_jaredweb" id= "webrow2" src= "assets/images/WebDevel-WorkDay10.1.png" alt= "Folder">
                 </a>
             </div>
             <div class= "col-md-4 wdrow3">
                 <a href="https://simpson-482.github.io/assignment4/" target="_blank">
-                <img class="img_jaredweb" src= "assets/images/Quiz.png" alt= "Folder">
+                <img class="img_jaredweb" id= "webrow3" src= "assets/images/WebDevel-Quiz3.1.png" alt= "Folder">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-md-4 wdrow4">
+                <a href="https://simpson-482.github.io/PasswordGenerator/" target="_blank">
+                <img class="img_jaredweb" id= "webrow4" src= "assets/images/WebDevel-Password1.1.png" alt= "Folder">
                 </a>
             </div>
         </div>
@@ -86,6 +103,44 @@
 <br>
 <br>
 <br>
+<script>
+    // Attempt 3
+
+        var button1 = document.getElementById('togglebutton1');
+        var button2 = document.getElementById('togglebutton2');
+        var button3 = document.getElementById('togglebutton3');
+
+        var img1 = document.getElementById('webrow1');
+        var img2 = document.getElementById('webrow2');
+        var img3 = document.getElementById('webrow3');
+        var img4 = document.getElementById('webrow4');
+
+        button2.addEventListener('click', () => {
+            img1.src = './assets/images/WebDevel-OutDoor8.1.png';
+            img2.src = './assets/images/WebDevel-WorkDay6.1.png';
+            img3.src = './assets/images/WebDevel-Quiz18.1.png';
+            img4.src = './assets/images/WebDevel-Password12.1.png';
+        })
+
+        button1.addEventListener('click', () => {
+            img1.src = './assets/images/WebDevel-OutDoor14.1.png';
+            img2.src = './assets/images/WebDevel-WorkDay10.1.png';
+            img3.src = './assets/images/WebDevel-Quiz3.1.png';
+            img4.src = './assets/images/WebDevel-Password1.1.png';
+        })
+
+        button3.addEventListener('click', () => {
+            img1.src = './assets/images/WebDevel-OutDoor9.1.png';
+            img2.src = './assets/images/WebDevel-WorkDay4.1.png';
+            img3.src = './assets/images/WebDevel-Quiz1.1.png';
+            img4.src = './assets/images/WebDevel-Password4.1.png';
+            // 3.4.1 Works
+        })
+
+
+        console.log(button1);
+
+    </script>
   
     <!--Footer-->
     <footer class= "footer">
