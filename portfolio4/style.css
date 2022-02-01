@@ -18,6 +18,10 @@
       margin-top: 30px;
       margin-left: 60px;
    }
+   .myDivChart6{
+    margin-top: 30px;
+    margin-left: 60px;
+ }
   }
   @media (min-width: 768px) {
     .myDivChart1{
@@ -41,6 +45,10 @@
        margin-top: 50px;
        margin-left: 0px;
     }
+    .myDivChart6{
+      margin-top: 50px;
+      margin-left: 0px;
+   }
   }
   @media (min-width: 992px) {
     .myDivChart4{
@@ -49,6 +57,9 @@
     .myDivChart5{
        margin-top: 50px;
     }
+    .myDivChart6{
+      margin-top: 50px;
+   }
   }
   @media (min-width: 1200px) {
     .myDivChart4 {
@@ -57,8 +68,11 @@
     .myDivChart5 {
        margin-top: 50px;
      }
+     .myDivChart6{
+      margin-top: 50px;
+   }
   }
 
-  #myChart1:hover, #myChart2:hover, #myChart3:hover, #myChart4:hover, #myChart5:hover {
+  #myChart1:hover, #myChart2:hover, #myChart3:hover, #myChart4:hover, #myChart5:hover, #myChart6:hover {
     transform: scale(1.04);
  }
