@@ -370,6 +370,10 @@
 
 #togglebutton3 {
    float: right;
+   margin-right: 30px;
+}
+#togglebutton4 {
+   float: right;
    margin-right: 50px;
 }
 
@@ -382,6 +386,9 @@
 }
 
 #togglebutton3:hover {
+   transform: scale(1.15);
+}
+#togglebutton4:hover {
    transform: scale(1.15);
 }
 
