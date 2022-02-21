@@ -18,7 +18,7 @@
     <!--Navigation Bar-->
     <header>
         <div class= "container">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
                     <a href="../index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                         <span class="navbar-toggler-icon"></span>
@@ -141,6 +141,12 @@
                 if($('button#back-button').hasClass('btn-dark')){
                     $('button#back-button').removeClass('btn-dark').addClass('btn-light');
                 }
+                if($('nav#navbar').hasClass('bg-dark')){
+                    $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
+                }
+                if($('nav#footer').hasClass('bg-dark')){
+                    $('nav#footer').removeClass('bg-dark').addClass('bg-light');
+                }
             })
 
             $('button#darkbutton').click(function () {
@@ -163,6 +169,12 @@
                 }
                 if($('button#back-button').hasClass('btn-light')){
                     $('button#back-button').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('nav#navbar').hasClass('bg-light')){
+                    $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
+                }
+                if($('nav#footer').hasClass('bg-light')){
+                    $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
             })
 
@@ -194,7 +206,7 @@
     <!--Footer-->
     <footer class= "footer">
         <div class= "container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
                         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
