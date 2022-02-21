@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src= "./script.js"></script>
     <title>Jared Simpson's Portfolio</title>
 </head>
@@ -117,14 +120,50 @@
                 img3.src = '../assets/images/Stocks-WatchList.5.png';
             })
 
-            lightButton.addEventListener('click', () => {
-    
+            $('button#lightbutton').click(function () {
                 paperBody.style.background = 'white';
+
+                if($('button#darkbutton').hasClass('btn-dark')){
+                    $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#lightbutton').hasClass('btn-dark')){
+                    $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#togglebutton1').hasClass('btn-dark')){
+                    $('button#togglebutton1').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#togglebutton2').hasClass('btn-dark')){
+                    $('button#togglebutton2').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#togglebutton3').hasClass('btn-dark')){
+                    $('button#togglebutton3').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#back-button').hasClass('btn-dark')){
+                    $('button#back-button').removeClass('btn-dark').addClass('btn-light');
+                }
             })
 
-            darkButton.addEventListener('click', () => {
-
+            $('button#darkbutton').click(function () {
                 paperBody.style.background = 'black';
+
+                if($('button#darkbutton').hasClass('btn-light')){
+                    $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#lightbutton').hasClass('btn-light')){
+                    $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#togglebutton1').hasClass('btn-light')){
+                    $('button#togglebutton1').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#togglebutton2').hasClass('btn-light')){
+                    $('button#togglebutton2').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#togglebutton3').hasClass('btn-light')){
+                    $('button#togglebutton3').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#back-button').hasClass('btn-light')){
+                    $('button#back-button').removeClass('btn-light').addClass('btn-dark');
+                }
             })
 
             console.log(button1);
@@ -134,7 +173,7 @@
     <div class= "container">
         <div class= "row">
             <div class= col-md-4>
-            <button type="button" class="btn btn-light back-button" onclick="location.href='../portfolio4/index.html'">
+            <button type="button" class="btn btn-light back-button" id= "back-button" onclick="location.href='../portfolio4/index.html'">
                 Back
             </button>
             </div>
