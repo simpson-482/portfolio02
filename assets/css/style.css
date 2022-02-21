@@ -390,6 +390,14 @@ body {
    margin-right: 50px;
 }
 
+#lightbutton:hover {
+   transform: scale(1.15);
+}
+
+#darkbutton:hover {
+   transform: scale(1.15);
+}
+
 #togglebutton1:hover {
    transform: scale(1.15);
 }
