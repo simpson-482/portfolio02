@@ -14,7 +14,8 @@
 <script src= "./script.js"></script>
     <title>Jared Simpson's Portfolio</title>
 </head>
-<body>
+
+<body id= "paperbody">
     <!--Navigation Bar-->
     <header>
         <div class= "container">
@@ -48,6 +49,12 @@
     </div>
     <div class= "container">
         <hr style= "width: 100%; height: 5px">
+        <button type="button" class="btn btn-light light-btn" id= "lightbutton">
+            Light
+        </button>
+        <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
+            Dark
+        </button>
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton3">
             Toggle #3
         </button>
@@ -112,11 +119,14 @@
             </div>
         </div>  
         <script>
-        // Attempt 3
+        // Attempt 3 Img Source Change
 
             var button1 = document.getElementById('togglebutton1');
             var button2 = document.getElementById('togglebutton2');
             var button3 = document.getElementById('togglebutton3');
+            var lightButton = document.getElementById('lightbutton');
+            var darkButton = document.getElementById('darkbutton');
+            var paperBody = document.getElementById('paperbody');
 
             var img1 = document.getElementById('paperrow1');
             var img2 = document.getElementById('paperrow2');
@@ -163,6 +173,16 @@
                 img8.src = '../assets/images/Papers-ClassMyth2.5.1.png';
                 img9.src = '../assets/images/Papers-ClassMyth3.6.png';
                 // 3.4.1 Works
+            })
+
+            lightButton.addEventListener('click', () => {
+    
+                paperBody.style.background = 'white';
+            })
+
+            darkButton.addEventListener('click', () => {
+    
+                paperBody.style.background = 'black';
             })
 
 

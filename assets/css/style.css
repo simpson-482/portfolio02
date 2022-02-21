@@ -358,6 +358,19 @@
    margin: auto;
 }
 
+body {
+   background-color: black;
+}
+
+#lightbutton {
+   float: left;
+}
+
+#darkbutton {
+   float: left;
+   margin-left: 30px;
+}
+
 #togglebutton1 {
    float: right;
    margin-right: 30px;
