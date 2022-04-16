@@ -58,6 +58,9 @@
         <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
             Dark
         </button>
+        <button type="button" class="btn btn-light toggle-btn" id= "randombutton">
+            Random
+        </button>
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton3">
             Toggle #3
         </button>
@@ -67,6 +70,9 @@
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton1">
             Toggle #1
         </button>
+        <!-- <button type="button" class="btn btn-light practice-btn" id= "practicebutton">
+            Practice
+        </button> -->
         <br>
         <br>
         <br>
@@ -127,9 +133,21 @@
             var button1 = document.getElementById('togglebutton1');
             var button2 = document.getElementById('togglebutton2');
             var button3 = document.getElementById('togglebutton3');
+            var practice = document.getElementById('practicebutton');
             var lightButton = document.getElementById('lightbutton');
             var darkButton = document.getElementById('darkbutton');
             var paperBody = document.getElementById('paperbody');
+            var randomButton = document.getElementById('randombutton');
+            const electricCarImages = ['../assets/images/Papers-Electric8.1.png', '../assets/images/Papers-Electric2.1.png', '../assets/images/Papers-Electric6.1.png', '../assets/images/Papers-Electric9.png', '../assets/images/Papers-Electric10.png', '../assets/images/Papers-Electric11.png', '../assets/images/Papers-Electric12.png', '../assets/images/Papers-Electric13.png', '../assets/images/Papers-Electric14.png', '../assets/images/Papers-Electric15.png', '../assets/images/Papers-Electric16.png', '../assets/images/Papers-Electric17.png', '../assets/images/Papers-Electric18.png', '../assets/images/Papers-Electric19.png'];
+            const hawaiiImages = ['../assets/images/Papers-Hawaii6.png', '../assets/images/Papers-Hawaii3.7.2.png', '../assets/images/Papers-Hawaii4.7.png', '../assets/images/Papers-Hawaii7.png', '../assets/images/Papers-Hawaii8.png', '../assets/images/Papers-Hawaii9.png', '../assets/images/Papers-Hawaii10.png', '../assets/images/Papers-Hawaii11.png', '../assets/images/Papers-Hawaii12.png', '../assets/images/Papers-Hawaii13.png', '../assets/images/Papers-Hawaii14.png', '../assets/images/Papers-Hawaii15.png','../assets/images/Papers-Hawaii16.png', '../assets/images/Papers-Hawaii17.png', '../assets/images/Papers-Hawaii18.png', '../assets/images/Papers-Hawaii19.png', '../assets/images/Papers-Hawaii20.png', '../assets/images/Papers-Hawaii21.png'];
+            const coralReefImages = ['../assets/images/Papers-Corals2.png', '../assets/images/Papers-Corals1.png', '../assets/images/Papers-Corals4.7.png', '../assets/images/Papers-Corals5.png', '../assets/images/Papers-Corals6.png', '../assets/images/Papers-Corals7.png', '../assets/images/Papers-Corals8.png', '../assets/images/Papers-Corals9.png', '../assets/images/Papers-Corals10.png', '../assets/images/Papers-Corals11.png', '../assets/images/Papers-Corals12.png', '../assets/images/Papers-Corals13.png', '../assets/images/Papers-Corals14.png', '../assets/images/Papers-Corals15.png']
+            const footballImages = ['../assets/images/Papers-Fball6.png', '../assets/images/Papers-Fball1.png', '../assets/images/Papers-Fball5.1.2.png', '../assets/images/Papers-Fball7.png', '../assets/images/Papers-Fball8.png', '../assets/images/Papers-Fball9.png', '../assets/images/Papers-Fball10.png', '../assets/images/Papers-Fball11.png', '../assets/images/Papers-Fball12.png', '../assets/images/Papers-Fball13.png', '../assets/images/Papers-Fball14.png', '../assets/images/Papers-Fball15.png', '../assets/images/Papers-Fball16.png', '../assets/images/Papers-Fball17.png', '../assets/images/Papers-Fball18.png', '../assets/images/Papers-Fball19.png', '../assets/images/Papers-Fball20.png', '../assets/images/Papers-Fball21.png', '../assets/images/Papers-Fball22.png', '../assets/images/Papers-Fball23.png', '../assets/images/Papers-Fball24.png']
+            const vietnamImages = ['../assets/images/Papers-VNWar5.png', '../assets/images/Papers-VNWar1.1.png', '../assets/images/Papers-VNWar3.4.png', '../assets/images/Papers-VNWar6.png', '../assets/images/Papers-VNWar7.png', '../assets/images/Papers-VNWar8.png', '../assets/images/Papers-VNWar9.png', '../assets/images/Papers-VNWar10.png', '../assets/images/Papers-VNWar11.png', '../assets/images/Papers-VNWar12.png', '../assets/images/Papers-VNWar13.png', '../assets/images/Papers-VNWar14.png', '../assets/images/Papers-VNWar15.png', '../assets/images/Papers-VNWar16.png', '../assets/images/Papers-VNWar17.png', '../assets/images/Papers-VNWar18.png', '../assets/images/Papers-VNWar19.png', '../assets/images/Papers-VNWar20.png']
+            const steelTownImages = ['../assets/images/Papers-SteelTown1.png', '../assets/images/Papers-SteelTown3.png', '../assets/images/Papers-SteelTown4.4.png', '../assets/images/Papers-SteelTown5.png', '../assets/images/Papers-SteelTown6.png', '../assets/images/Papers-SteelTown7.png', '../assets/images/Papers-SteelTown8.png', '../assets/images/Papers-SteelTown9.png', '../assets/images/Papers-SteelTown10.png', '../assets/images/Papers-SteelTown11.png', '../assets/images/Papers-SteelTown12.png', '../assets/images/Papers-SteelTown13.png', '../assets/images/Papers-SteelTown14.png', '../assets/images/Papers-SteelTown15.png', '../assets/images/Papers-SteelTown16.png', '../assets/images/Papers-SteelTown17.png', '../assets/images/Papers-SteelTown18.png', '../assets/images/Papers-SteelTown19.png', '../assets/images/Papers-SteelTown20.png', '../assets/images/Papers-SteelTown21.png', '../assets/images/Papers-SteelTown22.png', '../assets/images/Papers-SteelTown23.png']
+            const classMyth1Images = ['../assets/images/Papers-ClassMyth1.3.png', '../assets/images/Papers-ClassMyth1.1.png', '../assets/images/Papers-ClassMyth1.5.1.png', '../assets/images/Papers-ClassMyth1.6.png', '../assets/images/Papers-ClassMyth1.7.png', '../assets/images/Papers-ClassMyth1.8.png', '../assets/images/Papers-ClassMyth1.9.png', '../assets/images/Papers-ClassMyth1.10.png', '../assets/images/Papers-ClassMyth1.11.png', '../assets/images/Papers-ClassMyth1.12.png', '../assets/images/Papers-ClassMyth1.13.png', '../assets/images/Papers-ClassMyth1.14.png', '../assets/images/Papers-ClassMyth1.15.png', '../assets/images/Papers-ClassMyth1.16.png', '../assets/images/Papers-ClassMyth1.17.png', '../assets/images/Papers-ClassMyth1.18.png', '../assets/images/Papers-ClassMyth1.19.png', '../assets/images/Papers-ClassMyth1.20.png', '../assets/images/Papers-ClassMyth1.21.png', '../assets/images/Papers-ClassMyth1.22.png', '../assets/images/Papers-ClassMyth1.23.png', '../assets/images/Papers-ClassMyth1.24.png', '../assets/images/Papers-ClassMyth1.25.png', '../assets/images/Papers-ClassMyth1.26.png', '../assets/images/Papers-ClassMyth1.27.png', '../assets/images/Papers-ClassMyth1.28.png', '../assets/images/Papers-ClassMyth1.29.png', '../assets/images/Papers-ClassMyth1.30.png', '../assets/images/Papers-ClassMyth1.31.png', '../assets/images/Papers-ClassMyth1.32.png', '../assets/images/Papers-ClassMyth1.33.png', '../assets/images/Papers-ClassMyth1.34.png', '../assets/images/Papers-ClassMyth1.35.png']
+            const classMyth2Images = ['../assets/images/Papers-ClassMyth2.3.3.png', '../assets/images/Papers-ClassMyth2.1.1.png', '../assets/images/Papers-ClassMyth2.5.1.png','../assets/images/Papers-ClassMyth2.6.png', '../assets/images/Papers-ClassMyth2.7.png', '../assets/images/Papers-ClassMyth2.8.png', '../assets/images/Papers-ClassMyth2.9.png', '../assets/images/Papers-ClassMyth2.10.png', '../assets/images/Papers-ClassMyth2.11.png', '../assets/images/Papers-ClassMyth2.12.png', '../assets/images/Papers-ClassMyth2.13.png', '../assets/images/Papers-ClassMyth2.14.png', '../assets/images/Papers-ClassMyth2.15.png', '../assets/images/Papers-ClassMyth2.16.png', '../assets/images/Papers-ClassMyth2.17.png', '../assets/images/Papers-ClassMyth2.18.png', '../assets/images/Papers-ClassMyth2.19.png', '../assets/images/Papers-ClassMyth2.20.png', '../assets/images/Papers-ClassMyth2.21.png', '../assets/images/Papers-ClassMyth2.22.png', '../assets/images/Papers-ClassMyth2.23.png', '../assets/images/Papers-ClassMyth2.24.png', '../assets/images/Papers-ClassMyth2.25.png', '../assets/images/Papers-ClassMyth2.26.png', '../assets/images/Papers-ClassMyth2.27.png', '../assets/images/Papers-ClassMyth2.28.png', '../assets/images/Papers-ClassMyth2.29.png', '../assets/images/Papers-ClassMyth2.30.png', '../assets/images/Papers-ClassMyth2.31.png', '../assets/images/Papers-ClassMyth2.32.png', '../assets/images/Papers-ClassMyth2.33.png', '../assets/images/Papers-ClassMyth2.34.png', '../assets/images/Papers-ClassMyth2.35.png', '../assets/images/Papers-ClassMyth2.36.png', '../assets/images/Papers-ClassMyth2.37.png', '../assets/images/Papers-ClassMyth2.38.png', '../assets/images/Papers-ClassMyth2.39.png', '../assets/images/Papers-ClassMyth2.40.png']
+            const classMyth3Images = ['../assets/images/Papers-ClassMyth3.1.1.png', '../assets/images/Papers-ClassMyth3.3.1.png', '../assets/images/Papers-ClassMyth3.6.png', '../assets/images/Papers-ClassMyth3.8.png', '../assets/images/Papers-ClassMyth3.9.png', '../assets/images/Papers-ClassMyth3.10.png', '../assets/images/Papers-ClassMyth3.11.png', '../assets/images/Papers-ClassMyth3.12.png', '../assets/images/Papers-ClassMyth3.13.png', '../assets/images/Papers-ClassMyth3.14.png', '../assets/images/Papers-ClassMyth3.15.png', '../assets/images/Papers-ClassMyth3.16.png', '../assets/images/Papers-ClassMyth3.17.png', '../assets/images/Papers-ClassMyth3.18.png', '../assets/images/Papers-ClassMyth3.19.png', '../assets/images/Papers-ClassMyth3.20.png', '../assets/images/Papers-ClassMyth3.21.png', '../assets/images/Papers-ClassMyth3.22.png', '../assets/images/Papers-ClassMyth3.23.png', '../assets/images/Papers-ClassMyth3.24.png', '../assets/images/Papers-ClassMyth3.25.png', '../assets/images/Papers-ClassMyth3.26.png', '../assets/images/Papers-ClassMyth3.27.png', '../assets/images/Papers-ClassMyth3.28.png', '../assets/images/Papers-ClassMyth3.29.png', '../assets/images/Papers-ClassMyth3.30.png', '../assets/images/Papers-ClassMyth3.31.png', '../assets/images/Papers-ClassMyth3.32.png', '../assets/images/Papers-ClassMyth3.33.png', '../assets/images/Papers-ClassMyth3.34.png', '../assets/images/Papers-ClassMyth3.35.png', '../assets/images/Papers-ClassMyth3.36.png', '../assets/images/Papers-ClassMyth3.37.png']
+
 
             var img1 = document.getElementById('paperrow1');
             var img2 = document.getElementById('paperrow2');
@@ -178,6 +196,44 @@
                 // 3.4.1 Works
             })
 
+            // practice.addEventListener('click', () => {
+            //     img1.src = '../assets/images/Papers-Electric9.png';
+            //     img2.src = '../assets/images/Papers-Hawaii7.png';
+            //     img3.src = '../assets/images/Papers-Corals5.png';
+            //     img4.src = '../assets/images/Papers-Fball7.png';
+            //     img5.src = '../assets/images/Papers-VNWar6.png';
+            //     img6.src = '../assets/images/Papers-SteelTown6.png';
+            //     img7.src = '../assets/images/Papers-ClassMyth1.6.png';
+            //     img8.src = '../assets/images/Papers-ClassMyth2.6.png';
+            //     img9.src = '../assets/images/Papers-ClassMyth3.8.png';
+            // })
+            
+            // const electricCarImages = ['../assets/images/Papers-Electric1.png', '../assets/images/Papers-Electric2.1.png', '../assets/images/Papers-Electric3.png', '../assets/images/Papers-Electric4.png', '../assets/images/Papers-Electric6.1.png', '../assets/images/Papers-Electric7.png', '../assets/images/Papers-Electric8.1.png'];
+
+
+            randomButton.addEventListener('click', () => {
+                var randomElectricNumber = Math.floor(Math.random() * electricCarImages.length);
+                var randomHawaiiNumber = Math.floor(Math.random() * hawaiiImages.length);
+                var randomCoralNumber = Math.floor(Math.random() * coralReefImages.length);
+                var randomFootballNumber = Math.floor(Math.random() * footballImages.length);
+                var randomVietnamNumber = Math.floor(Math.random() * vietnamImages.length);
+                var randomSteelTownNumber = Math.floor(Math.random() * steelTownImages.length);
+                var randomClassMyth1Number = Math.floor(Math.random() * classMyth1Images.length);
+                var randomClassMyth2Number = Math.floor(Math.random() * classMyth2Images.length);
+                var randomClassMyth3Number = Math.floor(Math.random() * classMyth3Images.length);
+                img1.src = electricCarImages[randomElectricNumber];
+                img2.src = hawaiiImages[randomHawaiiNumber];
+                img3.src = coralReefImages[randomCoralNumber];
+                img4.src = footballImages[randomFootballNumber];
+                img5.src = vietnamImages[randomVietnamNumber];
+                img6.src = steelTownImages[randomSteelTownNumber];
+                img7.src = classMyth1Images[randomClassMyth1Number];
+                img8.src = classMyth2Images[randomClassMyth2Number];
+                img9.src = classMyth3Images[randomClassMyth3Number];
+                // 3.4.1 Works
+                console.log(randomElectricNumber);
+            })
+
             $('button#lightbutton').click(function () {
                 paperBody.style.background = 'white';
 
@@ -195,6 +251,9 @@
                 }
                 if($('button#togglebutton3').hasClass('btn-dark')){
                     $('button#togglebutton3').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#randombutton').hasClass('btn-dark')){
+                    $('button#randombutton').removeClass('btn-dark').addClass('btn-light');
                 }
                 if($('button#back-button').hasClass('btn-dark')){
                     $('button#back-button').removeClass('btn-dark').addClass('btn-light');
@@ -225,6 +284,9 @@
                 if($('button#togglebutton3').hasClass('btn-light')){
                     $('button#togglebutton3').removeClass('btn-light').addClass('btn-dark');
                 }
+                if($('button#randombutton').hasClass('btn-light')){
+                    $('button#randombutton').removeClass('btn-light').addClass('btn-dark');
+                }
                 if($('button#back-button').hasClass('btn-light')){
                     $('button#back-button').removeClass('btn-light').addClass('btn-dark');
                 }
@@ -235,9 +297,15 @@
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
             })
+            
+            
 
+            // function randomImage () {
+            //     var random = Math.floor(Math.random() * electricCarImages.length + 1);
+            // };
 
-            console.log(button1);
+            // var randomNumber = Math.floor(Math.random() * electricCarImages.length + 1);
+            // console.log(random);
 
         </script>
         <!-- <div class="row">

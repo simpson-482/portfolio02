@@ -390,6 +390,11 @@
    margin-right: 50px;
 }
 
+#randombutton {
+   float: right;
+   margin-right: 30px;
+}
+
 #lightbutton:hover {
    transform: scale(1.15);
 }
@@ -410,6 +415,9 @@
    transform: scale(1.15);
 }
 #togglebutton4:hover {
+   transform: scale(1.15);
+}
+#randombutton:hover {
    transform: scale(1.15);
 }
 
