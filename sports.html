@@ -61,6 +61,9 @@
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton1">
             Toggle #1
         </button>
+        <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+            Full
+        </button>
         <br>
         <br>
         <br>
@@ -127,6 +130,7 @@
             var button3 = document.getElementById('togglebutton3');
             var lightButton = document.getElementById('lightbutton');
             var darkButton = document.getElementById('darkbutton');
+            var fullButton = document.getElementById('fullbutton');
             var paperBody = document.getElementById('paperbody');
 
             var img1 = document.getElementById('sportsrow1');
@@ -181,6 +185,9 @@
                 if($('button#lightbutton').hasClass('btn-dark')){
                     $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
                 }
+                if($('button#fullbutton').hasClass('btn-dark')){
+                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+                }
                 if($('button#togglebutton1').hasClass('btn-dark')){
                     $('button#togglebutton1').removeClass('btn-dark').addClass('btn-light');
                 }
@@ -210,6 +217,9 @@
                 if($('button#lightbutton').hasClass('btn-light')){
                     $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
                 }
+                if($('button#fullbutton').hasClass('btn-light')){
+                    $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+                }
                 if($('button#togglebutton1').hasClass('btn-light')){
                     $('button#togglebutton1').removeClass('btn-light').addClass('btn-dark');
                 }
@@ -229,6 +239,11 @@
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
             })
+            fullButton.addEventListener("click", () => {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
+                });
+            });
 
             
             console.log(button1);

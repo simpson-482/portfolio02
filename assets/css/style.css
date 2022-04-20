@@ -370,6 +370,10 @@
    float: left;
    margin-left: 30px;
 }
+#fullbutton {
+   float: left;
+   margin-left: 30px;
+}
 
 #togglebutton1 {
    float: right;
@@ -400,6 +404,9 @@
 }
 
 #darkbutton:hover {
+   transform: scale(1.15);
+}
+#fullbutton:hover {
    transform: scale(1.15);
 }
 

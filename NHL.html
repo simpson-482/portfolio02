@@ -30,6 +30,17 @@
     </header>
     <br>
     <br>
+    <div class= "container">
+        <div class= "row">
+            <div class= col-md-4>
+                <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+                    Full
+                </button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
     <br>
 
 <img style="margin-left: 30px"; src="assets/images/Stanley_Cup_Playoffs_History.png">
@@ -37,6 +48,17 @@
 <br>
 <br>
 <br>
+<script>
+    var fullButton = document.getElementById('fullbutton');
+    
+    fullButton.addEventListener("click", () => {
+                    document.documentElement.requestFullscreen().catch((e) => {
+                        console.log(e);
+                    });
+                });
+    
+    
+    </script>
 <div class= "container">
     <div class= "row">
         <div class= col-md-4>

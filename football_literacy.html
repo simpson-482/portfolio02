@@ -47,6 +47,9 @@
                 <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
                     Dark
                 </button>
+                <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+                    Full
+                </button>
                 <br>
         </h1>
     </div>
@@ -141,6 +144,9 @@
         if($('button#lightbutton').hasClass('btn-dark')){
             $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
         }
+        if($('button#fullbutton').hasClass('btn-dark')){
+            $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+        }
         if($('button#back-button').hasClass('btn-dark')){
             $('button#back-button').removeClass('btn-dark').addClass('btn-light');
         }
@@ -163,6 +169,9 @@
         if($('button#lightbutton').hasClass('btn-light')){
             $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
         }
+        if($('button#fullbutton').hasClass('btn-light')){
+            $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+        }
         if($('button#back-button').hasClass('btn-light')){
             $('button#back-button').removeClass('btn-light').addClass('btn-dark');
         }
@@ -175,7 +184,13 @@
         $('h1').css('color', 'white');
         $('p').css('color', 'white');
     })
+    var fullButton = document.getElementById('fullbutton');
 
+        fullButton.addEventListener("click", () => {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
+                });
+            });
     </script>
 
 <div class= "container">
