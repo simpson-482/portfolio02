@@ -32,6 +32,10 @@
         margin-top: 50px;
         margin-left: 60px;
      }
+     .jaredrow6{
+      margin-top: 50px;
+      margin-left: 60px;
+   }
      .paperrow1{
          margin-left: 60px;
       }
@@ -182,6 +186,10 @@
          margin-top: 50px;
          margin-left: 0px;
       }
+      .jaredrow6{
+         margin-top: 50px;
+         margin-left: 0px;
+      }
       .paperrow1{
         margin-top: 0px;
         margin-left: 0px;
@@ -311,6 +319,10 @@
       .jaredrow5{
          margin-top: 50px;
       }
+      .jaredrow6{
+         margin-top: 50px;
+         margin-left: 0px;
+      }
 }
 
 @media (min-width: 1200px) {
@@ -320,6 +332,10 @@
       .jaredrow5 {
          margin-top: 50px;
        }
+       .jaredrow6{
+         margin-top: 50px;
+         margin-left: 0px;
+      }
 }
 
 .img_jared1 {
