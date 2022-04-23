@@ -1,253 +1,267 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "./assets/css/style.css">
-    <link rel= "shortcut icon" href= "assets/images/Favicon1.png">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Jared Simpson's Portfolio</title>
-</head>
-<body id="paperbody">
-    <!--Navigation Bar-->
-    <header>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel= "stylesheet" href= "./assets/css/style.css">
+            <link rel= "shortcut icon" href= "assets/images/Favicon1.png">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <title>Jared Simpson's Portfolio</title>
+        </head>
+        <body id="paperbody">
+            <!--Navigation Bar-->
+            <header>
+                <div class= "container">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
+                            <a href="index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class= "navbar-nav ml-auto">
+                                <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
+                                <li class="nav-item" style="font-size: 20px"><a href="./portfolio4/index.html" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
+                            </ul>
+                            </div>
+                </nav>
+                </div>
+
+            </header>
+            <br>
+            <br>
+            <br>
+
+        <!--Content Section-->
         <div class= "container">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
-                    <a href="index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class= "navbar-nav ml-auto">
-                        <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
-                        <li class="nav-item" style="font-size: 20px"><a href="./portfolio4/index.html" class="nav-link">Portfolio</a></li>
-                        <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
-                    </ul>
-                    </div>
-        </nav>
-        </div>
-
-    </header>
-    <br>
-    <br>
-    <br>
-
-<!--Content Section-->
-<div class= "container">
-    <div class="row">
-        <h1 class= col-md-4>
-            <strong>Hawaii Volcanoes National Park</strong>
-            <br>
-            <br>
-                <button type="button" class="btn btn-light light-btn" id= "lightbutton">
-                    Light
-                </button>
-                <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
-                    Dark
-                </button>
-                <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
-                    Full
-                </button>
-            <br>
-            <br>
-        </h1>
-    </div>
-</div>
-<div class= "container">
-    <div class="row">
-        <p class= col-md-12>
-            Hawaii Volcanoes National Park<br>
-            Jared Simpson<br>
-            October 31, 2012<br>
-        </p>
-        <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
-        Hawaii Volcanoes National Park is located on the southern most island in Hawaii. The park is about 299,177 acres in diameter or 358 square miles.  It was established as a National Park on August 1, 1916.  The park not only exhibits cultural history, but some of the most striking geological features on the planet.  Frequent gentle lava eruptions are characteristic volcanic activity on the island.  Lava may squirt in high fountains from volcanic vents, or cascade down slopes in rivers of incandescent rock.  As of 1994, about 500 acres of land have been added to Hawaii Island as a result of volcanic activity.  The flows of these volcanoes produced a baron volcanic landscape that has served as the foundation of life on the island. 
-        </p>
-        <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
-        The volcanoes of the park, Kilauea and Mauna Loa, are two of the most active on the planet.  These volcanoes are constantly adding land to the island of Hawaii.  Mauna Loa’s shield-shaped dome is about 70 miles long and 30 miles wide.  It produces lava flow on the average of every seven years and exhibits minor eruptive activity in the years between.  It is the world’s largest active volcano.  Its summit stands approximately 56,000 feet (17 km) above its base making it from top to bottom roughly 27,000 feet higher than Mount Everest.  Of this 17 km about 4 km stands above sea level, about 5 km stands stretches from sea level to the sea floor, and another 8 km is depressed by Mauna Loa’s giant mass.  Mauna Loa is so massive that it makes up approximately half of Hawaii Island.  
-        </p>
-    </div>
-</div>
-<div class= "container">
-    <div class="row">
-        <div class= col-md-12 style= "text-indent: 75px">
-            <p style="line-height: 2;">
-            The volcano Kilauea is the other volcano of Hawaii Island.  While not as large as Mauna Loa, Kilauea produces more lava flow and erupts more frequently than its counterpart.  Although Kilauea is not as large as Mauna Loa, its shield dome, which is about 50 miles long and 14 miles wide, is still a massive specimen.  Of this dome, Kilauea’s caldera is made up of about a distance of three miles long by two miles wide.  Kilauea’s lava flow currently produces between 250,000 and 650,000 cubic yards of lava each day.  This is enough lava to resurface 20-mile long two-lane road daily.  Located just east of the volcano is the Kilauea’s Puu Oo lava vent.  Most of Kilauea’s lava flow comes from the Puu Oo lava vent.  The lava makes the seven-mile trip from the caldera of the volcano to ocean through the Puu Oo lava vent.  At the summit caldera of Kilauea is the Halemaumau Crater.  The crater, about 3,000 feet across and 300 feet deep, is a massive specimen.  Lava flows approximately 70 to 150 feet below the craters floor.  Each day the crater expels about 300 tons of sulfur dioxide.  The Halemaumau Crater is said to be the home of Hawaiian volcano goddess Pele.   Tourists must pay respect to Pele when the Halemaumau crater is visited.
-            </p>
-        </div>
-        <div class= col-md-12 style= "text-indent: 75px">
-            <p style="line-height: 2;">
-                Many other interesting geologic features are characteristic of the island.  Thurston lava tube is a 500-year-old lava cave.  The caves walls were formed and solidified by lava.  When the lava stopped flowing, the cave was formed.
-            </p>
-        </div>
-        <div class= col-md-12 style= "text-indent: 75px">
-            <p style="line-height: 2;">
-                Located nearly 2,000 miles from the nearest continental land mass, the Hawaiian Archipelago is the most geographically isolated group of islands on Earth.  Hawaii Volcanoes National Park displays the results of 70 million years of volcanism, migration and evolution in the Hawaiian Island.  Forty percent of the native terrestrial flora and fauna are found only on the Hawaiian Islands.  Most native animal species in the Hawaiian archipelago are descendants of those that were able to fly there, birds, bats, and insects; those carried by birds such as snails, some insects and spiders, and those blown or washed ashore.
-            </p>
-        </div>
-    </div>  
-</div>
-<div class= "container">
-    <div class="row">
-        <div class="col-md-4">
-            <p>
-            <strong>Video Sources</strong>
-            </p>
-            <p>
-             <a href="https://www.youtube.com/watch?v=BvPSv9VjM0c" target="_blank"> 
-                1. Puu Oo Lava Vent
-             </a>
-             <br>
-             <a href="https://www.youtube.com/watch?v=ZzxecBbLlnk" target="_blank">
-                2. Thurston Lava tube
-             </a>
-            </p>
-        </div>
-    </div>
-<br>
-<br>
-<br>
-<div class= "container">
-    <div class="row">
-        <div class="col-md-4">
-            <p>
-            <strong>List of Sources</strong>
-            </p>
-        </div>
-    </div>
-        <p>
-            1.  Harris, Ann G., Esther Tuttle, and Sherwood D. Tuttle. Geology of National Parks. Dubuque, 	IA: Kendall/Hunt Pub., 1990. Print.
-        </p>
-        <p>
-            2.  "Hawaii Volcanoes National Park, Hawaii, the Big Island | GoHawaii.com." Hawaii's Official 	Tourism Site. N.p., n.d. Web. 31 Oct. 2012. <http://www.gohawaii.com/big-island/regions-neighborhoods/kau/hawaii-volcanoes-national-park>
-        </p>
-        <p>
-            3.  "Volcanoes Are Monuments to Earth's Origin, Evidence That Its Primordial Forces Are Still 	at Work." National Park Service. N.p., n.d. Web. 	<http://www.nps.gov/havo/naturescience/volcanoes-are-monuments.htm>.
-
-        </p>
-            <br>
-            <br>
-            <br>
-        </h1>
-    </div>
-</div>
-<script>
-    
-    var paperBody = document.getElementById('paperbody');
-    var lightButton = document.getElementById('lightbutton');
-    var darkButton = document.getElementById('darkbutton');
-    var h1 = document.getElementById('h1');
-
-    $('button#lightbutton').click(function () {
-        paperBody.style.background = 'white';
-        if($('button#darkbutton').hasClass('btn-dark')){
-            $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('button#lightbutton').hasClass('btn-dark')){
-            $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('button#fullbutton').hasClass('btn-dark')){
-            $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('button#back-button').hasClass('btn-dark')){
-            $('button#back-button').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('nav#navbar').hasClass('bg-dark')){
-            $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
-        }
-        if($('nav#footer').hasClass('bg-dark')){
-            $('nav#footer').removeClass('bg-dark').addClass('bg-light');
-        }
-        $('h1').css('color', 'black');
-        $('p').css('color', 'black');
-    })
-    $('button#darkbutton').click(function () {
-        paperBody.style.background = 'black';
-                
-        if($('button#darkbutton').hasClass('btn-light')){
-            $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
-        }
-                
-        if($('button#lightbutton').hasClass('btn-light')){
-            $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
-        }
-        if($('button#fullbutton').hasClass('btn-light')){
-            $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
-        }
-        if($('button#back-button').hasClass('btn-light')){
-            $('button#back-button').removeClass('btn-light').addClass('btn-dark');
-        }
-        if($('nav#navbar').hasClass('bg-light')){
-            $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
-        }
-        if($('nav#footer').hasClass('bg-light')){
-            $('nav#footer').removeClass('bg-light').addClass('bg-dark');
-        }
-        $('h1').css('color', 'white');
-        $('p').css('color', 'white');
-    })
-    var fullButton = document.getElementById('fullbutton');
-
-        fullButton.addEventListener("click", () => {
-                document.documentElement.requestFullscreen().catch((e) => {
-                    console.log(e);
-                });
-            });
-
-    </script>
-    <div class= "container">
-        <div class= "row">
-            <div class= col-md-4>
-            <button type="button" class="btn btn-light back-button" id="back-button"onclick="location.href='Papers-School/papers.html'">
-                Back
-            </button>
+            <div class="row">
+                <h1 class= col-md-4>
+                    <strong>Hawaii Volcanoes National Park</strong>
+                    <br>
+                    <br>
+                        <button type="button" class="btn btn-light light-btn" id= "lightbutton">
+                            Light
+                        </button>
+                        <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
+                            Dark
+                        </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+                            Full
+                        </button>
+                    <br>
+                    <br>
+                </h1>
             </div>
         </div>
-    </div>
-    <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-    <!--Footer-->
-    <footer class= "footer">
         <div class= "container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "footer">
-                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarMenu">
-                        <ul class= "navbar-nav mr-auto">
-                            <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
-                            <li class="nav-item" style="font-size: 20px"><a href="portfolio4/index.html" class="nav-link">Portfolio</a></li>
-                            <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
-                        </ul>
-                        </div>
-            <a href="https://www.facebook.com/profile.php?id=100008295522988" target="_blank">
-                <img class="rounded fbimg" src="./assets/images/Footer-facebook1.png">
-            </a>
-            <a href="https://www.linkedin.com/in/jared--simpson/" target="_blank">
-                <img class="rounded linkedinimg" src="./assets/images/Footer-linkin1.png">
-            </a>
-            <a href="https://twitter.com/jurdsimp" target="_blank">
-                <img class="rounded twitterimg" src="./assets/images/Footer-twitter1.png">
-            </a>
-            <a href="https://www.instagram.com/simpson.482/" target="_blank">
-                <img class="rounded igimg" src="./assets/images/Footer-instagram1.png">
-            </a>
-            </nav>
+            <div class="row">
+                <p class= col-md-12>
+                    Hawaii Volcanoes National Park<br>
+                    Jared Simpson<br>
+                    October 31, 2012<br>
+                </p>
+                <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
+                Hawaii Volcanoes National Park is located on the southern most island in Hawaii. The park is about 299,177 acres in diameter or 358 square miles.  It was established as a National Park on August 1, 1916.  The park not only exhibits cultural history, but some of the most striking geological features on the planet.  Frequent gentle lava eruptions are characteristic volcanic activity on the island.  Lava may squirt in high fountains from volcanic vents, or cascade down slopes in rivers of incandescent rock.  As of 1994, about 500 acres of land have been added to Hawaii Island as a result of volcanic activity.  The flows of these volcanoes produced a baron volcanic landscape that has served as the foundation of life on the island. 
+                </p>
+                <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
+                The volcanoes of the park, Kilauea and Mauna Loa, are two of the most active on the planet.  These volcanoes are constantly adding land to the island of Hawaii.  Mauna Loa’s shield-shaped dome is about 70 miles long and 30 miles wide.  It produces lava flow on the average of every seven years and exhibits minor eruptive activity in the years between.  It is the world’s largest active volcano.  Its summit stands approximately 56,000 feet (17 km) above its base making it from top to bottom roughly 27,000 feet higher than Mount Everest.  Of this 17 km about 4 km stands above sea level, about 5 km stands stretches from sea level to the sea floor, and another 8 km is depressed by Mauna Loa’s giant mass.  Mauna Loa is so massive that it makes up approximately half of Hawaii Island.  
+                </p>
+            </div>
         </div>
-    </footer>
-</body>
-</html>
+        <div class= "container">
+            <div class="row">
+                <div class= col-md-12 style= "text-indent: 75px">
+                    <p style="line-height: 2;">
+                    The volcano Kilauea is the other volcano of Hawaii Island.  While not as large as Mauna Loa, Kilauea produces more lava flow and erupts more frequently than its counterpart.  Although Kilauea is not as large as Mauna Loa, its shield dome, which is about 50 miles long and 14 miles wide, is still a massive specimen.  Of this dome, Kilauea’s caldera is made up of about a distance of three miles long by two miles wide.  Kilauea’s lava flow currently produces between 250,000 and 650,000 cubic yards of lava each day.  This is enough lava to resurface 20-mile long two-lane road daily.  Located just east of the volcano is the Kilauea’s Puu Oo lava vent.  Most of Kilauea’s lava flow comes from the Puu Oo lava vent.  The lava makes the seven-mile trip from the caldera of the volcano to ocean through the Puu Oo lava vent.  At the summit caldera of Kilauea is the Halemaumau Crater.  The crater, about 3,000 feet across and 300 feet deep, is a massive specimen.  Lava flows approximately 70 to 150 feet below the craters floor.  Each day the crater expels about 300 tons of sulfur dioxide.  The Halemaumau Crater is said to be the home of Hawaiian volcano goddess Pele.   Tourists must pay respect to Pele when the Halemaumau crater is visited.
+                    </p>
+                </div>
+                <div class= col-md-12 style= "text-indent: 75px">
+                    <p style="line-height: 2;">
+                        Many other interesting geologic features are characteristic of the island.  Thurston lava tube is a 500-year-old lava cave.  The caves walls were formed and solidified by lava.  When the lava stopped flowing, the cave was formed.
+                    </p>
+                </div>
+                <div class= col-md-12 style= "text-indent: 75px">
+                    <p style="line-height: 2;">
+                        Located nearly 2,000 miles from the nearest continental land mass, the Hawaiian Archipelago is the most geographically isolated group of islands on Earth.  Hawaii Volcanoes National Park displays the results of 70 million years of volcanism, migration and evolution in the Hawaiian Island.  Forty percent of the native terrestrial flora and fauna are found only on the Hawaiian Islands.  Most native animal species in the Hawaiian archipelago are descendants of those that were able to fly there, birds, bats, and insects; those carried by birds such as snails, some insects and spiders, and those blown or washed ashore.
+                    </p>
+                </div>
+            </div>  
+        </div>
+        <div class= "container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                    <strong>Video Sources</strong>
+                    </p>
+                    <p>
+                    <a href="https://www.youtube.com/watch?v=BvPSv9VjM0c" target="_blank"> 
+                        1. Puu Oo Lava Vent
+                    </a>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=ZzxecBbLlnk" target="_blank">
+                        2. Thurston Lava tube
+                    </a>
+                    </p>
+                </div>
+            </div>
+        <br>
+        <br>
+        <br>
+        <div class= "container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>
+                    <strong>List of Sources</strong>
+                    </p>
+                </div>
+            </div>
+                <p>
+                    1.  Harris, Ann G., Esther Tuttle, and Sherwood D. Tuttle. Geology of National Parks. Dubuque, 	IA: Kendall/Hunt Pub., 1990. Print.
+                </p>
+                <p>
+                    2.  "Hawaii Volcanoes National Park, Hawaii, the Big Island | GoHawaii.com." Hawaii's Official 	Tourism Site. N.p., n.d. Web. 31 Oct. 2012. <http://www.gohawaii.com/big-island/regions-neighborhoods/kau/hawaii-volcanoes-national-park>
+                </p>
+                <p>
+                    3.  "Volcanoes Are Monuments to Earth's Origin, Evidence That Its Primordial Forces Are Still 	at Work." National Park Service. N.p., n.d. Web. 	<http://www.nps.gov/havo/naturescience/volcanoes-are-monuments.htm>.
+
+                </p>
+                    <br>
+                    <br>
+                    <br>
+                </h1>
+            </div>
+        </div>
+        <script>
+            
+            var paperBody = document.getElementById('paperbody');
+            var lightButton = document.getElementById('lightbutton');
+            var darkButton = document.getElementById('darkbutton');
+            var h1 = document.getElementById('h1');
+
+            $('button#lightbutton').click(function () {
+                paperBody.style.background = 'white';
+                if($('button#darkbutton').hasClass('btn-dark')){
+                    $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#lightbutton').hasClass('btn-dark')){
+                    $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#fullbutton').hasClass('btn-dark')){
+                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#back-button').hasClass('btn-dark')){
+                    $('button#back-button').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('nav#navbar').hasClass('bg-dark')){
+                    $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
+                }
+                if($('nav#footer').hasClass('bg-dark')){
+                    $('nav#footer').removeClass('bg-dark').addClass('bg-light');
+                }
+                $('h1').css('color', 'black');
+                $('p').css('color', 'black');
+            })
+            $('button#darkbutton').click(function () {
+                paperBody.style.background = 'black';
+                        
+                if($('button#darkbutton').hasClass('btn-light')){
+                    $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                        
+                if($('button#lightbutton').hasClass('btn-light')){
+                    $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#fullbutton').hasClass('btn-light')){
+                    $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#back-button').hasClass('btn-light')){
+                    $('button#back-button').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('nav#navbar').hasClass('bg-light')){
+                    $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
+                }
+                if($('nav#footer').hasClass('bg-light')){
+                    $('nav#footer').removeClass('bg-light').addClass('bg-dark');
+                }
+                $('h1').css('color', 'white');
+                $('p').css('color', 'white');
+            })
+            var fullButton = document.getElementById('fullbutton');
+
+            fullButton.addEventListener("click", () => {
+                        document.documentElement.requestFullscreen().catch((e) => {
+                            console.log(e);
+                        });
+                    });
+                    document.addEventListener("dblclick", () => {
+                        toggleFullscreen();
+                    });
+                    function getFullscreenElement() {
+                        return document.fullscreenElement
+                    }
+
+                    function toggleFullscreen() {
+                        if (getFullscreenElement()) {
+                            document.exitFullscreen();
+                        } else { 
+                            document.documentElement.requestFullscreen().catch(console.log);
+                        }
+                    }
+
+            </script>
+            <div class= "container">
+                <div class= "row">
+                    <div class= col-md-4>
+                    <button type="button" class="btn btn-light back-button" id="back-button"onclick="location.href='Papers-School/papers.html'">
+                        Back
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+            <!--Footer-->
+            <footer class= "footer">
+                <div class= "container">
+                    <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "footer">
+                                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarMenu">
+                                <ul class= "navbar-nav mr-auto">
+                                    <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
+                                    <li class="nav-item" style="font-size: 20px"><a href="portfolio4/index.html" class="nav-link">Portfolio</a></li>
+                                    <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
+                                </ul>
+                                </div>
+                    <a href="https://www.facebook.com/profile.php?id=100008295522988" target="_blank">
+                        <img class="rounded fbimg" src="./assets/images/Footer-facebook1.png">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jared--simpson/" target="_blank">
+                        <img class="rounded linkedinimg" src="./assets/images/Footer-linkin1.png">
+                    </a>
+                    <a href="https://twitter.com/jurdsimp" target="_blank">
+                        <img class="rounded twitterimg" src="./assets/images/Footer-twitter1.png">
+                    </a>
+                    <a href="https://www.instagram.com/simpson.482/" target="_blank">
+                        <img class="rounded igimg" src="./assets/images/Footer-instagram1.png">
+                    </a>
+                    </nav>
+                </div>
+            </footer>
+        </body>
+        </html>

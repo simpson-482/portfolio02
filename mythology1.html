@@ -1,212 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= "stylesheet" href= "./assets/css/style.css">
-    <link rel= "shortcut icon" href= "assets/images/Favicon1.png">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Jared Simpson's Portfolio</title>
-</head>
-<body id= "paperbody">
-    <!--Navigation Bar-->
-    <header>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel= "stylesheet" href= "./assets/css/style.css">
+            <link rel= "shortcut icon" href= "assets/images/Favicon1.png">
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <title>Jared Simpson's Portfolio</title>
+        </head>
+        <body id= "paperbody">
+            <!--Navigation Bar-->
+            <header>
+                <div class= "container">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
+                            <a href="index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class= "navbar-nav ml-auto">
+                                <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
+                                <li class="nav-item" style="font-size: 20px"><a href="./portfolio4/index.html" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
+                            </ul>
+                            </div>
+                </nav>
+                </div>
+
+            </header>
+            <br>
+            <br>
+            <br>
+
+        <!--Content Section-->
         <div class= "container">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
-                    <a href="index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class= "navbar-nav ml-auto">
-                        <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
-                        <li class="nav-item" style="font-size: 20px"><a href="./portfolio4/index.html" class="nav-link">Portfolio</a></li>
-                        <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
-                    </ul>
-                    </div>
-        </nav>
+            <div class="row">
+                <h1 class= col-md-4>
+                    <strong>Classical Mythology Paper #1</strong>
+                    <br>
+                    <br>
+                        <button type="button" class="btn btn-light light-btn" id= "lightbutton">
+                            Light
+                        </button>
+                        <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
+                            Dark
+                        </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+                            Full
+                        </button>
+                    <br>
+                    <br>
+                </h1>
+            </div>
         </div>
-
-    </header>
-    <br>
-    <br>
-    <br>
-
-<!--Content Section-->
-<div class= "container">
-    <div class="row">
-        <h1 class= col-md-4>
-            <strong>Classical Mythology Paper #1</strong>
-            <br>
-            <br>
-                <button type="button" class="btn btn-light light-btn" id= "lightbutton">
-                    Light
-                </button>
-                <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
-                    Dark
-                </button>
-                <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
-                    Full
-                </button>
-            <br>
-            <br>
-        </h1>
-    </div>
-</div>
-<div class= "container">
-    <div class="row">
-        <p class= col-md-12>
-            Jared Simpson<br>
-            Assignment #1<br>
-            Friday January 27, 2017<br>
-        </p>
-        <p class= col-md-12 style= "text-indent: 75px; line-height: 2; text-align: center;">
-            The Bible vs. The Theogony
-        </p>
-        <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
-            The creation story I will summarize is the creation story of the Bible.  I picked this creation myth because I am interested in the Bible and I believe we haven’t studied it extensively in class.  This is a very common creation myth that spans many different cultures.  It was the first thing I thought of when thinking of a comparable creation story to the Theogony. The story goes like, in the beginning God created the heavens and the earth.  In the beginning the earth was formless and empty, with God hovering over the sea.  Next God created light and separated the night from the day, this is what occurred on the first day.  On the second day God separated the water from the sky.  On the third day God let the seas gather in one place so that solid ground could form underneath it.  Next on the third day God produces various vegetation. He produces seed bearing plants and trees that produce fruit.  On the fourth day God lets the night and day and the revolution of the earth become sacred times, years and days.  God continues to make light for the day and light for the night, as well as stars on the fourth day.  God then creates the living things in the water and birds in the skies and tells them to be fruitful and multiply—this is the fifth day.  On the sixth day, God proceeds to create livestock and creatures of the ground.  God says “Let us make mankind in our image, in our likeness, so that they may rule over the fish in the sea and the birds in the sky, over the livestock and all the wild animals, and over all the creatures that move along the ground.” And God created males and females.  Finally on the seventh day God rested.  
-        </p>
-        <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
-            In comparison Genesis does not explain the beginning that the Theogony describes as chaos.  While the story in Genesis goes right into God creating the earth, seas, land, etc., it doesn’t account for the big bang theory or the chaos that Gaia and Ouranos arose from spontaneously.  Obviously a major difference between the two creation myths is a singular God in the Bible verses multiple and the vastly talented Gods and the Gods that own the passage of many different facets of life in the Theogony.  While the Bible credits a singular God for the creation of the vast and many creatures on earth, it gives domain to the humans on earth to rule over these creations and different facets of life.  The Theogony gives domain over these different facets to a single God that has his or her specific niche.  As the Bible also focuses on the creation of the land, sea, creatures, seeds, fruit, night, day, humans, etc.; the Theogony focuses on Gods that rule over these things.     
-        </p>
-    </div>
-</div>
-<div class= "container">
-    <div class="row">
-        <div class= col-md-12 style= "text-indent: 75px">
-            <p style="line-height: 2;">
-                The overall tone of Genesis is one that is much more forward then that of the Theogony.  It is simpler and easier to follow.  In the Bible the summary of creation take only a few paragraphs and the tone is somewhat more difficult to grasp because of its briefness.  It is repeated “God saw it and it was good” throughout the passage so you can infer that the Bible is saying that the world and all creation is good.  As opposed to the world being good and creation being steady rulers in Genesis; there is eating of children, castration and trickery in the Theogony.  Fighting among the Gods is common and the lust for power and fear of losing power is commonplace in the Theogony.  I believe the Theogony may have been an explanation of creation but it may also be meant to entertain as well.  As the Bible is somewhat more stern and offers guidelines to live by as opposed to some of the trickery in the Theogony.  
-            </p>
+        <div class= "container">
+            <div class="row">
+                <p class= col-md-12>
+                    Jared Simpson<br>
+                    Assignment #1<br>
+                    Friday January 27, 2017<br>
+                </p>
+                <p class= col-md-12 style= "text-indent: 75px; line-height: 2; text-align: center;">
+                    The Bible vs. The Theogony
+                </p>
+                <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
+                    The creation story I will summarize is the creation story of the Bible.  I picked this creation myth because I am interested in the Bible and I believe we haven’t studied it extensively in class.  This is a very common creation myth that spans many different cultures.  It was the first thing I thought of when thinking of a comparable creation story to the Theogony. The story goes like, in the beginning God created the heavens and the earth.  In the beginning the earth was formless and empty, with God hovering over the sea.  Next God created light and separated the night from the day, this is what occurred on the first day.  On the second day God separated the water from the sky.  On the third day God let the seas gather in one place so that solid ground could form underneath it.  Next on the third day God produces various vegetation. He produces seed bearing plants and trees that produce fruit.  On the fourth day God lets the night and day and the revolution of the earth become sacred times, years and days.  God continues to make light for the day and light for the night, as well as stars on the fourth day.  God then creates the living things in the water and birds in the skies and tells them to be fruitful and multiply—this is the fifth day.  On the sixth day, God proceeds to create livestock and creatures of the ground.  God says “Let us make mankind in our image, in our likeness, so that they may rule over the fish in the sea and the birds in the sky, over the livestock and all the wild animals, and over all the creatures that move along the ground.” And God created males and females.  Finally on the seventh day God rested.  
+                </p>
+                <p class= col-md-12 style= "text-indent: 75px; line-height: 2">
+                    In comparison Genesis does not explain the beginning that the Theogony describes as chaos.  While the story in Genesis goes right into God creating the earth, seas, land, etc., it doesn’t account for the big bang theory or the chaos that Gaia and Ouranos arose from spontaneously.  Obviously a major difference between the two creation myths is a singular God in the Bible verses multiple and the vastly talented Gods and the Gods that own the passage of many different facets of life in the Theogony.  While the Bible credits a singular God for the creation of the vast and many creatures on earth, it gives domain to the humans on earth to rule over these creations and different facets of life.  The Theogony gives domain over these different facets to a single God that has his or her specific niche.  As the Bible also focuses on the creation of the land, sea, creatures, seeds, fruit, night, day, humans, etc.; the Theogony focuses on Gods that rule over these things.     
+                </p>
+            </div>
         </div>
-        <div class= col-md-12 style= "text-indent: 75px">
-            <p style="line-height: 2;">
-                The impact of these two stories was great in both cultures they were created in and continues to be great today.  The Bible has shaped and paved out how life was created and how to live life for millions if not billions of potential followers of Christ.  It gives people a single and almighty God to pray to in times of need.  The Theogony continues to be passed around from culture to culture and offers an entertaining and explanatory way to describe how creation came to be.  This method gave the people of its time multiple Gods to pray to for each specific need they had.  Both are cornerstones and staples of the cultures they represent and will continue to be passed down from generation to generation.  
-            </p>
+        <div class= "container">
+            <div class="row">
+                <div class= col-md-12 style= "text-indent: 75px">
+                    <p style="line-height: 2;">
+                        The overall tone of Genesis is one that is much more forward then that of the Theogony.  It is simpler and easier to follow.  In the Bible the summary of creation take only a few paragraphs and the tone is somewhat more difficult to grasp because of its briefness.  It is repeated “God saw it and it was good” throughout the passage so you can infer that the Bible is saying that the world and all creation is good.  As opposed to the world being good and creation being steady rulers in Genesis; there is eating of children, castration and trickery in the Theogony.  Fighting among the Gods is common and the lust for power and fear of losing power is commonplace in the Theogony.  I believe the Theogony may have been an explanation of creation but it may also be meant to entertain as well.  As the Bible is somewhat more stern and offers guidelines to live by as opposed to some of the trickery in the Theogony.  
+                    </p>
+                </div>
+                <div class= col-md-12 style= "text-indent: 75px">
+                    <p style="line-height: 2;">
+                        The impact of these two stories was great in both cultures they were created in and continues to be great today.  The Bible has shaped and paved out how life was created and how to live life for millions if not billions of potential followers of Christ.  It gives people a single and almighty God to pray to in times of need.  The Theogony continues to be passed around from culture to culture and offers an entertaining and explanatory way to describe how creation came to be.  This method gave the people of its time multiple Gods to pray to for each specific need they had.  Both are cornerstones and staples of the cultures they represent and will continue to be passed down from generation to generation.  
+                    </p>
+                </div>
+            </div>  
         </div>
-    </div>  
-</div>
-<script>
-    
-    var paperBody = document.getElementById('paperbody');
-    var lightButton = document.getElementById('lightbutton');
-    var darkButton = document.getElementById('darkbutton');
-    var h1 = document.getElementById('h1');
+        <script>
+            
+            var paperBody = document.getElementById('paperbody');
+            var lightButton = document.getElementById('lightbutton');
+            var darkButton = document.getElementById('darkbutton');
+            var h1 = document.getElementById('h1');
 
-    $('button#lightbutton').click(function () {
-        paperBody.style.background = 'white';
-        if($('button#darkbutton').hasClass('btn-dark')){
-            $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('button#lightbutton').hasClass('btn-dark')){
-            $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('button#fullbutton').hasClass('btn-dark')){
-            $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('button#back-button').hasClass('btn-dark')){
-            $('button#back-button').removeClass('btn-dark').addClass('btn-light');
-        }
-        if($('nav#navbar').hasClass('bg-dark')){
-            $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
-        }
-        if($('nav#footer').hasClass('bg-dark')){
-            $('nav#footer').removeClass('bg-dark').addClass('bg-light');
-        }
-        $('h1').css('color', 'black');
-        $('p').css('color', 'black');
-    })
-    $('button#darkbutton').click(function () {
-        paperBody.style.background = 'black';
-                
-        if($('button#darkbutton').hasClass('btn-light')){
-            $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
-        }
-                
-        if($('button#lightbutton').hasClass('btn-light')){
-            $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
-        }
-        if($('button#fullbutton').hasClass('btn-light')){
-            $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
-        }
-        if($('button#back-button').hasClass('btn-light')){
-            $('button#back-button').removeClass('btn-light').addClass('btn-dark');
-        }
-        if($('nav#navbar').hasClass('bg-light')){
-            $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
-        }
-        if($('nav#footer').hasClass('bg-light')){
-            $('nav#footer').removeClass('bg-light').addClass('bg-dark');
-        }
-        $('h1').css('color', 'white');
-        $('p').css('color', 'white');
-    })
+            $('button#lightbutton').click(function () {
+                paperBody.style.background = 'white';
+                if($('button#darkbutton').hasClass('btn-dark')){
+                    $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#lightbutton').hasClass('btn-dark')){
+                    $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#fullbutton').hasClass('btn-dark')){
+                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#back-button').hasClass('btn-dark')){
+                    $('button#back-button').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('nav#navbar').hasClass('bg-dark')){
+                    $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
+                }
+                if($('nav#footer').hasClass('bg-dark')){
+                    $('nav#footer').removeClass('bg-dark').addClass('bg-light');
+                }
+                $('h1').css('color', 'black');
+                $('p').css('color', 'black');
+            })
+            $('button#darkbutton').click(function () {
+                paperBody.style.background = 'black';
+                        
+                if($('button#darkbutton').hasClass('btn-light')){
+                    $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                        
+                if($('button#lightbutton').hasClass('btn-light')){
+                    $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#fullbutton').hasClass('btn-light')){
+                    $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#back-button').hasClass('btn-light')){
+                    $('button#back-button').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('nav#navbar').hasClass('bg-light')){
+                    $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
+                }
+                if($('nav#footer').hasClass('bg-light')){
+                    $('nav#footer').removeClass('bg-light').addClass('bg-dark');
+                }
+                $('h1').css('color', 'white');
+                $('p').css('color', 'white');
+            })
 
-    var fullButton = document.getElementById('fullbutton');
-    
-    fullButton.addEventListener("click", () => {
-                    document.documentElement.requestFullscreen().catch((e) => {
-                        console.log(e);
-                    });
+            var fullButton = document.getElementById('fullbutton');
+            
+            fullButton.addEventListener("click", () => {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
                 });
-    </script>
+            });
+            document.addEventListener("dblclick", () => {
+                toggleFullscreen();
+            });
+            function getFullscreenElement() {
+                return document.fullscreenElement
+            }
 
-<br>
-<br>
-<br>
-<div class= "container">
-    <div class= "row">
-        <div class= col-md-4>
-        <button type="button" class="btn btn-light back-button" id= "back-button" onclick="location.href='Papers-School/papers.html'">
-            Back
-        </button>
+            function toggleFullscreen() {
+                if (getFullscreenElement()) {
+                    document.exitFullscreen();
+                } else { 
+                    document.documentElement.requestFullscreen().catch(console.log);
+                }
+            }
+            </script>
+
+        <br>
+        <br>
+        <br>
+        <div class= "container">
+            <div class= "row">
+                <div class= col-md-4>
+                <button type="button" class="btn btn-light back-button" id= "back-button" onclick="location.href='Papers-School/papers.html'">
+                    Back
+                </button>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
 
-   <!--Footer-->
-   <footer class= "footer">
-    <div class= "container">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "footer">
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class= "navbar-nav mr-auto">
-                        <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
-                        <li class="nav-item" style="font-size: 20px"><a href="portfolio4/index.html" class="nav-link">Portfolio</a></li>
-                        <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
-                    </ul>
-                    </div>
-        <a href="https://www.facebook.com/profile.php?id=100008295522988" target="_blank">
-            <img class="rounded fbimg" src="./assets/images/Footer-facebook1.png">
-        </a>
-        <a href="https://www.linkedin.com/in/jared--simpson/" target="_blank">
-            <img class="rounded linkedinimg" src="./assets/images/Footer-linkin1.png">
-        </a>
-        <a href="https://twitter.com/jurdsimp" target="_blank">
-            <img class="rounded twitterimg" src="./assets/images/Footer-twitter1.png">
-        </a>
-        <a href="https://www.instagram.com/simpson.482/" target="_blank">
-            <img class="rounded igimg" src="./assets/images/Footer-instagram1.png">
-        </a>
-        </nav>
-    </div>
-</footer>
+        <!--Footer-->
+        <footer class= "footer">
+            <div class= "container">
+                <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "footer">
+                            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarMenu">
+                            <ul class= "navbar-nav mr-auto">
+                                <li class="nav-item" style="font-size: 20px"><a href="index.html" class="nav-link"> About</a></li>
+                                <li class="nav-item" style="font-size: 20px"><a href="portfolio4/index.html" class="nav-link">Portfolio</a></li>
+                                <li class="nav-item" style="font-size: 20px"><a href="contact.html" class="nav-link"> Contact</a></li>
+                            </ul>
+                            </div>
+                <a href="https://www.facebook.com/profile.php?id=100008295522988" target="_blank">
+                    <img class="rounded fbimg" src="./assets/images/Footer-facebook1.png">
+                </a>
+                <a href="https://www.linkedin.com/in/jared--simpson/" target="_blank">
+                    <img class="rounded linkedinimg" src="./assets/images/Footer-linkin1.png">
+                </a>
+                <a href="https://twitter.com/jurdsimp" target="_blank">
+                    <img class="rounded twitterimg" src="./assets/images/Footer-twitter1.png">
+                </a>
+                <a href="https://www.instagram.com/simpson.482/" target="_blank">
+                    <img class="rounded igimg" src="./assets/images/Footer-instagram1.png">
+                </a>
+                </nav>
+            </div>
+        </footer>
 
-</body>
-</html>
+        </body>
+        </html>
