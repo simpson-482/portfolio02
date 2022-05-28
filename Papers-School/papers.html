@@ -65,9 +65,6 @@
         <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
             <strong>Dark</strong>
         </button>
-        <button type="button" class="btn btn-light randombg-btn" id= "randombgbutton">
-            <strong>Random</strong>
-        </button>
         <button type="button" class="btn btn-light toggle-btn" id= "randombutton">
             <strong>Random</strong>
         </button>
@@ -151,7 +148,6 @@
             var practice2 = document.getElementById('practice2button');
             var lightButton = document.getElementById('lightbutton');
             var darkButton = document.getElementById('darkbutton');
-            var randomBGButton = document.getElementById('randombgbutton');
             var fullButton = document.getElementById('fullbutton');
             var paperBody = document.getElementById('paperbody');
             var randomButton = document.getElementById('randombutton');
@@ -164,7 +160,7 @@
             const classMyth1Images = ['../assets/images/Papers-ClassMyth1.3.png', '../assets/images/Papers-ClassMyth1.1.png', '../assets/images/Papers-ClassMyth1.5.1.png', '../assets/images/Papers-ClassMyth1.6.png', '../assets/images/Papers-ClassMyth1.7.png', '../assets/images/Papers-ClassMyth1.8.png', '../assets/images/Papers-ClassMyth1.9.png', '../assets/images/Papers-ClassMyth1.10.png', '../assets/images/Papers-ClassMyth1.11.png', '../assets/images/Papers-ClassMyth1.12.png', '../assets/images/Papers-ClassMyth1.13.png', '../assets/images/Papers-ClassMyth1.14.png', '../assets/images/Papers-ClassMyth1.15.png', '../assets/images/Papers-ClassMyth1.16.png', '../assets/images/Papers-ClassMyth1.17.png', '../assets/images/Papers-ClassMyth1.18.png', '../assets/images/Papers-ClassMyth1.19.png', '../assets/images/Papers-ClassMyth1.20.png', '../assets/images/Papers-ClassMyth1.21.png', '../assets/images/Papers-ClassMyth1.22.png', '../assets/images/Papers-ClassMyth1.23.png', '../assets/images/Papers-ClassMyth1.24.png', '../assets/images/Papers-ClassMyth1.25.png', '../assets/images/Papers-ClassMyth1.26.png', '../assets/images/Papers-ClassMyth1.27.png', '../assets/images/Papers-ClassMyth1.28.png', '../assets/images/Papers-ClassMyth1.29.png', '../assets/images/Papers-ClassMyth1.30.png', '../assets/images/Papers-ClassMyth1.31.png', '../assets/images/Papers-ClassMyth1.32.png', '../assets/images/Papers-ClassMyth1.33.png', '../assets/images/Papers-ClassMyth1.34.png', '../assets/images/Papers-ClassMyth1.35.png']
             const classMyth2Images = ['../assets/images/Papers-ClassMyth2.3.3.png', '../assets/images/Papers-ClassMyth2.1.1.png', '../assets/images/Papers-ClassMyth2.5.1.png','../assets/images/Papers-ClassMyth2.6.png', '../assets/images/Papers-ClassMyth2.7.png', '../assets/images/Papers-ClassMyth2.8.png', '../assets/images/Papers-ClassMyth2.9.png', '../assets/images/Papers-ClassMyth2.10.png', '../assets/images/Papers-ClassMyth2.11.png', '../assets/images/Papers-ClassMyth2.12.png', '../assets/images/Papers-ClassMyth2.13.png', '../assets/images/Papers-ClassMyth2.14.png', '../assets/images/Papers-ClassMyth2.15.png', '../assets/images/Papers-ClassMyth2.16.png', '../assets/images/Papers-ClassMyth2.17.png', '../assets/images/Papers-ClassMyth2.18.png', '../assets/images/Papers-ClassMyth2.19.png', '../assets/images/Papers-ClassMyth2.20.png', '../assets/images/Papers-ClassMyth2.21.png', '../assets/images/Papers-ClassMyth2.22.png', '../assets/images/Papers-ClassMyth2.23.png', '../assets/images/Papers-ClassMyth2.24.png', '../assets/images/Papers-ClassMyth2.25.png', '../assets/images/Papers-ClassMyth2.26.png', '../assets/images/Papers-ClassMyth2.27.png', '../assets/images/Papers-ClassMyth2.28.png', '../assets/images/Papers-ClassMyth2.29.png', '../assets/images/Papers-ClassMyth2.30.png', '../assets/images/Papers-ClassMyth2.31.png', '../assets/images/Papers-ClassMyth2.32.png', '../assets/images/Papers-ClassMyth2.33.png', '../assets/images/Papers-ClassMyth2.34.png', '../assets/images/Papers-ClassMyth2.35.png', '../assets/images/Papers-ClassMyth2.36.png', '../assets/images/Papers-ClassMyth2.37.png', '../assets/images/Papers-ClassMyth2.38.png', '../assets/images/Papers-ClassMyth2.39.png', '../assets/images/Papers-ClassMyth2.40.png']
             const classMyth3Images = ['../assets/images/Papers-ClassMyth3.1.1.png', '../assets/images/Papers-ClassMyth3.3.1.png', '../assets/images/Papers-ClassMyth3.6.png', '../assets/images/Papers-ClassMyth3.8.png', '../assets/images/Papers-ClassMyth3.9.png', '../assets/images/Papers-ClassMyth3.10.png', '../assets/images/Papers-ClassMyth3.11.png', '../assets/images/Papers-ClassMyth3.12.png', '../assets/images/Papers-ClassMyth3.13.png', '../assets/images/Papers-ClassMyth3.14.png', '../assets/images/Papers-ClassMyth3.15.png', '../assets/images/Papers-ClassMyth3.16.png', '../assets/images/Papers-ClassMyth3.17.png', '../assets/images/Papers-ClassMyth3.18.png', '../assets/images/Papers-ClassMyth3.19.png', '../assets/images/Papers-ClassMyth3.20.png', '../assets/images/Papers-ClassMyth3.21.png', '../assets/images/Papers-ClassMyth3.22.png', '../assets/images/Papers-ClassMyth3.23.png', '../assets/images/Papers-ClassMyth3.24.png', '../assets/images/Papers-ClassMyth3.25.png', '../assets/images/Papers-ClassMyth3.26.png', '../assets/images/Papers-ClassMyth3.27.png', '../assets/images/Papers-ClassMyth3.28.png', '../assets/images/Papers-ClassMyth3.29.png', '../assets/images/Papers-ClassMyth3.30.png', '../assets/images/Papers-ClassMyth3.31.png', '../assets/images/Papers-ClassMyth3.32.png', '../assets/images/Papers-ClassMyth3.33.png', '../assets/images/Papers-ClassMyth3.34.png', '../assets/images/Papers-ClassMyth3.35.png', '../assets/images/Papers-ClassMyth3.36.png', '../assets/images/Papers-ClassMyth3.37.png']
-            const randomBGColors = ['#d50000', '#c51162', '#aa00ff', '#6200ea', '#304ffe', '#2962ff', '#2962ff', '#00b8d4', '#00bfa5', '#00c853', '#00c853', '#aeea00', '#ffd600', '#ffab00', '#ff6d00', '#dd2c00', '#3e2723', '#212121', '#263238']
+           
 
             var img1 = document.getElementById('paperrow1');
             var img2 = document.getElementById('paperrow2');
@@ -237,10 +233,10 @@
             // })
             
             // const electricCarImages = ['../assets/images/Papers-Electric1.png', '../assets/images/Papers-Electric2.1.png', '../assets/images/Papers-Electric3.png', '../assets/images/Papers-Electric4.png', '../assets/images/Papers-Electric6.1.png', '../assets/images/Papers-Electric7.png', '../assets/images/Papers-Electric8.1.png'];
-            randomBGButton.addEventListener('click', () => {
-                var randomBGNumber = Math.floor(Math.random() * randomBGColors.length);
-                paperBody.style.background = randomBGColors[randomBGNumber];
-            })
+            // randomBGButton.addEventListener('click', () => {
+            //     var randomBGNumber = Math.floor(Math.random() * randomBGColors.length);
+            //     paperBody.style.background = randomBGColors[randomBGNumber];
+            // })
 
             randomButton.addEventListener('click', () => {
                 var randomElectricNumber = Math.floor(Math.random() * electricCarImages.length);
@@ -252,7 +248,6 @@
                 var randomClassMyth1Number = Math.floor(Math.random() * classMyth1Images.length);
                 var randomClassMyth2Number = Math.floor(Math.random() * classMyth2Images.length);
                 var randomClassMyth3Number = Math.floor(Math.random() * classMyth3Images.length);
-                var randomRandomBGNumber = Math.floor(Math.random() * randomBGColors.length);
                 img1.src = electricCarImages[randomElectricNumber];
                 img2.src = hawaiiImages[randomHawaiiNumber];
                 img3.src = coralReefImages[randomCoralNumber];
@@ -349,43 +344,7 @@
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
             })
-            $('button#randombgbutton').click(function () {
-
-                if($('button#darkbutton').hasClass('btn-dark')){
-                    $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#lightbutton').hasClass('btn-dark')){
-                    $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#randombgbutton').hasClass('btn-dark')){
-                    $('button#randombgbutton').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#fullbutton').hasClass('btn-dark')){
-                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#togglebutton1').hasClass('btn-dark')){
-                    $('button#togglebutton1').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#togglebutton2').hasClass('btn-dark')){
-                    $('button#togglebutton2').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#togglebutton3').hasClass('btn-dark')){
-                    $('button#togglebutton3').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#randombutton').hasClass('btn-dark')){
-                    $('button#randombutton').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('button#back-button').hasClass('btn-dark')){
-                    $('button#back-button').removeClass('btn-dark').addClass('btn-light');
-                }
-                if($('nav#navbar').hasClass('bg-dark')){
-                    $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
-                }
-                if($('nav#footer').hasClass('bg-dark')){
-                    $('nav#footer').removeClass('bg-dark').addClass('bg-light');
-                }
-                
-            })
+           
 
             fullButton.addEventListener("click", () => {
                 document.documentElement.requestFullscreen().catch((e) => {
