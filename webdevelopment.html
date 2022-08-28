@@ -58,6 +58,9 @@
         <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
             <strong>Dark</strong>
         </button>
+        <button type="button" class="btn btn-light toggle-btn" id= "randombutton">
+            <strong>Random</strong>
+        </button>
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton3">
             Toggle #3
         </button>
@@ -132,6 +135,11 @@
         var darkButton = document.getElementById('darkbutton');
         var paperBody = document.getElementById('paperbody');
         var fullButton = document.getElementById('fullbutton');
+        var randomButton = document.getElementById('randombutton');
+        const outdoorItineraryImages = ['./assets/images/WebDevel-OutDoor1.1.png', './assets/images/WebDevel-OutDoor2.1.png', './assets/images/WebDevel-OutDoor3.1.png', './assets/images/WebDevel-OutDoor4.1.png', './assets/images/WebDevel-OutDoor5.1.png', './assets/images/WebDevel-OutDoor6.1.png', './assets/images/WebDevel-OutDoor7.1.png', './assets/images/WebDevel-OutDoor8.1.png', './assets/images/WebDevel-OutDoor9.1.png', './assets/images/WebDevel-OutDoor10.1.png', './assets/images/WebDevel-OutDoor11.1.png', './assets/images/WebDevel-OutDoor12.1.png', './assets/images/WebDevel-OutDoor13.1.png', './assets/images/WebDevel-OutDoor14.1.png', './assets/images/WebDevel-OutDoor15.1.png', './assets/images/WebDevel-OutDoor16.1.png', './assets/images/WebDevel-OutDoor17.1.png', './assets/images/WebDevel-OutDoor18.1.png', './assets/images/WebDevel-OutDoor19.1.png', './assets/images/WebDevel-OutDoor20.1.png'];
+        const workDayPlannerImages = ['./assets/images/WebDevel-WorkDay1.1.png', './assets/images/WebDevel-WorkDay2.1.png', './assets/images/WebDevel-WorkDay3.1.png', './assets/images/WebDevel-WorkDay4.1.png', './assets/images/WebDevel-WorkDay5.1.png', './assets/images/WebDevel-WorkDay6.1.png', './assets/images/WebDevel-WorkDay7.1.png', './assets/images/WebDevel-WorkDay8.1.png', './assets/images/WebDevel-WorkDay9.1.png', './assets/images/WebDevel-WorkDay10.1.png', './assets/images/WebDevel-WorkDay11.1.png', './assets/images/WebDevel-WorkDay12.1.png', './assets/images/WebDevel-WorkDay13.1.png', './assets/images/WebDevel-WorkDay14.1.png', './assets/images/WebDevel-WorkDay15.1.png', './assets/images/WebDevel-WorkDay16.1.png', './assets/images/WebDevel-WorkDay17.1.png', './assets/images/WebDevel-WorkDay18.1.png', './assets/images/WebDevel-WorkDay19.1.png'];
+        const quizChallengeImages = ['./assets/images/WebDevel-Quiz1.1.png', './assets/images/WebDevel-Quiz2.1.png', './assets/images/WebDevel-Quiz3.1.png', './assets/images/WebDevel-Quiz4.1.png', './assets/images/WebDevel-Quiz5.1.png', './assets/images/WebDevel-Quiz6.1.png', './assets/images/WebDevel-Quiz7.1.png', './assets/images/WebDevel-Quiz8.1.png', './assets/images/WebDevel-Quiz9.1.png', './assets/images/WebDevel-Quiz10.1.png', './assets/images/WebDevel-Quiz11.1.png', './assets/images/WebDevel-Quiz12.1.png', './assets/images/WebDevel-Quiz13.1.png', './assets/images/WebDevel-Quiz14.1.png', './assets/images/WebDevel-Quiz15.1.png', './assets/images/WebDevel-Quiz16.1.png', './assets/images/WebDevel-Quiz17.1.png', './assets/images/WebDevel-Quiz18.1.png', './assets/images/WebDevel-Quiz19.1.png', './assets/images/WebDevel-Quiz20.1.png'];
+        const passwordGeneratorImages = ['./assets/images/WebDevel-Password1.1.png', './assets/images/WebDevel-Password2.1.png', './assets/images/WebDevel-Password3.1.png', './assets/images/WebDevel-Password4.1.png', './assets/images/WebDevel-Password5.1.png', './assets/images/WebDevel-Password6.1.png', './assets/images/WebDevel-Password7.1.png', './assets/images/WebDevel-Password8.1.png', './assets/images/WebDevel-Password9.1.png', './assets/images/WebDevel-Password10.1.png', './assets/images/WebDevel-Password11.1.png', './assets/images/WebDevel-Password12.1.png', './assets/images/WebDevel-Password13.1.png', './assets/images/WebDevel-Password14.1.png', './assets/images/WebDevel-Password15.1.png', './assets/images/WebDevel-Password16.1.png', './assets/images/WebDevel-Password17.1.png', './assets/images/WebDevel-Password18.1.png', './assets/images/WebDevel-Password19.1.png'];
 
         var img1 = document.getElementById('webrow1');
         var img2 = document.getElementById('webrow2');
@@ -160,6 +168,27 @@
             // 3.4.1 Works
         })
 
+        randomButton.addEventListener('click', () => {
+                var randomOutdoorNumber = Math.floor(Math.random() * outdoorItineraryImages.length);
+                var randomWorkDayNumber = Math.floor(Math.random() * workDayPlannerImages.length);
+                var randomQuizChallengeNumber = Math.floor(Math.random() * quizChallengeImages.length);
+                var randomPasswordGenerator = Math.floor(Math.random() * passwordGeneratorImages.length);
+                img1.src = outdoorItineraryImages[randomOutdoorNumber];
+                img2.src = workDayPlannerImages[randomWorkDayNumber];
+                img3.src = quizChallengeImages[randomQuizChallengeNumber];
+                img4.src = passwordGeneratorImages[randomPasswordGenerator];
+                console.log(randomOutdoorNumber + ': Outdoor Number');
+                console.log(randomWorkDayNumber + ': Work Day Number');
+                console.log(randomQuizChallengeNumber + ': Quiz Challenge Number');
+                console.log(randomPasswordGenerator + ': Password Generator Number');
+                console.log('------------------------');
+            })
+
+                console.log(outdoorItineraryImages.length);
+                console.log(workDayPlannerImages.length);
+                console.log(quizChallengeImages.length);
+                console.log(passwordGeneratorImages.length);
+
         $('button#lightbutton').click(function () {
                 paperBody.style.background = 'white';
 
@@ -180,6 +209,9 @@
                 }
                 if($('button#togglebutton3').hasClass('btn-dark')){
                     $('button#togglebutton3').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#randombutton').hasClass('btn-dark')){
+                    $('button#randombutton').removeClass('btn-dark').addClass('btn-light');
                 }
                 if($('button#back-button').hasClass('btn-dark')){
                     $('button#back-button').removeClass('btn-dark').addClass('btn-light');
@@ -212,6 +244,9 @@
                 }
                 if($('button#togglebutton3').hasClass('btn-light')){
                     $('button#togglebutton3').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#randombutton').hasClass('btn-light')){
+                    $('button#randombutton').removeClass('btn-light').addClass('btn-dark');
                 }
                 if($('button#back-button').hasClass('btn-light')){
                     $('button#back-button').removeClass('btn-light').addClass('btn-dark');
