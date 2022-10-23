@@ -164,7 +164,7 @@
             // Taken out of Array
             // Papers-Fball17
 
-            
+
             var img1 = document.getElementById('paperrow1');
             var img2 = document.getElementById('paperrow2');
             var img3 = document.getElementById('paperrow3');
@@ -378,6 +378,132 @@
                 } else { 
                     document.documentElement.requestFullscreen().catch(console.log);
                 }
+            }
+            
+            // Electric Car Single Random Change
+            if (document.addEventListener) {
+                img1.addEventListener('contextmenu', function(e) {
+                var randomElectricNumber = Math.floor(Math.random() * electricCarImages.length);
+                img1.src = electricCarImages[randomElectricNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+            
+            // Hawaii Single Random Change
+            if (document.addEventListener) {
+                img2.addEventListener('contextmenu', function(e) {
+                var randomHawaiiNumber = Math.floor(Math.random() * hawaiiImages.length);
+                img2.src = hawaiiImages[randomHawaiiNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Coral Single Random Change
+            if (document.addEventListener) {
+                img3.addEventListener('contextmenu', function(e) {
+                var randomCoralNumber = Math.floor(Math.random() * coralReefImages.length);
+                img3.src = coralReefImages[randomCoralNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Football Single Random Change
+            if (document.addEventListener) {
+                img4.addEventListener('contextmenu', function(e) {
+                var randomFootballNumber = Math.floor(Math.random() * footballImages.length);
+                img4.src = footballImages[randomFootballNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Vietnam Single Random Change
+            if (document.addEventListener) {
+                img5.addEventListener('contextmenu', function(e) {
+                var randomVietnamNumber = Math.floor(Math.random() * vietnamImages.length);
+                img5.src = vietnamImages[randomVietnamNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Steel Town Single Random Change
+            if (document.addEventListener) {
+                img6.addEventListener('contextmenu', function(e) {
+                var randomSteelTownNumber = Math.floor(Math.random() * steelTownImages.length);
+                img6.src = steelTownImages[randomSteelTownNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Classical Myth 1 Single Random Change
+            if (document.addEventListener) {
+                img7.addEventListener('contextmenu', function(e) {
+                var randomClassMyth1Number = Math.floor(Math.random() * classMyth1Images.length);
+                img7.src = classMyth1Images[randomClassMyth1Number];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Classical Myth 2 Single Random Change
+            if (document.addEventListener) {
+                img8.addEventListener('contextmenu', function(e) {
+                var randomClassMyth2Number = Math.floor(Math.random() * classMyth2Images.length);
+                img8.src = classMyth2Images[randomClassMyth2Number];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Classical Myth 3 Single Random Change
+            if (document.addEventListener) {
+                img9.addEventListener('contextmenu', function(e) {
+                var randomClassMyth3Number = Math.floor(Math.random() * classMyth3Images.length);
+                img9.src = classMyth3Images[randomClassMyth3Number];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
             }
             
             

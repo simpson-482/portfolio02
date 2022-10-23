@@ -278,6 +278,62 @@
                 }
             }
 
+            // Outdoor Single Random Change
+            if (document.addEventListener) {
+                img1.addEventListener('contextmenu', function(e) {
+                var randomOutdoorNumber = Math.floor(Math.random() * outdoorItineraryImages.length);
+                img1.src = outdoorItineraryImages[randomOutdoorNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+            
+            // Workday Single Random Change
+            if (document.addEventListener) {
+                img2.addEventListener('contextmenu', function(e) {
+                var randomWorkDayNumber = Math.floor(Math.random() * workDayPlannerImages.length);
+                img2.src = workDayPlannerImages[randomWorkDayNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Quiz Single Random Change
+            if (document.addEventListener) {
+                img3.addEventListener('contextmenu', function(e) {
+                var randomQuizChallengeNumber = Math.floor(Math.random() * quizChallengeImages.length);
+                img3.src = quizChallengeImages[randomQuizChallengeNumber];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Password Single Random Change
+            if (document.addEventListener) {
+                img4.addEventListener('contextmenu', function(e) {
+                var randomPasswordGenerator = Math.floor(Math.random() * passwordGeneratorImages.length);
+                img4.src = passwordGeneratorImages[randomPasswordGenerator];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
 
         console.log(button1);
 

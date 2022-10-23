@@ -348,6 +348,118 @@
             console.log(NBAImages.length);
             console.log(MLBImages.length);
             console.log(SCPImages.length);
+            
+             // World Cup Single Random Change
+             if (document.addEventListener) {
+                img1.addEventListener('contextmenu', function(e) {
+                var randomWorldCup = Math.floor(Math.random() * worldCupImages.length);
+                img1.src = worldCupImages[randomWorldCup];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+            
+            // CFP Playoff Single Random Change
+            if (document.addEventListener) {
+                img2.addEventListener('contextmenu', function(e) {
+                var randomCFBPlayoff = Math.floor(Math.random() * CFPlayoffImages.length);
+                img2.src = CFPlayoffImages[randomCFBPlayoff];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // NCAA Tourney Random Change
+            if (document.addEventListener) {
+                img3.addEventListener('contextmenu', function(e) {
+                var randomNCAATourney = Math.floor(Math.random() * ncaaTourneyImages.length);
+                img3.src = ncaaTourneyImages[randomNCAATourney];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // CFB Bowl Games Single Random Change
+            if (document.addEventListener) {
+                img4.addEventListener('contextmenu', function(e) {
+                var randomCFBBowlGames = Math.floor(Math.random() * bowlGamesImages.length);
+                img4.src = bowlGamesImages[randomCFBBowlGames];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // NFL Playoffs Single Random Change
+            if (document.addEventListener) {
+                img5.addEventListener('contextmenu', function(e) {
+                var randomNFLPlayoffs = Math.floor(Math.random() * NFLImages.length);
+                img5.src = NFLImages[randomNFLPlayoffs];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // NBA Playoffs Single Random Change
+            if (document.addEventListener) {
+                img6.addEventListener('contextmenu', function(e) {
+                var randomNBAPlayoffs = Math.floor(Math.random() * NBAImages.length);
+                img6.src = NBAImages[randomNBAPlayoffs];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // MLB Playoffs Single Random Change
+            if (document.addEventListener) {
+                img7.addEventListener('contextmenu', function(e) {
+                var randomMLBPlayoffs = Math.floor(Math.random() * MLBImages.length);
+                img7.src = MLBImages[randomMLBPlayoffs];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // NHL Playoffs Single Random Change
+            if (document.addEventListener) {
+                img8.addEventListener('contextmenu', function(e) {
+                var randomSCPlayoffs = Math.floor(Math.random() * SCPImages.length);
+                img8.src = SCPImages[randomSCPlayoffs];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
 
         </script>
 
