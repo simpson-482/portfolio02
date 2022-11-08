@@ -77,7 +77,7 @@
             <div class="about-picture1 col-md-4">
                 <br>
                 <br>
-                <img class="img_jared1" src= "assets/images/AboutMe_Picture1.png" alt= "Jared Simpson Photo">
+                <img class="img_jared1" id= "aboutmepic" src= "assets/images/AboutMe_Picture3.png" alt= "Jared Simpson Photo">
             </div>
             <div class="about-item col-md-7">
                 <br>
@@ -103,13 +103,18 @@
 
     <script>
 
-var paperBody = document.getElementById('paperbody');
+            var paperBody = document.getElementById('paperbody');
             var lightButton = document.getElementById('lightbutton');
             var darkButton = document.getElementById('darkbutton');
             var h1 = document.getElementById('h1');
+            var img1 = document.getElementById('aboutmepic');
+
+
 
             $('button#lightbutton').click(function () {
                 paperBody.style.background = 'white';
+                img1.src = 'assets/images/AboutMe_Picture3.png';
+
                 if($('button#darkbutton').hasClass('btn-dark')){
                     $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
                 }
@@ -134,6 +139,7 @@ var paperBody = document.getElementById('paperbody');
             })
             $('button#darkbutton').click(function () {
                 paperBody.style.background = 'black';
+                img1.src = 'assets/images/AboutMe_Picture1.png';
                         
                 if($('button#darkbutton').hasClass('btn-light')){
                     $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
@@ -157,6 +163,8 @@ var paperBody = document.getElementById('paperbody');
                 $('h1').css('color', 'white');
                 $('p').css('color', 'white');
                 $('hr').css('border-color', 'white');
+
+
 
             })
             var fullButton = document.getElementById('fullbutton');
