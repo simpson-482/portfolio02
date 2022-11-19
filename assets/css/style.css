@@ -415,6 +415,16 @@
    margin-right: 50px;
 }
 
+#tieredbutton {
+   float: right;
+   margin-right: 25px;
+}
+
+#bowlbutton {
+   float: right;
+   margin-right: 50px;
+}
+
 #randombutton {
    float: right;
    margin-right: 30px;

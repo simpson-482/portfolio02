@@ -31,26 +31,45 @@
             <br>
             <br>
             <div class= "container">
-                <div class= "row">
-                    <div class= col-md-4>
                         <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
                             +
                         </button>
-                    </div>
-                </div>
+                        <button type="button" class="btn btn-light toggle-btn" id= "bowlbutton">
+                            Bowl Games
+                        </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "tieredbutton">
+                            Tiered Bowl Games
+                        </button>
             </div>
             <br>
             <br>
             <br>
 
-        <img style="margin-left: 30px"; src="assets/images/BowlGamesNew1.png">
-        <img style="margin-left: 30px"; src="assets/images/BowlGamesNew2.png">
-        <img style="margin-left: 30px"; src="assets/images/BowlGamesNew3.png">
+        <img id="img1" style="margin-left: 30px"; src="assets/images/BowlGamesNew1.png">
+        <img id="img2" style="margin-left: 30px"; src="assets/images/BowlGamesNew2.png">
+        <img id="img3" style="margin-left: 30px"; src="assets/images/BowlGamesNew3.png">
         <br>
         <br>
         <br>
         <script>
             var fullButton = document.getElementById('fullbutton');
+            var tieredButton = document.getElementById('tieredbutton');
+            var bowlButton = document.getElementById('bowlbutton');
+            var img1 = document.getElementById('img1');
+            var img2 = document.getElementById('img2');
+            var img3 = document.getElementById('img3');
+
+            tieredButton.addEventListener('click', () => {
+                img1.src = 'assets/images/BowlGamesNew1.png';
+                img2.src = 'assets/images/BowlGamesNew2.png';
+                img3.src = 'assets/images/BowlGamesNew3.png';
+            })
+
+            bowlButton.addEventListener('click', () => {
+                img1.src = 'assets/images/BowlGames1.png';
+                img2.src = 'assets/images/BowlGames2.png';
+                img3.src = 'assets/images/BowlGames3.png';     
+            })
             
             fullButton.addEventListener("click", () => {
                         document.documentElement.requestFullscreen().catch((e) => {
