@@ -424,6 +424,10 @@
    float: right;
    margin-right: 50px;
 }
+#majorbutton {
+   float: right;
+   margin-right: 25px;
+}
 
 #randombutton {
    float: right;

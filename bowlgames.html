@@ -40,6 +40,9 @@
                         <button type="button" class="btn btn-light toggle-btn" id= "tieredbutton">
                             Tiered Bowl Games
                         </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "majorbutton">
+                            Major Bowl Games
+                        </button>
             </div>
             <br>
             <br>
@@ -55,6 +58,7 @@
             var fullButton = document.getElementById('fullbutton');
             var tieredButton = document.getElementById('tieredbutton');
             var bowlButton = document.getElementById('bowlbutton');
+            var majorBowlButton = document.getElementById('majorbutton');
             var img1 = document.getElementById('img1');
             var img2 = document.getElementById('img2');
             var img3 = document.getElementById('img3');
@@ -69,6 +73,11 @@
                 img1.src = 'assets/images/BowlGames1.png';
                 img2.src = 'assets/images/BowlGames2.png';
                 img3.src = 'assets/images/BowlGames3.png';     
+            })
+            majorBowlButton.addEventListener('click', () => {
+                img1.src = 'assets/images/BowlGamesMajor1.png';
+                img2.src = 'assets/images/BowlGamesMajor2.png';
+                img3.src = 'assets/images/BowlGamesMajor3.png';     
             })
             
             fullButton.addEventListener("click", () => {
