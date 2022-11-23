@@ -34,23 +34,35 @@
                         <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
                             +
                         </button>
-                        <button type="button" class="btn btn-light toggle-btn" id= "bowlbutton">
-                            Bowl Games
+                        <button type="button" class="btn btn-light toggle-btn" id= "majorbutton">
+                            Major Bowl Games
                         </button>
                         <button type="button" class="btn btn-light toggle-btn" id= "tieredbutton">
                             Tiered Bowl Games
                         </button>
-                        <button type="button" class="btn btn-light toggle-btn" id= "majorbutton">
-                            Major Bowl Games
+                        <button type="button" class="btn btn-light toggle-btn" id= "bowlbutton">
+                            Bowl Games
                         </button>
             </div>
             <br>
             <br>
             <br>
-
-        <img id="img1" style="margin-left: 30px"; src="assets/images/BowlGamesNew1.png">
-        <img id="img2" style="margin-left: 30px"; src="assets/images/BowlGamesNew2.png">
-        <img id="img3" style="margin-left: 30px"; src="assets/images/BowlGamesNew3.png">
+                <div style="width: 4000px">
+                    <img id="img11" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull1.1.png">
+                    <img id="img12" style="float: left"; src="assets/images/BowlGamesNewFull1.2.png">
+                </div>
+                <div style="width: 4000px">
+                    <img id="img21" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull2.1.png">
+                    <img id="img22" style="float: left"; src="assets/images/BowlGamesNewFull2.2.png">
+                </div>
+                <div style="width: 4000px">
+                    <img id="img31" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull3.1.png">
+                    <img id="img32" style="float: left"; src="assets/images/BowlGamesNewFull3.2.png">
+                </div>
+                <div style="width: 4000px">
+                    <img id="img41" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull4.1.png">
+                    <img id="img42" style="float: left"; src="assets/images/BowlGamesNewFull4.2.png">
+                </div>
         <br>
         <br>
         <br>
@@ -59,25 +71,45 @@
             var tieredButton = document.getElementById('tieredbutton');
             var bowlButton = document.getElementById('bowlbutton');
             var majorBowlButton = document.getElementById('majorbutton');
-            var img1 = document.getElementById('img1');
-            var img2 = document.getElementById('img2');
-            var img3 = document.getElementById('img3');
+            var img11 = document.getElementById('img11');
+            var img12 = document.getElementById('img12');
+            var img21 = document.getElementById('img21');
+            var img22 = document.getElementById('img22');
+            var img31 = document.getElementById('img31');
+            var img32 = document.getElementById('img32');
+            var img41 = document.getElementById('img41');
+            var img42 = document.getElementById('img42');
 
             tieredButton.addEventListener('click', () => {
-                img1.src = 'assets/images/BowlGamesNew1.png';
-                img2.src = 'assets/images/BowlGamesNew2.png';
-                img3.src = 'assets/images/BowlGamesNew3.png';
+                img11.src = 'assets/images/BowlGamesTieredFull1.1.png';
+                img12.src = 'assets/images/BowlGamesTieredFull1.2.png';
+                img21.src = 'assets/images/BowlGamesTieredFull2.1.png';
+                img22.src = 'assets/images/BowlGamesTieredFull2.2.png';
+                img31.src = 'assets/images/BowlGamesTieredFull3.1.png';
+                img32.src = 'assets/images/BowlGamesTieredFull3.2.png'; 
+                img41.src = '';
+                img42.src = '';
             })
 
             bowlButton.addEventListener('click', () => {
-                img1.src = 'assets/images/BowlGames1.png';
-                img2.src = 'assets/images/BowlGames2.png';
-                img3.src = 'assets/images/BowlGames3.png';     
+                img11.src = 'assets/images/BowlGamesNewFull1.1.png';
+                img12.src = 'assets/images/BowlGamesNewFull1.2.png';
+                img21.src = 'assets/images/BowlGamesNewFull2.1.png';
+                img22.src = 'assets/images/BowlGamesNewFull2.2.png';
+                img31.src = 'assets/images/BowlGamesNewFull3.1.png';
+                img32.src = 'assets/images/BowlGamesNewFull3.2.png'; 
+                img41.src = 'assets/images/BowlGamesNewFull4.1.png';
+                img42.src = 'assets/images/BowlGamesNewFull4.2.png';
             })
             majorBowlButton.addEventListener('click', () => {
-                img1.src = 'assets/images/BowlGamesMajor1.png';
-                img2.src = 'assets/images/BowlGamesMajor2.png';
-                img3.src = 'assets/images/BowlGamesMajor3.png';     
+                img11.src = 'assets/images/BowlGamesMajorFull1.1.png';
+                img12.src = 'assets/images/BowlGamesMajorFull1.2.png';
+                img21.src = 'assets/images/BowlGamesMajorFull2.1.png';
+                img22.src = 'assets/images/BowlGamesMajorFull2.2.png';
+                img31.src = '';
+                img32.src = ''; 
+                img41.src = '';
+                img42.src = '';     
             })
             
             fullButton.addEventListener("click", () => {
