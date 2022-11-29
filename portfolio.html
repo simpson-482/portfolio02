@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "stylesheet" href= "./assets/css/style.css">
     <link rel= "shortcut icon" href= "assets/images/Favicon1.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Jared Simpson's Portfolio</title>
 </head>
-<body>
+<body id="paperBody">
     <!--Navigation Bar-->
     <header>
         <div class= "container">
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
                     <a href="index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                         <span class="navbar-toggler-icon"></span>
@@ -41,8 +42,12 @@
     </div>
     </div>
     <div class= "container">
-        <hr style= "width: 100%; height: 5px">
         <br>
+        <div class="checkbox1" id="checkbox1">
+            <input type="checkbox" id="check" class="toggle">
+            <label for="check" class="label"></label>
+        </div>
+        <hr style= "width: 100%; height: 5px">
         <br>
         <div class="row">
             <div class= "col-md-4 col-sm-12 jaredrow1">
@@ -80,6 +85,35 @@
         </div>    
     </div>
     <script>
+        var toggleSwitch = document.getElementById('toggle');
+        var paperBody = document.getElementById('paperBody');
+
+        $('#check').on('change', function() {
+                if (!this.checked) {
+                paperBody.style.background = 'white';
+                if($('button#back-button').hasClass('btn-dark')){
+                    $('button#back-button').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('nav#navbar').hasClass('bg-dark')){
+                    $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
+                }
+                if($('nav#footer').hasClass('bg-dark')){
+                    $('nav#footer').removeClass('bg-dark').addClass('bg-light');
+                }
+            } else if (this.checked) {
+                paperBody.style.background = 'black';
+                if($('button#back-button').hasClass('btn-light')){
+                    $('button#back-button').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('nav#navbar').hasClass('bg-light')){
+                    $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
+                }
+                if($('nav#footer').hasClass('bg-light')){
+                    $('nav#footer').removeClass('bg-light').addClass('bg-dark');
+                }
+                }
+            })
+
 
         document.addEventListener("dblclick", () => {
                         toggleFullscreen();
@@ -102,7 +136,7 @@
     <div class= "container">
         <div class= "row">
             <div class= col-md-4>
-            <button type="button" class="btn btn-light back-button" onclick="location.href='index.html'">
+            <button type="button" class="btn btn-light back-button" id="back-button" onclick="location.href='index.html'">
                 Back
             </button>
             </div>
@@ -124,7 +158,7 @@
     <!--Footer-->
     <footer class= "footer">
         <div class= "container">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "footer">
                         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
                             <span class="navbar-toggler-icon"></span>
                         </button>
