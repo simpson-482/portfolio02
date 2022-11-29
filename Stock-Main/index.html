@@ -42,18 +42,18 @@
 
     <!--Papers Sections-->
     <div class= "container">
-    <div class="row">
-    <h1 class= "col-md-4 headlines">
-        <strong>Stocks</strong>
-    </h1>
-    </div>
-    <p>Last updated July, 2 2021</p>
-    </div>
-    <div class= "container">
-        <div class="row">
-        <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
-            <strong>+</strong>
-        </button>
+        <h1 class= "headlines">
+            <strong>Stocks</strong>
+        </h1>
+        <div class= "container">
+            <div class="row">
+            <button type="button" class="btn btn-light toggle-btn" id= "fullbuttonmain">
+                <strong>+</strong>
+            </button>
+            </div>
+        </div>
+        <div class= "container">
+            <h2 id="h2">Last updated July 2, 2021</h2>
         </div>
     </div>
     <div class= "container">
@@ -112,7 +112,7 @@
             var darkButton = document.getElementById('darkbutton');
             var toggleSwitch = document.getElementById('toggle');
             var paperBody = document.getElementById('paperbody');
-            var fullButton = document.getElementById('fullbutton');
+            var fullButton = document.getElementById('fullbuttonmain');
 
             var img1 = document.getElementById('stocksrow1');
             var img2 = document.getElementById('stocksrow2');
@@ -146,8 +146,8 @@
                 if($('button#lightbutton').hasClass('btn-dark')){
                     $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
                 }
-                if($('button#fullbutton').hasClass('btn-dark')){
-                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+                if($('button#fullbuttonmain').hasClass('btn-dark')){
+                    $('button#fullbuttonmain').removeClass('btn-dark').addClass('btn-light');
                 }
                 if($('button#randombutton').hasClass('btn-dark')){
                     $('button#randombutton').removeClass('btn-dark').addClass('btn-light');
@@ -182,8 +182,8 @@
                 if($('button#randombgbutton').hasClass('btn-light')){
                     $('button#randombgbutton').removeClass('btn-light').addClass('btn-dark');
                 }
-                if($('button#fullbutton').hasClass('btn-light')){
-                    $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+                if($('button#fullbuttonmain').hasClass('btn-light')){
+                    $('button#fullbuttonmain').removeClass('btn-light').addClass('btn-dark');
                 }
                 if($('button#togglebutton1').hasClass('btn-light')){
                     $('button#togglebutton1').removeClass('btn-light').addClass('btn-dark');

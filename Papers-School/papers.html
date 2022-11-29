@@ -44,13 +44,12 @@
 
     <!--Papers Sections-->
     <div class= "container">
-    <div class="row">
-    <h1 class= "col-md-4 headlines">
+    <h1 class= "headlines">
         <strong>Papers</strong>
     </h1>
     <div class= "container">
         <div class="row">
-        <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+        <button type="button" class="btn btn-light toggle-btn" id= "fullbuttonmain">
             <strong>+</strong>
         </button>
         </div>
@@ -60,7 +59,6 @@
     </div>
     <div class= "container">
         <h3 id="h3">Right Click for Single Image Change</h3>
-    </div>
     </div>
     </div>
     <div class= "container">
@@ -157,7 +155,7 @@
             var lightButton = document.getElementById('lightbutton');
             var darkButton = document.getElementById('darkbutton');
             var toggleSwitch = document.getElementById('toggle');
-            var fullButton = document.getElementById('fullbutton');
+            var fullButton = document.getElementById('fullbuttonmain');
             var paperBody = document.getElementById('paperbody');
             var randomButton = document.getElementById('randombutton');
             const electricCarImages = ['../assets/images/Papers-Electric20.png', '../assets/images/Papers-Electric21.png', '../assets/images/Papers-Electric22.png', '../assets/images/Papers-Electric11.png', '../assets/images/Papers-Electric13.png', '../assets/images/Papers-Electric14.png', '../assets/images/Papers-Electric15.png', '../assets/images/Papers-Electric16.png', '../assets/images/Papers-Electric17.png', '../assets/images/Papers-Electric18.png', '../assets/images/Papers-Electric19.png', '../assets/images/Papers-Electric23.png', '../assets/images/Papers-Electric24.png', '../assets/images/Papers-Electric25.png', '../assets/images/Papers-Electric26.png', '../assets/images/Papers-Electric27.png', '../assets/images/Papers-Electric28.png', '../assets/images/Papers-Electric29.png', '../assets/images/Papers-Electric30.png', '../assets/images/Papers-Electric31.png', '../assets/images/Papers-Electric32.png', '../assets/images/Papers-Electric33.png', '../assets/images/Papers-Electric34.png', '../assets/images/Papers-Electric35.png', '../assets/images/Papers-Electric36.png', '../assets/images/Papers-Electric37.png', '../assets/images/Papers-Electric38.png', '../assets/images/Papers-Electric39.png', '../assets/images/Papers-Electric40.png', '../assets/images/Papers-Electric41.png', '../assets/images/Papers-Electric42.png', '../assets/images/Papers-Electric43.png', '../assets/images/Papers-Electric44.png', '../assets/images/Papers-Electric45.png', '../assets/images/Papers-Electric46.png', '../assets/images/Papers-Electric47.png', '../assets/images/Papers-Electric48.png', '../assets/images/Papers-Electric49.png', '../assets/images/Papers-Electric50.png', '../assets/images/Papers-Electric51.png', '../assets/images/Papers-Electric52.png', '../assets/images/Papers-Electric53.png', '../assets/images/Papers-Electric54.png', '../assets/images/Papers-Electric55.png', '../assets/images/Papers-Electric56.png', '../assets/images/Papers-Electric57.png', '../assets/images/Papers-Electric58.png', '../assets/images/Papers-Electric59.png', '../assets/images/Papers-Electric60.png', '../assets/images/Papers-Electric61.png', '../assets/images/Papers-Electric62.png', '../assets/images/Papers-Electric63.png', '../assets/images/Papers-Electric64.png', '../assets/images/Papers-Electric65.png', '../assets/images/Papers-Electric66.png', '../assets/images/Papers-Electric67.png', '../assets/images/Papers-Electric68.png', '../assets/images/Papers-Electric69.png', '../assets/images/Papers-Electric70.png', '../assets/images/Papers-Electric71.png', '../assets/images/Papers-Electric72.png', '../assets/images/Papers-Electric73.png', '../assets/images/Papers-Electric74.png', '../assets/images/Papers-Electric75.png', '../assets/images/Papers-Electric76.png', '../assets/images/Papers-Electric77.png', '../assets/images/Papers-Electric78.png', '../assets/images/Papers-Electric79.png', '../assets/images/Papers-Electric80.png', '../assets/images/Papers-Electric81.png', '../assets/images/Papers-Electric82.png', '../assets/images/Papers-Electric83.png', '../assets/images/Papers-Electric84.png', '../assets/images/Papers-Electric85.png', '../assets/images/Papers-Electric86.png', '../assets/images/Papers-Electric87.png'];
@@ -306,8 +304,8 @@
                 if($('button#randombgbutton').hasClass('btn-dark')){
                     $('button#randombgbutton').removeClass('btn-dark').addClass('btn-light');
                 }
-                if($('button#fullbutton').hasClass('btn-dark')){
-                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+                if($('button#fullbuttonmain').hasClass('btn-dark')){
+                    $('button#fullbuttonmain').removeClass('btn-dark').addClass('btn-light');
                 }
                 if($('button#togglebutton1').hasClass('btn-dark')){
                     $('button#togglebutton1').removeClass('btn-dark').addClass('btn-light');
@@ -342,8 +340,8 @@
                 if($('button#randombgbutton').hasClass('btn-light')){
                     $('button#randombgbutton').removeClass('btn-light').addClass('btn-dark');
                 }
-                if($('button#fullbutton').hasClass('btn-light')){
-                    $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+                if($('button#fullbuttonmain').hasClass('btn-light')){
+                    $('button#fullbuttonmain').removeClass('btn-light').addClass('btn-dark');
                 }
                 if($('button#togglebutton1').hasClass('btn-light')){
                     $('button#togglebutton1').removeClass('btn-light').addClass('btn-dark');

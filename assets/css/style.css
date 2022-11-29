@@ -397,6 +397,15 @@
    margin-right: 35px;
 }
 
+#fullbuttonmain {
+   float: left;
+   margin-left: 10px;
+}
+#fullbuttonsports {
+   float: left;
+   margin-left: 25px;
+}
+
 #togglebutton1 {
    float: right;
    margin-right: 30px;
@@ -445,6 +454,12 @@
 #fullbutton:hover {
    transform: scale(1.15);
 }
+#fullbuttonmain:hover {
+   transform: scale(1.15);
+}
+#fullbuttonsports:hover {
+   transform: scale(1.15);
+}
 
 #togglebutton1:hover {
    transform: scale(1.15);
@@ -467,7 +482,6 @@
 .back-button:hover {
    transform: scale(1.15);
 }
-
 
 footer {
     position: fixed;
