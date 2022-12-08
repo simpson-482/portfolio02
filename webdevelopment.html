@@ -37,7 +37,7 @@
 
     <!--Portfolio Sections-->
     <div class= "container">
-        <h1 class= "headlines">
+        <h1 id= "h1" class= "headlines">
             <strong>Projects</strong>
         </h1>
         <div class= "container">
@@ -144,6 +144,9 @@
         var paperBody = document.getElementById('paperbody');
         var fullButton = document.getElementById('fullbuttonmain');
         var randomButton = document.getElementById('randombutton');
+        var h1 = document.getElementById('h1');
+        var h2 = document.getElementById('h2');
+        var h3 = document.getElementById('h3');
         const outdoorItineraryImages = ['./assets/images/WebDevel-OutDoor1.1.png', './assets/images/WebDevel-OutDoor2.1.png', './assets/images/WebDevel-OutDoor3.1.png', './assets/images/WebDevel-OutDoor4.1.png', './assets/images/WebDevel-OutDoor5.1.png', './assets/images/WebDevel-OutDoor6.1.png', './assets/images/WebDevel-OutDoor7.1.png', './assets/images/WebDevel-OutDoor8.1.png', './assets/images/WebDevel-OutDoor9.1.png', './assets/images/WebDevel-OutDoor10.1.png', './assets/images/WebDevel-OutDoor11.1.png', './assets/images/WebDevel-OutDoor12.1.png', './assets/images/WebDevel-OutDoor13.1.png', './assets/images/WebDevel-OutDoor14.1.png', './assets/images/WebDevel-OutDoor15.1.png', './assets/images/WebDevel-OutDoor16.1.png', './assets/images/WebDevel-OutDoor17.1.png', './assets/images/WebDevel-OutDoor18.1.png', './assets/images/WebDevel-OutDoor19.1.png', './assets/images/WebDevel-OutDoor20.1.png'];
         const workDayPlannerImages = ['./assets/images/WebDevel-WorkDay1.1.png', './assets/images/WebDevel-WorkDay2.1.png', './assets/images/WebDevel-WorkDay3.1.png', './assets/images/WebDevel-WorkDay4.1.png', './assets/images/WebDevel-WorkDay5.1.png', './assets/images/WebDevel-WorkDay6.1.png', './assets/images/WebDevel-WorkDay7.1.png', './assets/images/WebDevel-WorkDay8.1.png', './assets/images/WebDevel-WorkDay9.1.png', './assets/images/WebDevel-WorkDay10.1.png', './assets/images/WebDevel-WorkDay11.1.png', './assets/images/WebDevel-WorkDay12.1.png', './assets/images/WebDevel-WorkDay13.1.png', './assets/images/WebDevel-WorkDay14.1.png', './assets/images/WebDevel-WorkDay15.1.png', './assets/images/WebDevel-WorkDay16.1.png', './assets/images/WebDevel-WorkDay17.1.png', './assets/images/WebDevel-WorkDay18.1.png', './assets/images/WebDevel-WorkDay19.1.png'];
         const quizChallengeImages = ['./assets/images/WebDevel-Quiz1.1.png', './assets/images/WebDevel-Quiz2.1.png', './assets/images/WebDevel-Quiz3.1.png', './assets/images/WebDevel-Quiz4.1.png', './assets/images/WebDevel-Quiz5.1.png', './assets/images/WebDevel-Quiz6.1.png', './assets/images/WebDevel-Quiz7.1.png', './assets/images/WebDevel-Quiz8.1.png', './assets/images/WebDevel-Quiz9.1.png', './assets/images/WebDevel-Quiz10.1.png', './assets/images/WebDevel-Quiz11.1.png', './assets/images/WebDevel-Quiz12.1.png', './assets/images/WebDevel-Quiz13.1.png', './assets/images/WebDevel-Quiz14.1.png', './assets/images/WebDevel-Quiz15.1.png', './assets/images/WebDevel-Quiz16.1.png', './assets/images/WebDevel-Quiz17.1.png', './assets/images/WebDevel-Quiz18.1.png', './assets/images/WebDevel-Quiz19.1.png', './assets/images/WebDevel-Quiz20.1.png'];
@@ -231,6 +234,9 @@
                 if($('nav#footer').hasClass('bg-dark')){
                     $('nav#footer').removeClass('bg-dark').addClass('bg-light');
                 }
+                $('h1#h1').css('color', 'black');
+                $('h2#h2').css('color', 'black');
+                $('h3#h3').css('color', 'black');
             } else if (this.checked) {
                 paperBody.style.background = 'black';
 
@@ -267,6 +273,9 @@
                 if($('nav#footer').hasClass('bg-light')){
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
+                $('h1#h1').css('color', 'white');
+                $('h2#h2').css('color', 'white');
+                $('h3#h3').css('color', 'white');
                 }
             })
 

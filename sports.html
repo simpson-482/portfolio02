@@ -37,7 +37,7 @@
 
     <!--Portfolio Sections-->
     <div class= "container">
-        <h1 class= "headlines">
+        <h1 id= "h1" class= "headlines">
             <strong>History of Sports</strong>
         </h1>
         <div class= "container">
@@ -159,6 +159,10 @@
             var fullButton = document.getElementById('fullbuttonmain');
             var randomButton = document.getElementById('randombutton');
             var paperBody = document.getElementById('paperbody');
+            var h1 = document.getElementById('h1');
+            var h2 = document.getElementById('h2');
+            var h3 = document.getElementById('h3');
+            var h4 = document.getElementById('h4');
             // var practice = document.getElementById('practicebutton');
             // var practice2 = document.getElementById('practice2button');
             const worldCupImages = ['assets/images/Sports-WCHist5.2.png', 'assets/images/Sports-WCHist1.png', 'assets/images/Sports-WCHist4.1.png', 'assets/images/Sports-WCHist6.png','assets/images/Sports-WCHist7.png','assets/images/Sports-WCHist8.png','assets/images/Sports-WCHist9.png','assets/images/Sports-WCHist10.png','assets/images/Sports-WCHist11.png','assets/images/Sports-WCHist12.png','assets/images/Sports-WCHist13.png','assets/images/Sports-WCHist14.png','assets/images/Sports-WCHist15.png','assets/images/Sports-WCHist16.png','assets/images/Sports-WCHist17.png','assets/images/Sports-WCHist18.png','assets/images/Sports-WCHist19.png','assets/images/Sports-WCHist20.png','assets/images/Sports-WCHist21.png','assets/images/Sports-WCHist22.png','assets/images/Sports-WCHist23.png','assets/images/Sports-WCHist24.png','assets/images/Sports-WCHist25.png','assets/images/Sports-WCHist26.png','assets/images/Sports-WCHist27.png','assets/images/Sports-WCHist28.png','assets/images/Sports-WCHist29.png','assets/images/Sports-WCHist30.png','assets/images/Sports-WCHist31.png','assets/images/Sports-WCHist32.png','assets/images/Sports-WCHist33.png','assets/images/Sports-WCHist34.png','assets/images/Sports-WCHist35.png','assets/images/Sports-WCHist36.png','assets/images/Sports-WCHist37.png','assets/images/Sports-WCHist38.png','assets/images/Sports-WCHist39.png','assets/images/Sports-WCHist40.png','assets/images/Sports-WCHist41.png','assets/images/Sports-WCHist41.png','assets/images/Sports-WCHist42.png','assets/images/Sports-WCHist43.png','assets/images/Sports-WCHist44.png','assets/images/Sports-WCHist45.png','assets/images/Sports-WCHist46.png','assets/images/Sports-WCHist47.png','assets/images/Sports-WCHist48.png','assets/images/Sports-WCHist49.png','assets/images/Sports-WCHist50.png','assets/images/Sports-WCHist51.png','assets/images/Sports-WCHist53.png','assets/images/Sports-WCHist54.png','assets/images/Sports-WCHist55.png', 'assets/images/Sports-WCHist56.png', 'assets/images/Sports-WCHist57.png', 'assets/images/Sports-WCHist58.png', 'assets/images/Sports-WCHist59.png', 'assets/images/Sports-WCHist60.png', 'assets/images/Sports-WCHist61.png', 'assets/images/Sports-WCHist62.png', 'assets/images/Sports-WCHist63.png', 'assets/images/Sports-WCHist64.png', 'assets/images/Sports-WCHist65.png', 'assets/images/Sports-WCHist66.png', 'assets/images/Sports-WCHist67.png', 'assets/images/Sports-WCHist68.png', 'assets/images/Sports-WCHist69.png', 'assets/images/Sports-WCHist70.png', 'assets/images/Sports-WCHist71.png', 'assets/images/Sports-WCHist72.png', 'assets/images/Sports-WCHist73.png', 'assets/images/Sports-WCHist74.png', 'assets/images/Sports-WCHist75.png', 'assets/images/Sports-WCHist76.png', 'assets/images/Sports-WCHist77.png', 'assets/images/Sports-WCHist78.png', 'assets/images/Sports-WCHist79.png', 'assets/images/Sports-WCHist80.png', 'assets/images/Sports-WCHist81.png', 'assets/images/Sports-WCHist82.png', 'assets/images/Sports-WCHist83.png', 'assets/images/Sports-WCHist84.png', 'assets/images/Sports-WCHist85.png', 'assets/images/Sports-WCHist86.png', 'assets/images/Sports-WCHist87.png', 'assets/images/Sports-WCHist88.png', 'assets/images/Sports-WCHist89.png', 'assets/images/Sports-WCHist90.png', 'assets/images/Sports-WCHist91.png', 'assets/images/Sports-WCHist92.png', 'assets/images/Sports-WCHist93.png', 'assets/images/Sports-WCHist94.png', 'assets/images/Sports-WCHist95.png', 'assets/images/Sports-WCHist96.png', 'assets/images/Sports-WCHist97.png', 'assets/images/Sports-WCHist98.png', 'assets/images/Sports-WCHist99.png', 'assets/images/Sports-WCHist100.png', 'assets/images/Sports-WCHist101.png', 'assets/images/Sports-WCHist102.png', 'assets/images/Sports-WCHist103.png', 'assets/images/Sports-WCHist104.png', 'assets/images/Sports-WCHist105.png', 'assets/images/Sports-WCHist106.png', 'assets/images/Sports-WCHist107.png', 'assets/images/Sports-WCHist108.png'];
@@ -294,6 +298,10 @@
                 if($('nav#footer').hasClass('bg-dark')){
                     $('nav#footer').removeClass('bg-dark').addClass('bg-light');
                 }
+                $('h1#h1').css('color', 'black');
+                $('h2#h2').css('color', 'black');
+                $('h3#h3').css('color', 'black');
+                $('h4#h4').css('color', 'black');
             } else if (this.checked) {
                 paperBody.style.background = 'black';
 
@@ -330,6 +338,10 @@
                 if($('nav#footer').hasClass('bg-light')){
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
+                $('h1#h1').css('color', 'white');
+                $('h2#h2').css('color', 'white');
+                $('h3#h3').css('color', 'white');
+                $('h4#h4').css('color', 'white');
                 }
             })
 

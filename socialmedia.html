@@ -37,7 +37,7 @@
 
     <!--Portfolio Sections-->
     <div class= "container">
-        <h1 class= "headlines">
+        <h1 id= "h1" class= "headlines">
             <strong>Travel Destinations</strong>
         </h1>
         <div class= "container">
@@ -116,6 +116,7 @@
             var toggleSwitch = document.getElementById('toggle');
             var paperBody = document.getElementById('paperbody');
             var fullButton = document.getElementById('fullbuttonmain');
+            var h1 = document.getElementById('h1');
 
             var img1 = document.getElementById('smrow1');
             var img2 = document.getElementById('smrow2');
@@ -181,6 +182,7 @@
                 if($('nav#footer').hasClass('bg-dark')){
                     $('nav#footer').removeClass('bg-dark').addClass('bg-light');
                 }
+                $('h1#h1').css('color', 'black');
             } else if (this.checked) {
                 paperBody.style.background = 'black';
 
@@ -217,6 +219,7 @@
                 if($('nav#footer').hasClass('bg-light')){
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
+                $('h1#h1').css('color', 'white');
                 }
             })
 
