@@ -43,7 +43,7 @@
         <br>
         <div class="row">
             <div class="col-md-2">
-                <img style="margin-left: 0px" id= "resume_img" src="assets/images/Resume_pic3.png">
+                <img style="margin-left: 0px" id= "resume_img" src="assets/images/Resume_pic3_light.png">
     <!-- <img style="margin-left: 30px"; src="assets/images/Resume_pic2.png"> -->
             </div>  
         </div>
@@ -55,7 +55,7 @@
         $('#check').on('change', function() {
                 if (!this.checked) {
                 paperBody.style.background = 'white';
-                resumeimg.src = "assets/images/Resume_pic3.png";
+                resumeimg.src = "assets/images/Resume_pic3_light.png";
 
                 if($('button#back-button').hasClass('btn-dark')){
                     $('button#back-button').removeClass('btn-dark').addClass('btn-light');
@@ -68,7 +68,7 @@
                 }
                 } else if (this.checked) {
                 paperBody.style.background = 'black';
-                resumeimg.src = "assets/images/Resume_pic3_black.png";
+                resumeimg.src = "assets/images/Resume_pic3_dark.png";
 
                 if($('button#back-button').hasClass('btn-light')){
                     $('button#back-button').removeClass('btn-light').addClass('btn-dark');
