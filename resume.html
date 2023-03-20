@@ -34,13 +34,26 @@
     <br>
 
     <!--Content Sections-->
-    <div class="container">
-        <div class="checkbox1" id="checkbox1">
-            <input type="checkbox" id="check" class="toggle">
-            <label for="check" class="label"></label>
+    
+
+    <div class= "container">
+        <div class="row">
+                    <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
+                        +
+                    </button>
+                    <div class="checkbox1" id="papercheckbox1">
+                        <input type="checkbox" id="check" class="toggle">
+                        <label for="check" class="label"></label>
+                    </div>
+                    <br>
+                    <br>
+            </h1>
         </div>
+    </div>
+
         <br>
         <br>
+    <div class="container">
         <div class="row">
             <div class="col-md-2">
                 <img style="margin-left: 0px" id= "resume_img" src="assets/images/Resume_pic3_light.png">
@@ -51,6 +64,7 @@
 
     <script>
         var resumeimg = document.getElementById('resume_img');
+        var fullButton = document.getElementById('fullbutton');
 
         $('#check').on('change', function() {
                 if (!this.checked) {
@@ -66,6 +80,9 @@
                 if($('nav#footer').hasClass('bg-dark')){
                     $('nav#footer').removeClass('bg-dark').addClass('bg-light');
                 }
+                if($('button#fullbutton').hasClass('btn-dark')){
+                    $('button#fullbutton').removeClass('btn-dark').addClass('btn-light');
+                }
                 } else if (this.checked) {
                 paperBody.style.background = 'black';
                 resumeimg.src = "assets/images/Resume_pic3_dark.png";
@@ -79,8 +96,31 @@
                 if($('nav#footer').hasClass('bg-light')){
                     $('nav#footer').removeClass('bg-light').addClass('bg-dark');
                 }
+                if($('button#fullbutton').hasClass('btn-light')){
+                    $('button#fullbutton').removeClass('btn-light').addClass('btn-dark');
+                }
                 }
             })
+
+            fullButton.addEventListener("click", () => {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
+                });
+            });
+            document.addEventListener("dblclick", () => {
+                toggleFullscreen();
+            });
+            function getFullscreenElement() {
+                return document.fullscreenElement
+            }
+
+            function toggleFullscreen() {
+                if (getFullscreenElement()) {
+                    document.exitFullscreen();
+                } else { 
+                    document.documentElement.requestFullscreen().catch(console.log);
+                }
+            }
 
     </script>
 
