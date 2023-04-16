@@ -147,6 +147,63 @@
                 </a>
             </div>
         </div>  
+        <div class="container1">
+            <div class="comment__container opened" id="first-comment">
+                <div class="comment__card">
+                    <h3 class="comment__title">The first comment</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor iste possimus numquam velit commodi labore aliquid ut, harum soluta autem inventore perspiciatis magni. Alias debitis consectetur labore minima a placeat.</p>
+                    <div class="comment__card-footer">
+                        <div>Likes 123</div>
+                        <div>Dislikes 23</div>
+                        <div class="show-replies">Reply 2</div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__container" dataset="first-comment" id="first-reply">
+                <div class="comment__card">
+                    <h3 class="comment__title">The first reply</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor iste possimus numquam velit commodi labore aliquid ut, harum soluta autem inventore perspiciatis magni. Alias debitis consectetur labore minima a placeat.</p>
+                    <div class="comment__card-footer">
+                        <div>Likes 123</div>
+                        <div>Dislikes 23</div>
+                        <div class="show-replies">Reply 1</div>
+                    </div>
+                </div>
+                <div class="comment__container" dataset="first-reply" id="first-first-reply">
+                    <div class="comment__card">
+                        <h3 class="comment__title">The first reply to the first reply</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor iste possimus numquam velit commodi labore aliquid ut, harum soluta autem inventore perspiciatis magni. Alias debitis consectetur labore minima a placeat.</p>
+                        <div class="comment__card-footer">
+                            <div>Likes 123</div>
+                            <div>Dislikes 23</div>
+                            <div class="show-replies">Reply 1</div>
+                        </div>
+                    </div>
+                    <div class="comment__container" dataset="first-first-reply">
+                        <div class="comment__card">
+                            <h3 class="comment__title">The first reply to the first reply to the first reply</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor iste possimus numquam velit commodi labore aliquid ut, harum soluta autem inventore perspiciatis magni. Alias debitis consectetur labore minima a placeat.</p>
+                            <div class="comment__card-footer">
+                                <div>Likes 123</div>
+                                <div>Dislikes 23</div>
+                                <div class="show-replies">Reply 0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment__container" dataset="first-comment">
+                <div class="comment__card">
+                    <h3 class="comment__title">The second reply</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor iste possimus numquam velit commodi labore aliquid ut, harum soluta autem inventore perspiciatis magni. Alias debitis consectetur labore minima a placeat.</p>
+                    <div class="comment__card-footer">
+                        <div>Likes 123</div>
+                        <div>Dislikes 23</div>
+                        <div class="show-replies">Reply 0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script>
         // Img Source Change
 
@@ -2292,7 +2349,18 @@
             });
             }
             
-            
+            const showContainers = document.querySelectorAll('.show-replies');
+        
+            showContainers.forEach((btn) => 
+                btn.addEventListener("click", (e) => {
+                let parentContainer = e.target.closest('.comment__container');
+                let _id = parentContainer.id;
+                if (_id) {
+                    let childrenContainer = parentContainer.querySelectorAll(`[dataset=${_id}]`);
+                    childrenContainer.forEach(child => child.classList.toggle('opened'));
+                }
+            })
+            );
 
             // function randomImage () {
             //     var random = Math.floor(Math.random() * electricCarImages.length + 1);
