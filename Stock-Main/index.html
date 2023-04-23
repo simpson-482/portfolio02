@@ -64,6 +64,9 @@
         <button type="button" class="btn btn-light dark-btn" id= "darkbutton">
             <strong>Dark</strong>
         </button> -->
+        <button type="button" class="btn btn-light toggle-btn" id= "randombutton">
+            <strong>Random</strong>
+        </button>
         <button type="button" class="btn btn-light toggle-btn" id= "togglebutton3">
             Toggle #3
         </button>
@@ -84,17 +87,17 @@
         <div class="row">
             <div class= "col-md-4 paperrow1">
                 <!-- <a href="../Stock-Main/index.html"> -->
-                <img class= "img_jaredstocks" id= "stocksrow1" src="../assets/images/Stocks-1980-Pres.3.png" alt= "Folder">
+                <img class= "img_jaredstocks" id= "stocksrow1" src="../assets/images/Stocks-1980-Pres2.17.png" alt= "Folder">
                 <!-- </a> -->
             </div>
             <div class= "col-md-4 paperrow2">
                 <!-- <a href="../Stock-Main/index.html"> -->
-                <img class= "img_jaredstocks" id= "stocksrow2" src= "../assets/images/Stocks-CurrentYear.5.png" alt= "Folder">
+                <img class= "img_jaredstocks" id= "stocksrow2" src= "../assets/images/Stocks-CurrentYear2.19.png" alt= "Folder">
                 <!-- </a> -->
             </div>
             <div class= "col-md-4 paperrow3">
                 <a href="../Stock-Main/stocks.html">
-                <img class= "img_jaredstocks" id= "stocksrow3" src= "../assets/images/Stocks-WatchList.1.png" alt= "Folder">
+                <img class= "img_jaredstocks" id= "stocksrow3" src= "../assets/images/Stocks-WatchList2.4.png" alt= "Folder">
                 </a>
             </div>
         </div>
@@ -115,27 +118,45 @@
             var fullButton = document.getElementById('fullbuttonmain');
             var h1 = document.getElementById('h1');
             var h2 = document.getElementById('h2');
+            var randomButton = document.getElementById('randombutton');
+            const stocksWatchListImages = ['../assets/images/Stocks-WatchList2.1.png', '../assets/images/Stocks-WatchList2.2.png', '../assets/images/Stocks-WatchList2.3.png','../assets/images/Stocks-WatchList2.4.png','../assets/images/Stocks-WatchList2.5.png','../assets/images/Stocks-WatchList2.6.png','../assets/images/Stocks-WatchList2.7.png','../assets/images/Stocks-WatchList2.8.png','../assets/images/Stocks-WatchList2.9.png','../assets/images/Stocks-WatchList2.10.png','../assets/images/Stocks-WatchList2.11.png','../assets/images/Stocks-WatchList2.12.png','../assets/images/Stocks-WatchList2.13.png','../assets/images/Stocks-WatchList2.14.png','../assets/images/Stocks-WatchList2.15.png','../assets/images/Stocks-WatchList2.16.png','../assets/images/Stocks-WatchList2.17.png','../assets/images/Stocks-WatchList2.18.png', '../assets/images/Stocks-WatchList2.19.png'];
+            const stocksCurrentYearImages = ['../assets/images/Stocks-CurrentYear2.1.png', '../assets/images/Stocks-CurrentYear2.2.png', '../assets/images/Stocks-CurrentYear2.3.png', '../assets/images/Stocks-CurrentYear2.4.png', '../assets/images/Stocks-CurrentYear2.5.png', '../assets/images/Stocks-CurrentYear2.6.png', '../assets/images/Stocks-CurrentYear2.7.png', '../assets/images/Stocks-CurrentYear2.8.png', '../assets/images/Stocks-CurrentYear2.9.png', '../assets/images/Stocks-CurrentYear2.10.png', '../assets/images/Stocks-CurrentYear2.11.png', '../assets/images/Stocks-CurrentYear2.12.png', '../assets/images/Stocks-CurrentYear2.13.png', '../assets/images/Stocks-CurrentYear2.14.png', '../assets/images/Stocks-CurrentYear2.15.png', '../assets/images/Stocks-CurrentYear2.16.png', '../assets/images/Stocks-CurrentYear2.17.png', '../assets/images/Stocks-CurrentYear2.18.png', '../assets/images/Stocks-CurrentYear2.19.png'];
+            const stocks1980PresImages = ['../assets/images/Stocks-1980-Pres2.1.png', '../assets/images/Stocks-1980-Pres2.2.png','../assets/images/Stocks-1980-Pres2.3.png','../assets/images/Stocks-1980-Pres2.4.png','../assets/images/Stocks-1980-Pres2.5.png','../assets/images/Stocks-1980-Pres2.6.png','../assets/images/Stocks-1980-Pres2.7.png','../assets/images/Stocks-1980-Pres2.8.png','../assets/images/Stocks-1980-Pres2.9.png','../assets/images/Stocks-1980-Pres2.10.png','../assets/images/Stocks-1980-Pres2.11.png','../assets/images/Stocks-1980-Pres2.12.png','../assets/images/Stocks-1980-Pres2.13.png','../assets/images/Stocks-1980-Pres2.14.png','../assets/images/Stocks-1980-Pres2.15.png','../assets/images/Stocks-1980-Pres2.16.png','../assets/images/Stocks-1980-Pres2.17.png','../assets/images/Stocks-1980-Pres2.18.png','../assets/images/Stocks-1980-Pres2.19.png',]
 
             var img1 = document.getElementById('stocksrow1');
             var img2 = document.getElementById('stocksrow2');
             var img3 = document.getElementById('stocksrow3');
 
             button2.addEventListener('click', () => {
-                img1.src = '../assets/images/Stocks-1980-Pres.2.png';
-                img2.src = '../assets/images/Stocks-CurrentYear.4.png';
-                img3.src = '../assets/images/Stocks-WatchList.3.png';
+                img1.src = '../assets/images/Stocks-1980-Pres2.18.png';
+                img2.src = '../assets/images/Stocks-CurrentYear2.10.png';
+                img3.src = '../assets/images/Stocks-WatchList2.17.png';
             })
 
             button1.addEventListener('click', () => {
-                img1.src = '../assets/images/Stocks-1980-Pres.3.png';
-                img2.src = '../assets/images/Stocks-CurrentYear.5.png';
-                img3.src = '../assets/images/Stocks-WatchList.1.png';
+                img1.src = '../assets/images/Stocks-1980-Pres2.17.png';
+                img2.src = '../assets/images/Stocks-CurrentYear2.19.png';
+                img3.src = '../assets/images/Stocks-WatchList2.4.png';
             })
 
             button3.addEventListener('click', () => {
-                img1.src = '../assets/images/Stocks-1980-Pres.4.png';
-                img2.src = '../assets/images/Stocks-CurrentYear.3.png';
-                img3.src = '../assets/images/Stocks-WatchList.5.png';
+                img1.src = '../assets/images/Stocks-1980-Pres2.10.png';
+                img2.src = '../assets/images/Stocks-CurrentYear2.17.png';
+                img3.src = '../assets/images/Stocks-WatchList2.19.png';
+            })
+
+            randomButton.addEventListener('click', () => {
+                var randomWatchListNumber = Math.floor(Math.random() * stocksWatchListImages.length);
+                var randomCurrentYearNumber = Math.floor(Math.random() * stocksCurrentYearImages.length);
+                var random1980PresNumber = Math.floor(Math.random() * stocks1980PresImages.length);
+                img3.src = stocksWatchListImages[randomWatchListNumber];
+                img2.src = stocksCurrentYearImages[randomCurrentYearNumber];
+                img1.src = stocks1980PresImages[random1980PresNumber];
+                
+                console.log(randomWatchListNumber + ': Watch List Number');
+                console.log(randomCurrentYearNumber + ': Current Year Number');
+                console.log(random1980PresNumber + ': 1980-Pres Number');
+                console.log('------------------------');
             })
 
             $('#check').on('change', function() {
