@@ -586,6 +586,22 @@
             });
             }
 
+            // MLS Cup Playoffs Single Random Change
+            if (document.addEventListener) {
+                img9.addEventListener('contextmenu', function(e) {
+                var randomMLSCupPlayoffs = Math.floor(Math.random() * MLSImages.length);
+                img9.src = MLSImages[randomMLSCupPlayoffs];
+                console.log(randomMLSCupPlayoffs + ': MLS Cup Playoffs Number');
+                console.log('------------------------');
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
         </script>
 
     <div class= "container">
