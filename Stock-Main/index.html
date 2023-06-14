@@ -319,6 +319,55 @@
                 }
             }
 
+            // Electric Car Single Random Change
+            if (document.addEventListener) {
+                img1.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                var random1980PresNumber = Math.floor(Math.random() * stocks1980PresImages.length);
+                img1.src = stocks1980PresImages[random1980PresNumber];
+                console.log(random1980PresNumber + ': New Single 1980s-Pres Number');
+                console.log('------------------------');
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Single Random Change
+            if (document.addEventListener) {
+                img2.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                var randomCurrentYearNumber = Math.floor(Math.random() * stocksCurrentYearImages.length);
+                img2.src = stocksCurrentYearImages[randomCurrentYearNumber];
+                console.log(randomCurrentYearNumber + ': New Single Current Year Number');
+                console.log('------------------------');
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+            // Single Random Change
+            if (document.addEventListener) {
+                img3.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                var randomWatchListNumber = Math.floor(Math.random() * stocksWatchListImages.length);
+                img3.src = stocksWatchListImages[randomWatchListNumber];
+                console.log(randomWatchListNumber + ': New Single Watch List Number');
+                console.log('------------------------');
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
+
+
             console.log(button1);
 
         </script>
