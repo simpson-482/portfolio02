@@ -159,6 +159,21 @@
                 console.log('------------------------');
             })
 
+            window.addEventListener('keydown', checkKeyPress, false);
+
+                function checkKeyPress (key) {
+                    if (key.keyCode == '51') {
+                        var randomWatchListNumber = Math.floor(Math.random() * stocksWatchListImages.length);
+                        img3.src = stocksWatchListImages[randomWatchListNumber];
+                    } if (key.keyCode == '50') {
+                        var randomCurrentYearNumber = Math.floor(Math.random() * stocksCurrentYearImages.length);
+                        img2.src = stocksCurrentYearImages[randomCurrentYearNumber];
+                    } if (key.keyCode == '49') {
+                        var random1980PresNumber = Math.floor(Math.random() * stocks1980PresImages.length);
+                        img1.src = stocks1980PresImages[random1980PresNumber];
+                    }
+                }
+
             $('#check').on('change', function() {
                 if (!this.checked) {
                 paperBody.style.background = 'white';
@@ -319,7 +334,7 @@
                 }
             }
 
-            // Electric Car Single Random Change
+            // Single Random Change
             if (document.addEventListener) {
                 img1.addEventListener('contextmenu', function(e) {
                 e.preventDefault();

@@ -53,6 +53,9 @@
         <div class= "container">
             <h3 id="h3">Right Click for Single Image Change</h3>
         </div>
+        <div class= "container">
+            <h3 id="h3">1234</h3>
+        </div>
     </div>
 
     <div class= "container">
@@ -194,6 +197,24 @@
                 console.log(randomPasswordGenerator + ': Password Generator Number');
                 console.log('------------------------');
             })
+
+            window.addEventListener('keydown', checkKeyPress, false);
+
+            function checkKeyPress (key) {
+                if (key.keyCode == '49') {
+                    var randomOutdoorNumber = Math.floor(Math.random() * outdoorItineraryImages.length);
+                    img1.src = outdoorItineraryImages[randomOutdoorNumber];
+                } if (key.keyCode == '50') {
+                    var randomWorkDayNumber = Math.floor(Math.random() * workDayPlannerImages.length);
+                    img2.src = workDayPlannerImages[randomWorkDayNumber];
+                } if (key.keyCode == '51') {
+                    var randomQuizChallengeNumber = Math.floor(Math.random() * quizChallengeImages.length);
+                    img3.src = quizChallengeImages[randomQuizChallengeNumber];
+                } if (key.keyCode == '52') {
+                    var randomPasswordGenerator = Math.floor(Math.random() * passwordGeneratorImages.length);
+                    img4.src = passwordGeneratorImages[randomPasswordGenerator];
+                }
+            }
 
                 console.log(outdoorItineraryImages.length);
                 console.log(workDayPlannerImages.length);
