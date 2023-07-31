@@ -34,6 +34,9 @@
                         <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
                             +
                         </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "d3button">
+                            Divison 3 Playoffs
+                        </button>
                         <button type="button" class="btn btn-light toggle-btn" id= "majorbutton">
                             Major Bowl Games
                         </button>
@@ -71,6 +74,7 @@
             var tieredButton = document.getElementById('tieredbutton');
             var bowlButton = document.getElementById('bowlbutton');
             var majorBowlButton = document.getElementById('majorbutton');
+            var d3Button = document.getElementById('d3button');
             var img11 = document.getElementById('img11');
             var img12 = document.getElementById('img12');
             var img21 = document.getElementById('img21');
@@ -109,6 +113,16 @@
                 img31.src = '';
                 img32.src = ''; 
                 img41.src = '';
+                img42.src = '';     
+            })
+            d3button.addEventListener('click', () => {
+                img11.src = 'assets/images/NCAA-D3Playoffs1.png';
+                img12.src = '';
+                img21.src = 'assets/images/NCAA-D3Playoffs2.png';
+                img22.src = '';
+                img31.src = 'assets/images/NCAA-D3Playoffs3.png';
+                img32.src = ''; 
+                img41.src = 'assets/images/NCAA-D3Playoffs4.png';
                 img42.src = '';     
             })
             
