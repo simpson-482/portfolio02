@@ -31,13 +31,19 @@
             <br>
             <br>
             <div class= "container">
-                <div class= "row">
-                    <div class= col-md-4>
+                <!-- <div class= "row">
+                    <div class= col-md-4> -->
                         <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
                             +
                         </button>
-                    </div>
-                </div>
+                        <button type="button" class="btn btn-light toggle-btn" id= "womensbutton">
+                            Womens World Cup
+                        </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "mensbutton">
+                            Mens World Cup
+                        </button>
+                    <!-- </div>
+                </div> -->
             </div>
             <br>
             <br>
@@ -84,6 +90,39 @@
         <br>
         <script>
             var fullButton = document.getElementById('fullbutton');
+            var mensButton = document.getElementById('mensbutton');
+            var womensButton = document.getElementById('womensbutton');
+            var img11 = document.getElementById('img11');
+            var img12 = document.getElementById('img12');
+            var img21 = document.getElementById('img21');
+            var img22 = document.getElementById('img22');
+            var img31 = document.getElementById('img31');
+            var img32 = document.getElementById('img32');
+            var img41 = document.getElementById('img41');
+            var img42 = document.getElementById('img42');
+
+            mensButton.addEventListener('click', () => {
+                img11.src = 'assets/images/HistoryWorldCupNew1.1.png';
+                img12.src = 'assets/images/HistoryWorldCupNew1.2.png';
+                img21.src = 'assets/images/HistoryWorldCupNew2.1.png';
+                img22.src = 'assets/images/HistoryWorldCupNew2.2.png';
+                img31.src = 'assets/images/HistoryWorldCupNew3.1.png';
+                img32.src = 'assets/images/HistoryWorldCupNew3.2.png'; 
+                img41.src = 'assets/images/HistoryWorldCupNew4.1.png';
+                img42.src = 'assets/images/HistoryWorldCupNew4.2.png';
+            })
+
+            womensButton.addEventListener('click', () => {
+                img11.src = 'assets/images/HistoryWWorldCup1.1.png';
+                img12.src = '';
+                img21.src = '';
+                img22.src = '';
+                img31.src = '';
+                img32.src = ''; 
+                img41.src = '';
+                img42.src = '';
+            })
+            
             
             fullButton.addEventListener("click", () => {
                 document.documentElement.requestFullscreen().catch((e) => {
@@ -133,7 +172,7 @@
                     <img class="rounded linkedinimg" src="./assets/images/Footer-linkin1.png">
                 </a>
                 <a href="https://twitter.com/jurdsimp" target="_blank">
-                    <img class="rounded twitterimg" src="./assets/images/Footer-twitter1.png">
+                    <img class="rounded twitterimg" src="./assets/images/Footer-twitter2.png">
                 </a>
                 <a href="https://www.instagram.com/simpson.482/" target="_blank">
                     <img class="rounded igimg" src="./assets/images/Footer-instagram1.png">

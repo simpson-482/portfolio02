@@ -448,6 +448,16 @@
    margin-right: 25px;
 }
 
+#mensbutton {
+   float: right;
+   margin-right: 25px;
+}
+
+#womensbutton {
+   float: right;
+   margin-right: 25px;
+}
+
 #majorbutton {
    float: right;
    margin-right: 50px;
