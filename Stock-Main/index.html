@@ -171,6 +171,13 @@
                     } if (key.keyCode == '49') {
                         var random1980PresNumber = Math.floor(Math.random() * stocks1980PresImages.length);
                         img1.src = stocks1980PresImages[random1980PresNumber];
+                    } if (key.keyCode == '48') {
+                        var randomWatchListNumber = Math.floor(Math.random() * stocksWatchListImages.length);
+                        var randomCurrentYearNumber = Math.floor(Math.random() * stocksCurrentYearImages.length);
+                        var random1980PresNumber = Math.floor(Math.random() * stocks1980PresImages.length);
+                        img3.src = stocksWatchListImages[randomWatchListNumber];
+                        img2.src = stocksCurrentYearImages[randomCurrentYearNumber];
+                        img1.src = stocks1980PresImages[random1980PresNumber];
                     }
                 }
 

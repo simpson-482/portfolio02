@@ -54,7 +54,7 @@
             <h3 id="h3">Right Click for Single Image Change</h3>
         </div>
         <div class= "container">
-            <h3 id="h3">123456789</h3>
+            <h3 id="h3">1234567890</h3>
         </div>
         <div class= "container">
             <h4 id="h4">Last updated June 16, 2023</h3>
@@ -311,7 +311,27 @@
                     } if (key.keyCode == '57') {
                         var randomMLSCup = Math.floor(Math.random() * MLSImages.length);
                         img9.src = MLSImages[randomMLSCup];
+                    } if (key.keyCode == '48') {
+                        var randomWorldCup = Math.floor(Math.random() * worldCupImages.length);
+                        var randomCFBPlayoff = Math.floor(Math.random() * CFPlayoffImages.length);
+                        var randomNCAATourney = Math.floor(Math.random() * ncaaTourneyImages.length);
+                        var randomCFBBowlGames = Math.floor(Math.random() * bowlGamesImages.length);
+                        var randomNFLPlayoffs = Math.floor(Math.random() * NFLImages.length);
+                        var randomNBAPlayoffs = Math.floor(Math.random() * NBAImages.length);
+                        var randomMLBPlayoffs = Math.floor(Math.random() * MLBImages.length);
+                        var randomSCPlayoffs = Math.floor(Math.random() * SCPImages.length);
+                        var randomMLSCup = Math.floor(Math.random() * MLSImages.length);
+                        img1.src = worldCupImages[randomWorldCup];
+                        img2.src = CFPlayoffImages[randomCFBPlayoff];
+                        img3.src = ncaaTourneyImages[randomNCAATourney];
+                        img4.src = bowlGamesImages[randomCFBBowlGames];
+                        img5.src = NFLImages[randomNFLPlayoffs];
+                        img6.src = NBAImages[randomNBAPlayoffs];
+                        img7.src = MLBImages[randomMLBPlayoffs];
+                        img8.src = SCPImages[randomSCPlayoffs];
+                        img9.src = MLSImages[randomMLSCup];
                     }
+
                 }
 
             $('#check').on('change', function() {

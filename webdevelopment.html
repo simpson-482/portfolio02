@@ -54,7 +54,7 @@
             <h3 id="h3">Right Click for Single Image Change</h3>
         </div>
         <div class= "container">
-            <h3 id="h3">1234</h3>
+            <h3 id="h3">12340</h3>
         </div>
     </div>
 
@@ -212,6 +212,15 @@
                     img3.src = quizChallengeImages[randomQuizChallengeNumber];
                 } if (key.keyCode == '52') {
                     var randomPasswordGenerator = Math.floor(Math.random() * passwordGeneratorImages.length);
+                    img4.src = passwordGeneratorImages[randomPasswordGenerator];
+                } if (key.keyCode == '48') {
+                    var randomOutdoorNumber = Math.floor(Math.random() * outdoorItineraryImages.length);
+                    var randomWorkDayNumber = Math.floor(Math.random() * workDayPlannerImages.length);
+                    var randomQuizChallengeNumber = Math.floor(Math.random() * quizChallengeImages.length);
+                    var randomPasswordGenerator = Math.floor(Math.random() * passwordGeneratorImages.length);
+                    img1.src = outdoorItineraryImages[randomOutdoorNumber];
+                    img2.src = workDayPlannerImages[randomWorkDayNumber];
+                    img3.src = quizChallengeImages[randomQuizChallengeNumber];
                     img4.src = passwordGeneratorImages[randomPasswordGenerator];
                 }
             }
