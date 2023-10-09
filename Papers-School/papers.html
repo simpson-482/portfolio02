@@ -682,13 +682,16 @@
             }
 
 
-
             // Electric Car Single Random Change
             if (document.addEventListener) {
                 img1.addEventListener('contextmenu', function(e) {
                 e.preventDefault();
                 var randomElectricNumber = Math.floor(Math.random() * electricCarImages.length);
                 img1.src = electricCarImages[randomElectricNumber];
+                var electricArray = img1.src;
+                var toString = electricArray.toString();
+                toString.splice(-25);
+                console.log(toString);
                 console.log(randomElectricNumber + ': New Single Electric Number');
                 console.log('------------------------');
                 }, false);
@@ -698,12 +701,6 @@
                 window.event.returnValue = false;
             });
             }
-
-            // Electric Car Single Image Save
-
-            img1.addEventListener('keydown', (event) => {
-
-            })
             
             // Hawaii Single Random Change
             if (document.addEventListener) {
