@@ -1,4 +1,5 @@
-        <!DOCTYPE html>
+       
+       <!DOCTYPE html>
         <html lang="en">
         <head>
             <meta charset="UTF-8">
@@ -30,9 +31,12 @@
             </header>
             <br>
             <br>
-            <div class= "container">
+                    <div class= "container">
                         <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
                             +
+                        </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "diiibutton">
+                            DIII Playoffs
                         </button>
                         <button type="button" class="btn btn-light toggle-btn" id= "majorbutton">
                             Major Bowl Games
@@ -43,7 +47,7 @@
                         <button type="button" class="btn btn-light toggle-btn" id= "bowlbutton">
                             Bowl Games
                         </button>
-            </div>
+                    </div>
             <br>
             <br>
             <br>
@@ -71,7 +75,7 @@
             var tieredButton = document.getElementById('tieredbutton');
             var bowlButton = document.getElementById('bowlbutton');
             var majorBowlButton = document.getElementById('majorbutton');
-            var d3Button = document.getElementById('d3button');
+            var diiiButton = document.getElementById('diiibutton');
             var img11 = document.getElementById('img11');
             var img12 = document.getElementById('img12');
             var img21 = document.getElementById('img21');
@@ -107,6 +111,16 @@
                 img12.src = 'assets/images/BowlGamesMajorFull1.2.png';
                 img21.src = 'assets/images/BowlGamesMajorFull2.1.png';
                 img22.src = 'assets/images/BowlGamesMajorFull2.2.png';
+                img31.src = '';
+                img32.src = ''; 
+                img41.src = '';
+                img42.src = '';     
+            })
+            diiiButton.addEventListener('click', () => {
+                img11.src = 'assets/images/NCAA-D3Playoffs1.png';
+                img12.src = 'assets/images/NCAA-D3Playoffs2.png';
+                img21.src = 'assets/images/NCAA-D3Playoffs3.png';
+                img22.src = 'assets/images/NCAA-D3Playoffs4.png';
                 img31.src = '';
                 img32.src = ''; 
                 img41.src = '';
