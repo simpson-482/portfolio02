@@ -53,19 +53,19 @@
             <br>
                 <div style="width: 4100px">
                     <img id="img11" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull1.1.png">
-                    <img id="img12" style="float: left"; src="assets/images/BowlGamesNewFull1.2.png">
+                    <img id="img12" src="assets/images/BowlGamesNewFull1.2.png">
                 </div>
                 <div style="width: 4100px">
                     <img id="img21" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull2.1.png">
-                    <img id="img22" style="float: left"; src="assets/images/BowlGamesNewFull2.2.png">
+                    <img id="img22" src="assets/images/BowlGamesNewFull2.2.png">
                 </div>
                 <div style="width: 4100px">
                     <img id="img31" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull3.1.png">
-                    <img id="img32" style="float: left"; src="assets/images/BowlGamesNewFull3.2.png">
+                    <img id="img32" src="assets/images/BowlGamesNewFull3.2.png">
                 </div>
                 <div style="width: 4100px">
                     <img id="img41" style="margin-left: 30px; float: left;"; src="assets/images/BowlGamesNewFull4.1.png">
-                    <img id="img42" style="float: left"; src="assets/images/BowlGamesNewFull4.2.png">
+                    <img id="img42" src="assets/images/BowlGamesNewFull4.2.png">
                 </div>
         <br>
         <br>
@@ -94,6 +94,16 @@
                 img32.src = 'assets/images/BowlGamesTieredFull3.2.png'; 
                 img41.src = '';
                 img42.src = '';
+
+                img11.style = "margin-left: 30px";
+                img12.style = "margin-left: -5px";
+                img21.style = "margin-left: 30px";
+                img22.style = "margin-left: -5px";
+                img31.style = "margin-left: 30px";
+                img32.style = "margin-left: -5px";
+                img41.style = "margin-left: 30px";
+                img42.style = "margin-left: -5px";
+                
             })
 
             bowlButton.addEventListener('click', () => {
@@ -105,6 +115,16 @@
                 img32.src = 'assets/images/BowlGamesNewFull3.2.png'; 
                 img41.src = 'assets/images/BowlGamesNewFull4.1.png';
                 img42.src = 'assets/images/BowlGamesNewFull4.2.png';
+
+                img11.style = "margin-left: 30px";
+                img12.style = "margin-left: -5px";
+                img21.style = "margin-left: 30px";
+                img22.style = "margin-left: -5px";
+                img31.style = "margin-left: 30px";
+                img32.style = "margin-left: -5px";
+                img41.style = "margin-left: 30px";
+                img42.style = "margin-left: -5px";
+
             })
             majorBowlButton.addEventListener('click', () => {
                 img11.src = 'assets/images/BowlGamesMajorFull1.1.png';
@@ -114,7 +134,17 @@
                 img31.src = '';
                 img32.src = ''; 
                 img41.src = '';
-                img42.src = '';     
+                img42.src = '';
+                
+                img11.style = "margin-left: 30px";
+                img12.style = "margin-left: -5px";
+                img21.style = "margin-left: 34px";
+                img22.style = "margin-left: -5px";
+                img31.style = "margin-left: 30px";
+                img32.style = "margin-left: -5px";
+                img41.style = "margin-left: 30px";
+                img42.style = "margin-left: -5px";
+                
             })
             diiiButton.addEventListener('click', () => {
                 img11.src = 'assets/images/NCAA-D3Playoffs1.png';
@@ -124,8 +154,13 @@
                 img31.src = '';
                 img32.src = ''; 
                 img41.src = '';
-                img42.src = '';     
+                img42.src = '';   
+
+                img12.style = "margin-left: 30px";
+                img22.style = "margin-left: 30px";
+    
             })
+
             
             fullButton.addEventListener("click", () => {
                         document.documentElement.requestFullscreen().catch((e) => {
@@ -146,7 +181,6 @@
                             document.documentElement.requestFullscreen().catch(console.log);
                         }
                     }
-            
             
             </script>
         <div class= "container">
