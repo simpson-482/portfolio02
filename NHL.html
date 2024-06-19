@@ -31,13 +31,15 @@
             <br>
             <br>
             <div class= "container">
-                <div class= "row">
-                    <div class= col-md-4>
                         <button type="button" class="btn btn-light toggle-btn" id= "fullbutton">
                             +
                         </button>
-                    </div>
-                </div>
+                        <button type="button" class="btn btn-light toggle-btn" id= "olympicbutton">
+                            Olympics
+                        </button>
+                        <button type="button" class="btn btn-light toggle-btn" id= "nhlbutton">
+                            Stanley Cup Playoffs
+                        </button>
             </div>
             <br>
             <br>
@@ -53,6 +55,8 @@
         <br>
         <script>
             var fullButton = document.getElementById('fullbutton');
+            var nhlButton = document.getElementById('nhlbutton');
+            var olympicButton = document.getElementById('olympivbutton');
             
             fullButton.addEventListener("click", () => {
                 document.documentElement.requestFullscreen().catch((e) => {
@@ -73,6 +77,18 @@
                     document.documentElement.requestFullscreen().catch(console.log);
                 }
             }
+
+            nhlbutton.addEventListener('click', () => {
+                img11.src = 'assets/images/SCPNew1.1.png';
+                img12.src = 'assets/images/SCPNew1.2.png';
+                
+            })
+
+            olympicbutton.addEventListener('click', () => {
+                img11.src = 'assets/images/OlympicHockey.png';
+                img12.src = '';
+
+            })
             
             
             </script>
