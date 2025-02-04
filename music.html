@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel= "stylesheet" href= "./assets/css/style.css">
+    <link rel= "shortcut icon" href= "./assets/images/Favicon1.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src= "script.js"></script>
+    <title>Jared Simpson's Portfolio</title>
+</head>
+
+<body id= "paperbody">
+    <!--Navigation Bar-->
+    <header>
+        <div class= "container">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "navbar">
+                    <a href="./index.html" class="navbar-brand" style="font-size: 45px">Jared Simpson</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class= "navbar-nav ml-auto">
+                        <li class="nav-item" style="font-size: 20px"><a href="./index.html" class="nav-link"> About</a></li>
+                        <li class="nav-item" style="font-size: 20px"><a href="./portfolio4/index.html" class="nav-link">Portfolio</a></li>
+                        <li class="nav-item" style="font-size: 20px"><a href="./contact.html" class="nav-link"> Contact</a></li>
+                    </ul>
+                    </div>
+        </nav>
+        </div>
+
+    </header>
+    <br>
+    <br>
+    <br>
+
+    <!--Papers Sections-->
+    <div class= "container">
+    <h1 id= "h1" class= "headlines">
+        <strong>Papers</strong>
+    </h1>
+    <div class= "container">
+        <div class="row">
+        <button type="button" class="btn btn-light toggle-btn" id= "fullbuttonmain">
+            <strong>+</strong>
+        </button>
+        </div>
+    </div>
+    <div class= "container">
+        <h2 id="h2">Double Click for Full Screen</h2>
+        <h2 id="h3">Click album for different song from album</h2>
+    </div>
+    <div class= "container">
+    </div>
+    <div class= "container">
+    </div>
+    </div>
+    <div class= "container">
+        <hr style= "width: 100%; height: 5px">
+        <div class="checkbox1" id="checkbox1">
+            <input type="checkbox" id="check" class="toggle">
+            <label for="check" class="label"></label>
+        </div>
+        
+        <!-- <button type="button" class="btn btn-light practice-btn" id= "practicebutton">
+            Practice
+        </button>
+        <button type="button" class="btn btn-light practice2-btn" id= "practice2button">
+            Practice 2
+        </button> -->
+        <br>
+        <div class="row">
+            <div class= "col-md-4 paperrow1">
+                <a onclick = "changeSongSpringsteen()">
+                    <img class= "img_jaredmusic" id= "paperrow1" src= "./assets/images/Music-BruceSpringsteen.png" alt="Folder">
+                    <iframe id="framerow1" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/bobby-jean/203708420?i=203709090"></iframe>
+                </a>
+            </div>
+            <div class= "col-md-4 paperrow2">
+                <a onclick = "changeSongClapton()">
+                    <img class= "img_jaredmusic" id= "paperrow2" src= "./assets/images/Music-EricClapton.png" alt= "Folder">
+                    <iframe id= "framerow2" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/after-midnight/1440863256?i=1440863592"></iframe>
+                </a>
+            </div>
+            <div class= "col-md-4 paperrow3">
+                <a onclick= "changeSongBieber()">
+                <img class= "img_jaredmusic" id= "paperrow3" src= "./assets/images/Music-JustinBieber.png" alt= "Folder">
+                <iframe id= "framerow3" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/hold-on/1561058084?i=1561058477"></iframe>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class= "col-md-4 paperrow4">
+                <a onclick="changeSongDrake()">
+                <img class= "img_jaredmusic" id= "paperrow4" src= "./assets/images/Music-Drake.png" alt= "Folder">
+                <iframe id= "framerow4" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/take-care-feat-rihanna/1440642493?i=1440642738"></iframe>
+                </a>
+            </div>
+            <div class= "col-md-4 paperrow5">
+                <a onclick="changeSongJackson()">
+                <img class= "img_jaredmusic" id= "paperrow5" src= "./assets/images/Music-MichaelJackson.png" alt= "Folder">
+                <iframe id= "framerow5" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/billie-jean/269572838?i=269573364"></iframe>
+                </a>
+            </div>
+            <div class= "col-md-4 paperrow6">
+                <a onclick="changeSongBlind()">
+                <img class= "img_jaredmusic" id= "paperrow6" src= "./assets/images/Music-ThirdEyeBlind.png" alt= "Folder">
+                <iframe id= "framerow6" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/blinded-when-i-see-you/164394621?i=164394986"></iframe>
+                </a>
+            </div>
+        </div> 
+        <div class="row">
+            <div class= "col-md-4 paperrow7">
+                <a onclick="changeSongChurch()">
+                <img class= "img_jaredmusic" id= "paperrow7" src= "./assets/images/Music-EricChurch.png" alt= "Folder">
+                <iframe id= "framerow7" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src= "https://embed.music.apple.com/us/album/springsteen/721280109?i=721280659"></iframe>
+                </a>
+            </div>
+            <div class= "col-md-4 paperrow8">
+                <a onclick="changeSongGaga()">
+                <img class= "img_jaredmusic" id= "paperrow8" src= "./assets/images/Music-LadyGaga.png" alt= "Folder">
+                <iframe id="framerow8" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/bad-romance/1440860294?i=1440860297"></iframe>
+                 </a>
+            </div>
+            <div class= "col-md-4 paperrow9">
+                <a onclick="changeSongJackson5()">
+                <img class= "img_jaredmusic" id= "paperrow9" src= "./assets/images/Music-Jackson5.png" alt= "Folder">
+                <iframe id= "framerow9" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:90%;max-width:660px;overflow:hidden;border-radius:10px;" src="https://embed.music.apple.com/us/album/i-want-you-back/1440912101?i=1440912105"></iframe>
+                </a>
+            </div>
+        </div>  
+        
+        <script>
+            
+        // Img Source Change
+
+            var lightButton = document.getElementById('lightbutton');
+            var darkButton = document.getElementById('darkbutton');
+            var toggleSwitch = document.getElementById('toggle');
+            var fullButton = document.getElementById('fullbuttonmain');
+            var paperBody = document.getElementById('paperbody');
+            var h1 = document.getElementById('h1');
+            var h2 = document.getElementById('h2');
+            var h3 = document.getElementById('h3');
+            var img1 = document.getElementById('paperrow1');
+            var iframe1 = document.getElementById('framerow1');
+            var iframe2 = document.getElementById('framerow2');
+            var iframe3 = document.getElementById('framerow3');
+            var iframe4 = document.getElementById('framerow4');
+            var iframe5 = document.getElementById('framerow5');
+            var iframe6 = document.getElementById('framerow6');
+            var iframe7 = document.getElementById('framerow7');
+            var iframe8 = document.getElementById('framerow8');
+            var iframe9 = document.getElementById('framerow9');
+    
+            
+            function changeSongSpringsteen() {
+                var springsteenSongs = ["https://embed.music.apple.com/us/album/born-in-the-u-s-a/203708420?i=203708455", "https://embed.music.apple.com/us/album/cover-me/203708420?i=203708535", "https://embed.music.apple.com/us/album/darlington-county/203708420?i=203708645", "https://embed.music.apple.com/us/album/working-on-the-highway/203708420?i=203708785", "https://embed.music.apple.com/us/album/downbound-train/203708420?i=203708853", "https://embed.music.apple.com/us/album/im-on-fire/203708420?i=203708893", "https://embed.music.apple.com/us/album/no-surrender/203708420?i=203709047", "https://embed.music.apple.com/us/album/bobby-jean/203708420?i=203709090", "https://embed.music.apple.com/us/album/im-goin-down/203708420?i=203709128", "https://embed.music.apple.com/us/album/glory-days/203708420?i=203709191","https://embed.music.apple.com/us/album/dancing-in-the-dark/203708420?i=203709340", "https://embed.music.apple.com/us/album/my-hometown/203708420?i=203709448"];
+                var randomSpringsteen = Math.floor(Math.random() * springsteenSongs.length);
+                iframe1.src = springsteenSongs[randomSpringsteen];
+            }
+            function changeSongClapton() {
+                var claptonSongs = ["https://embed.music.apple.com/us/album/slunky/1440863256?i=1440863390", "https://embed.music.apple.com/us/album/bad-boy/1440863256?i=1440863403", "https://embed.music.apple.com/us/album/lonesome-and-a-long-way-from-home/1440863256?i=1440863407", "https://embed.music.apple.com/us/album/after-midnight/1440863256?i=1440863592", "https://embed.music.apple.com/us/album/easy-now/1440863256?i=1440863596", "https://embed.music.apple.com/us/album/blues-power/1440863256?i=1440863602", "https://embed.music.apple.com/us/album/bottle-of-red-wine/1440863256?i=1440863606", "https://embed.music.apple.com/us/album/lovin-you-lovin-me/1440863256?i=1440863619", "https://embed.music.apple.com/us/album/ive-told-you-for-the-last-time/1440863256?i=1440863766", "https://embed.music.apple.com/us/album/i-dont-know-why/1440863256?i=1440863904", "https://embed.music.apple.com/us/album/let-it-rain/1440863256?i=1440863982"];
+                var randomClapton = Math.floor(Math.random() * claptonSongs.length);
+                iframe2.src = claptonSongs[randomClapton];
+            }
+            function changeSongBieber() {
+                var bieberSongs = ["https://embed.music.apple.com/us/album/2-much/1561058084?i=1561058097", "https://embed.music.apple.com/us/album/deserve-you/1561058084?i=1561058105", "https://embed.music.apple.com/us/album/as-i-am-feat-khalid/1561058084?i=1561058294", "https://embed.music.apple.com/us/album/off-my-face/1561058084?i=1561058297", "https://embed.music.apple.com/us/album/holy-feat-chance-the-rapper/1561058084?i=1561058307", "https://embed.music.apple.com/us/album/unstable-feat-the-kid-laroi/1561058084?i=1561058313", "https://embed.music.apple.com/us/album/mlk-interlude/1561058084?i=1561058469", "https://embed.music.apple.com/us/album/die-for-you-feat-dominic-fike/1561058084?i=1561058471", "https://embed.music.apple.com/us/album/hold-on/1561058084?i=1561058477", "https://embed.music.apple.com/us/album/somebody/1561058084?i=1561058666", "https://embed.music.apple.com/us/album/ghost/1561058084?i=1561058740", "https://embed.music.apple.com/us/album/peaches-feat-daniel-caesar-giv%C4%93on/1561058084?i=1561058753", "https://embed.music.apple.com/us/album/love-you-different-feat-beam/1561058084?i=1561058760", "https://embed.music.apple.com/us/album/loved-by-you-feat-burna-boy/1561058084?i=1561058916", "https://embed.music.apple.com/us/album/anyone/1561058084?i=1561058924", "https://embed.music.apple.com/us/album/lonely/1561058084?i=1561058927", "https://embed.music.apple.com/us/album/there-she-go-feat-lil-uzi-vert/1561058084?i=1561058932", "https://embed.music.apple.com/us/album/i-cant-be-myself-feat-jaden/1561058084?i=1561058936", "https://embed.music.apple.com/us/album/lifetime/1561058084?i=1561058938", "https://embed.music.apple.com/us/album/wish-you-would-feat-quavo/1561058084?i=1561058942", "https://embed.music.apple.com/us/album/know-no-better-feat-dababy/1561058084?i=1561058944", "https://embed.music.apple.com/us/album/name-feat-tori-kelly/1561058084?i=1561059670"];
+                var randomBieber = Math.floor(Math.random() * bieberSongs.length);
+                iframe3.src = bieberSongs[randomBieber];
+            }
+            function changeSongDrake() {
+                var drakeSongs = ["https://embed.music.apple.com/us/album/over-my-dead-body/1440642493?i=1440642618", "https://embed.music.apple.com/us/album/take-care-feat-rihanna/1440642493?i=1440642738", "https://embed.music.apple.com/us/album/shot-for-me/1440642493?i=1440642637", "https://embed.music.apple.com/us/album/headlines/1440642493?i=1440642731", "https://embed.music.apple.com/us/album/crew-love-feat-the-weeknd/1440642493?i=1440642735", "https://embed.music.apple.com/us/album/marvins-room/1440642493?i=1440642743", "https://embed.music.apple.com/us/album/buried-alive-interlude-feat-kendrick-lamar/1440642493?i=1440642744", "https://embed.music.apple.com/us/album/under-ground-kings/1440642493?i=1440642746", "https://embed.music.apple.com/us/album/well-be-fine-feat-birdman/1440642493?i=1440642749", "https://embed.music.apple.com/us/album/make-me-proud-feat-nicki-minaj/1440642493?i=1440642755",  "https://embed.music.apple.com/us/album/lord-knows-feat-rick-ross/1440642493?i=1440642974", "https://embed.music.apple.com/us/album/cameras-good-ones-go-interlude/1440642493?i=1440642983", "https://embed.music.apple.com/us/album/doing-it-wrong/1440642493?i=1440642990", "https://embed.music.apple.com/us/album/the-real-her-feat-lil-wayne-andre-3000/1440642493?i=1440642996",  "https://embed.music.apple.com/us/album/look-what-youve-done/1440642493?i=1440642999", "https://embed.music.apple.com/us/album/hyfr-hell-ya-fucking-right-feat-lil-wayne/1440642493?i=1440643122", "https://embed.music.apple.com/us/album/practice/1440642493?i=1440643127", "https://embed.music.apple.com/us/album/the-ride/1440642493?i=1440643128", "https://embed.music.apple.com/us/album/the-motto-feat-lil-wayne-bonus-track/1440642493?i=1440643139", "https://embed.music.apple.com/us/album/hate-sleeping-alone-bonus-track/1440642493?i=1440643140"];
+                var randomDrake = Math.floor(Math.random() * drakeSongs.length);
+                iframe4.src = drakeSongs[randomDrake];
+            }
+            function changeSongJackson() {
+                var jacksonSongs = ["https://embed.music.apple.com/us/album/wanna-be-startin-somethin/269572838?i=269572927", "https://embed.music.apple.com/us/album/billie-jean/269572838?i=269573364", "https://embed.music.apple.com/us/album/baby-be-mine/269572838?i=269573042", "https://embed.music.apple.com/us/album/the-girl-is-mine/269572838?i=269573208", "https://embed.music.apple.com/us/album/thriller/269572838?i=269573303", "https://embed.music.apple.com/us/album/beat-it/269572838?i=269573341", "https://embed.music.apple.com/us/album/human-nature/269572838?i=269573405", "https://embed.music.apple.com/us/album/p-y-t-pretty-young-thing/269572838?i=269573447", "https://embed.music.apple.com/us/album/the-lady-in-my-life/269572838?i=269573478"];
+                var randomJackson = Math.floor(Math.random() * jacksonSongs.length);
+                iframe5.src = jacksonSongs[randomJackson];
+            }
+            function changeSongBlind() {
+                var blindSongs = ["https://embed.music.apple.com/us/album/semi-charmed-life/164394621?i=164394654",
+                                    "https://embed.music.apple.com/us/album/losing-a-whole-year/164394621?i=164394707",
+                                    "https://embed.music.apple.com/us/album/hows-it-going-to-be/164394621?i=164394710",
+                                    "https://embed.music.apple.com/us/album/jumper/164394621?i=164394762",
+                                    "https://embed.music.apple.com/us/album/graduate/164394621?i=164394811",
+                                    "https://embed.music.apple.com/us/album/never-let-you-go/164394621?i=164394887",
+                                    "https://embed.music.apple.com/us/album/deep-inside-of-you/164394621?i=164394921",
+                                    "https://embed.music.apple.com/us/album/10-days-late/164394621?i=164394947",
+                                    "https://embed.music.apple.com/us/album/blinded-when-i-see-you/164394621?i=164394986",
+                                    "https://embed.music.apple.com/us/album/crystal-baller/164394621?i=164394990",
+                                    "https://embed.music.apple.com/us/album/forget-myself/164394621?i=164394994",
+                                    "https://embed.music.apple.com/us/album/cant-get-away/164394621?i=164395000",
+                                    "https://embed.music.apple.com/us/album/motorcycle-drive-by/164394621?i=164395003",
+                                    "https://embed.music.apple.com/us/album/my-time-in-exile/164394621?i=164395008",
+                                    "https://embed.music.apple.com/us/album/palm-reader/164394621?i=164395011",
+                                    "https://embed.music.apple.com/us/album/tattoo-of-the-sun/164394621?i=164395080",
+                                    "https://embed.music.apple.com/us/album/wounded/164394621?i=164395167",
+                                    "https://embed.music.apple.com/us/album/god-of-wine/164394621?i=164395266",
+                                    "https://embed.music.apple.com/us/album/slow-motion/164394621?i=164395415",
+                                    "https://embed.music.apple.com/us/album/graduate-remix/164394621?i=164395428",
+                                    "https://embed.music.apple.com/us/album/losing-a-whole-year-remix/164394621?i=164395536"];
+                var randomBlind = Math.floor(Math.random() * blindSongs.length);
+                iframe6.src = blindSongs[randomBlind];
+            }
+            function changeSongChurch() {
+                var churchSongs = ["https://embed.music.apple.com/us/album/creepin/721280109?i=721280417",
+                                    "https://embed.music.apple.com/us/album/drink-in-my-hand/721280109?i=721280425",
+                                    "https://embed.music.apple.com/us/album/keep-on/721280109?i=721280431",
+                                    "https://embed.music.apple.com/us/album/like-jesus-does/721280109?i=721280438",
+                                    "https://embed.music.apple.com/us/album/hungover-hard-up/721280109?i=721280443",
+                                    "https://embed.music.apple.com/us/album/homeboy/721280109?i=721280449",
+                                    "https://embed.music.apple.com/us/album/country-music-jesus/721280109?i=721280539",
+                                    "https://embed.music.apple.com/us/album/jack-daniels/721280109?i=721280550",
+                                    "https://embed.music.apple.com/us/album/springsteen/721280109?i=721280659",
+                                    "https://embed.music.apple.com/us/album/im-gettin-stoned/721280109?i=721280665",
+                                    "https://embed.music.apple.com/us/album/over-when-its-over/721280109?i=721280671"];
+                var randomChurch = Math.floor(Math.random() * churchSongs.length);
+                iframe7.src = churchSongs[randomChurch];
+            }
+            function changeSongGaga() {
+                var gagaSongs = ["https://embed.music.apple.com/us/album/bad-romance/1440860294?i=1440860297", "https://embed.music.apple.com/us/album/alejandro/1440860294?i=1440860301", "https://embed.music.apple.com/us/album/monster/1440860294?i=1440860302", "https://embed.music.apple.com/us/album/speechless/1440860294?i=1440860304", "https://embed.music.apple.com/us/album/dance-in-the-dark/1440860294?i=1440860306", "https://embed.music.apple.com/us/album/telephone-feat-beyonc%C3%A9/1440860294?i=1440860312", "https://embed.music.apple.com/us/album/so-happy-i-could-die/1440860294?i=1440860313","https://embed.music.apple.com/us/album/teeth/1440860294?i=1440860315", "https://embed.music.apple.com/us/album/bad-romance-starsmith-remix/1440860294?i=1440860318"];
+                var randomGaga = Math.floor(Math.random() * gagaSongs.length);
+                iframe8.src = gagaSongs[randomGaga];
+            }
+            function changeSongJackson5() {
+                var jackson5Songs = ["https://embed.music.apple.com/us/album/i-want-you-back/1440912101?i=1440912105",
+                                        "https://embed.music.apple.com/us/album/abc/1440912101?i=1440912109",
+                                        "https://embed.music.apple.com/us/album/the-love-you-save/1440912101?i=1440912114",
+                                        "https://embed.music.apple.com/us/album/ill-be-there/1440912101?i=1440912116",
+                                        "https://embed.music.apple.com/us/album/its-your-thing/1440912101?i=1440912119",
+                                        "https://embed.music.apple.com/us/album/whos-lovin-you/1440912101?i=1440912121",
+                                        "https://embed.music.apple.com/us/album/mamas-pearl/1440912101?i=1440912123",
+                                        "https://embed.music.apple.com/us/album/never-can-say-goodbye/1440912101?i=1440912124",
+                                        "https://embed.music.apple.com/us/album/maybe-tomorrow/1440912101?i=1440912125",
+                                        "https://embed.music.apple.com/us/album/got-to-be-there/1440912101?i=1440912129",
+                                        "https://embed.music.apple.com/us/album/sugar-daddy/1440912101?i=1440912311",
+                                        "https://embed.music.apple.com/us/album/rockin-robin/1440912101?i=1440912313",
+                                        "https://embed.music.apple.com/us/album/daddys-home/1440912101?i=1440912319",
+                                        "https://embed.music.apple.com/us/album/lookin-through-the-windows/1440912101?i=1440912321",
+                                        "https://embed.music.apple.com/us/album/i-wanna-be-where-you-are/1440912101?i=1440912322",
+                                        "https://embed.music.apple.com/us/album/get-it-together/1440912101?i=1440912324",
+                                        "https://embed.music.apple.com/us/album/dancing-machine/1440912101?i=1440912325",
+                                        "https://embed.music.apple.com/us/album/the-life-of-the-party/1440912101?i=1440912326",
+                                        "https://embed.music.apple.com/us/album/i-am-love-pts-1-2/1440912101?i=1440912328",
+                                        "https://embed.music.apple.com/us/album/just-a-little-bit-of-you/1440912101?i=1440912332",
+                                        "https://embed.music.apple.com/us/album/its-your-thing-the-j5-in-95-extended-remix/1440912101?i=1440912334"];
+                var randomJackson5 = Math.floor(Math.random() * jackson5Songs.length);
+                iframe9.src = jackson5Songs[randomJackson5];
+            }
+
+
+        // Jackson 5 Songs
+        // "https://embed.music.apple.com/us/album/i-want-you-back/1440912101?i=1440912105",
+        // "https://embed.music.apple.com/us/album/abc/1440912101?i=1440912109",
+        // "https://embed.music.apple.com/us/album/the-love-you-save/1440912101?i=1440912114",
+        // "https://embed.music.apple.com/us/album/ill-be-there/1440912101?i=1440912116",
+        // "https://embed.music.apple.com/us/album/its-your-thing/1440912101?i=1440912119",
+        // "https://embed.music.apple.com/us/album/whos-lovin-you/1440912101?i=1440912121",
+        // "https://embed.music.apple.com/us/album/mamas-pearl/1440912101?i=1440912123",
+        // "https://embed.music.apple.com/us/album/never-can-say-goodbye/1440912101?i=1440912124",
+        // "https://embed.music.apple.com/us/album/maybe-tomorrow/1440912101?i=1440912125",
+        // "https://embed.music.apple.com/us/album/got-to-be-there/1440912101?i=1440912129",
+        // "https://embed.music.apple.com/us/album/sugar-daddy/1440912101?i=1440912311",
+        // "https://embed.music.apple.com/us/album/rockin-robin/1440912101?i=1440912313",
+        // "https://embed.music.apple.com/us/album/daddys-home/1440912101?i=1440912319",
+        // "https://embed.music.apple.com/us/album/lookin-through-the-windows/1440912101?i=1440912321",
+        // "https://embed.music.apple.com/us/album/i-wanna-be-where-you-are/1440912101?i=1440912322",
+        // "https://embed.music.apple.com/us/album/get-it-together/1440912101?i=1440912324",
+        // "https://embed.music.apple.com/us/album/dancing-machine/1440912101?i=1440912325",
+        // "https://embed.music.apple.com/us/album/the-life-of-the-party/1440912101?i=1440912326",
+        // "https://embed.music.apple.com/us/album/i-am-love-pts-1-2/1440912101?i=1440912328",
+        // "https://embed.music.apple.com/us/album/just-a-little-bit-of-you/1440912101?i=1440912332",
+        // "https://embed.music.apple.com/us/album/its-your-thing-the-j5-in-95-extended-remix/1440912101?i=1440912334"
+        
+        // Lady Gaga Songs
+        // "https://embed.music.apple.com/us/album/bad-romance/1440860294?i=1440860297"
+        // "https://embed.music.apple.com/us/album/alejandro/1440860294?i=1440860301"
+        // "https://embed.music.apple.com/us/album/monster/1440860294?i=1440860302"
+        // "https://embed.music.apple.com/us/album/speechless/1440860294?i=1440860304"
+        // "https://embed.music.apple.com/us/album/dance-in-the-dark/1440860294?i=1440860306"
+        // "https://embed.music.apple.com/us/album/telephone-feat-beyonc%C3%A9/1440860294?i=1440860312",
+        // "https://embed.music.apple.com/us/album/so-happy-i-could-die/1440860294?i=1440860313",
+        // "https://embed.music.apple.com/us/album/teeth/1440860294?i=1440860315",
+        // "https://embed.music.apple.com/us/album/bad-romance-starsmith-remix/1440860294?i=1440860318"
+
+        // Eric Church Songs
+        // "https://embed.music.apple.com/us/album/creepin/721280109?i=721280417",
+        // "https://embed.music.apple.com/us/album/drink-in-my-hand/721280109?i=721280425",
+        // "https://embed.music.apple.com/us/album/keep-on/721280109?i=721280431",
+        // "https://embed.music.apple.com/us/album/like-jesus-does/721280109?i=721280438",
+        // "https://embed.music.apple.com/us/album/hungover-hard-up/721280109?i=721280443",
+        // "https://embed.music.apple.com/us/album/homeboy/721280109?i=721280449",
+        // "https://embed.music.apple.com/us/album/country-music-jesus/721280109?i=721280539",
+        // "https://embed.music.apple.com/us/album/jack-daniels/721280109?i=721280550",
+        // "https://embed.music.apple.com/us/album/springsteen/721280109?i=721280659",
+        // "https://embed.music.apple.com/us/album/im-gettin-stoned/721280109?i=721280665",
+        // "https://embed.music.apple.com/us/album/over-when-its-over/721280109?i=721280671"
+
+
+        //Third Eye Blind Songs
+        // "https://embed.music.apple.com/us/album/semi-charmed-life/164394621?i=164394654",
+        // "https://embed.music.apple.com/us/album/losing-a-whole-year/164394621?i=164394707",
+        // "https://embed.music.apple.com/us/album/hows-it-going-to-be/164394621?i=164394710",
+        // "https://embed.music.apple.com/us/album/jumper/164394621?i=164394762",
+        // "https://embed.music.apple.com/us/album/graduate/164394621?i=164394811",
+        // "https://embed.music.apple.com/us/album/never-let-you-go/164394621?i=164394887",
+        // "https://embed.music.apple.com/us/album/deep-inside-of-you/164394621?i=164394921",
+        // "https://embed.music.apple.com/us/album/10-days-late/164394621?i=164394947",
+        // "https://embed.music.apple.com/us/album/blinded-when-i-see-you/164394621?i=164394986",
+        // "https://embed.music.apple.com/us/album/crystal-baller/164394621?i=164394990",
+        // "https://embed.music.apple.com/us/album/forget-myself/164394621?i=164394994",
+        // "https://embed.music.apple.com/us/album/cant-get-away/164394621?i=164395000",
+        // "https://embed.music.apple.com/us/album/motorcycle-drive-by/164394621?i=164395003",
+        // "https://embed.music.apple.com/us/album/my-time-in-exile/164394621?i=164395008",
+        // "https://embed.music.apple.com/us/album/palm-reader/164394621?i=164395011",
+        // "https://embed.music.apple.com/us/album/tattoo-of-the-sun/164394621?i=164395080",
+        // "https://embed.music.apple.com/us/album/wounded/164394621?i=164395167",
+        // "https://embed.music.apple.com/us/album/god-of-wine/164394621?i=164395266",
+        // "https://embed.music.apple.com/us/album/slow-motion/164394621?i=164395415",
+        // "https://embed.music.apple.com/us/album/graduate-remix/164394621?i=164395428",
+        // "https://embed.music.apple.com/us/album/losing-a-whole-year-remix/164394621?i=164395536"
+
+        // Michael Jackson Songs
+        // "https://embed.music.apple.com/us/album/wanna-be-startin-somethin/269572838?i=269572927"
+        // "https://embed.music.apple.com/us/album/baby-be-mine/269572838?i=269573042"
+        // "https://embed.music.apple.com/us/album/the-girl-is-mine/269572838?i=269573208"
+        // "https://embed.music.apple.com/us/album/thriller/269572838?i=269573303"
+        // "https://embed.music.apple.com/us/album/beat-it/269572838?i=269573341"
+        // "https://embed.music.apple.com/us/album/human-nature/269572838?i=269573405"
+        // "https://embed.music.apple.com/us/album/p-y-t-pretty-young-thing/269572838?i=269573447"
+        // "https://embed.music.apple.com/us/album/the-lady-in-my-life/269572838?i=269573478"
+
+         // Drake Songs
+        // "https://embed.music.apple.com/us/album/over-my-dead-body/1440642493?i=1440642618"
+        // "https://embed.music.apple.com/us/album/take-care-feat-rihanna/1440642493?i=1440642738"
+        // "https://embed.music.apple.com/us/album/shot-for-me/1440642493?i=1440642637"
+        // "https://embed.music.apple.com/us/album/headlines/1440642493?i=1440642731"
+        // "https://embed.music.apple.com/us/album/crew-love-feat-the-weeknd/1440642493?i=1440642735"
+        // "https://embed.music.apple.com/us/album/marvins-room/1440642493?i=1440642743"
+        // "https://embed.music.apple.com/us/album/buried-alive-interlude-feat-kendrick-lamar/1440642493?i=1440642744"
+        // "https://embed.music.apple.com/us/album/under-ground-kings/1440642493?i=1440642746"
+        // "https://embed.music.apple.com/us/album/well-be-fine-feat-birdman/1440642493?i=1440642749"
+        // "https://embed.music.apple.com/us/album/make-me-proud-feat-nicki-minaj/1440642493?i=1440642755"
+        // "https://embed.music.apple.com/us/album/lord-knows-feat-rick-ross/1440642493?i=1440642974"
+        // "https://embed.music.apple.com/us/album/cameras-good-ones-go-interlude/1440642493?i=1440642983"
+        // "https://embed.music.apple.com/us/album/doing-it-wrong/1440642493?i=1440642990"
+        // "https://embed.music.apple.com/us/album/the-real-her-feat-lil-wayne-andre-3000/1440642493?i=1440642996"
+        // "https://embed.music.apple.com/us/album/look-what-youve-done/1440642493?i=1440642999"
+        // "https://embed.music.apple.com/us/album/hyfr-hell-ya-fucking-right-feat-lil-wayne/1440642493?i=1440643122"
+        // "https://embed.music.apple.com/us/album/practice/1440642493?i=1440643127"
+        // "https://embed.music.apple.com/us/album/the-ride/1440642493?i=1440643128"
+        // "https://embed.music.apple.com/us/album/the-motto-feat-lil-wayne-bonus-track/1440642493?i=1440643139"
+        // "https://embed.music.apple.com/us/album/hate-sleeping-alone-bonus-track/1440642493?i=1440643140"
+
+        //  Justin Bieber Songs 
+        //    "https://embed.music.apple.com/us/album/2-much/1561058084?i=1561058097"
+        //    "https://embed.music.apple.com/us/album/deserve-you/1561058084?i=1561058105"
+        //    "https://embed.music.apple.com/us/album/as-i-am-feat-khalid/1561058084?i=1561058294"
+        //    "https://embed.music.apple.com/us/album/off-my-face/1561058084?i=1561058297"
+        //    "https://embed.music.apple.com/us/album/holy-feat-chance-the-rapper/1561058084?i=1561058307"
+        //    "https://embed.music.apple.com/us/album/unstable-feat-the-kid-laroi/1561058084?i=1561058313"
+        //    "https://embed.music.apple.com/us/album/mlk-interlude/1561058084?i=1561058469"
+        //    "https://embed.music.apple.com/us/album/die-for-you-feat-dominic-fike/1561058084?i=1561058471"
+        //    "https://embed.music.apple.com/us/album/hold-on/1561058084?i=1561058477"
+        //    "https://embed.music.apple.com/us/album/somebody/1561058084?i=1561058666"
+        //    "https://embed.music.apple.com/us/album/ghost/1561058084?i=1561058740"
+        //    "https://embed.music.apple.com/us/album/peaches-feat-daniel-caesar-giv%C4%93on/1561058084?i=1561058753"
+        //    "https://embed.music.apple.com/us/album/love-you-different-feat-beam/1561058084?i=1561058760"
+        //    "https://embed.music.apple.com/us/album/loved-by-you-feat-burna-boy/1561058084?i=1561058916"
+        //    "https://embed.music.apple.com/us/album/anyone/1561058084?i=1561058924"
+        //    "https://embed.music.apple.com/us/album/lonely/1561058084?i=1561058927"
+        //    "https://embed.music.apple.com/us/album/there-she-go-feat-lil-uzi-vert/1561058084?i=1561058932"
+        //    "https://embed.music.apple.com/us/album/i-cant-be-myself-feat-jaden/1561058084?i=1561058936"
+        //    "https://embed.music.apple.com/us/album/lifetime/1561058084?i=1561058938"
+        //    "https://embed.music.apple.com/us/album/wish-you-would-feat-quavo/1561058084?i=1561058942"
+        //    "https://embed.music.apple.com/us/album/know-no-better-feat-dababy/1561058084?i=1561058944"
+        //    "https://embed.music.apple.com/us/album/name-feat-tori-kelly/1561058084?i=1561059670"
+
+
+
+
+            
+
+                $('#check').on('change', function() {
+                if (!this.checked) {
+                paperBody.style.background = 'white';
+
+                if($('button#darkbutton').hasClass('btn-dark')){
+                    $('button#darkbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#lightbutton').hasClass('btn-dark')){
+                    $('button#lightbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#randombgbutton').hasClass('btn-dark')){
+                    $('button#randombgbutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#fullbuttonmain').hasClass('btn-dark')){
+                    $('button#fullbuttonmain').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#togglebutton1').hasClass('btn-dark')){
+                    $('button#togglebutton1').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#togglebutton2').hasClass('btn-dark')){
+                    $('button#togglebutton2').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#togglebutton3').hasClass('btn-dark')){
+                    $('button#togglebutton3').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#randombutton').hasClass('btn-dark')){
+                    $('button#randombutton').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('button#back-button').hasClass('btn-dark')){
+                    $('button#back-button').removeClass('btn-dark').addClass('btn-light');
+                }
+                if($('nav#navbar').hasClass('bg-dark')){
+                    $('nav#navbar').removeClass('bg-dark').addClass('bg-light');
+                }
+                if($('nav#footer').hasClass('bg-dark')){
+                    $('nav#footer').removeClass('bg-dark').addClass('bg-light');
+                }
+                $('h1#h1').css('color', 'black');
+                $('h2#h2').css('color', 'black');
+                $('h3#h3').css('color', 'black');
+                } else if (this.checked) {
+                paperBody.style.background = 'black';
+
+                if($('button#darkbutton').hasClass('btn-light')){
+                    $('button#darkbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#lightbutton').hasClass('btn-light')){
+                    $('button#lightbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#randombgbutton').hasClass('btn-light')){
+                    $('button#randombgbutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#fullbuttonmain').hasClass('btn-light')){
+                    $('button#fullbuttonmain').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#togglebutton1').hasClass('btn-light')){
+                    $('button#togglebutton1').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#togglebutton2').hasClass('btn-light')){
+                    $('button#togglebutton2').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#togglebutton3').hasClass('btn-light')){
+                    $('button#togglebutton3').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#randombutton').hasClass('btn-light')){
+                    $('button#randombutton').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('button#back-button').hasClass('btn-light')){
+                    $('button#back-button').removeClass('btn-light').addClass('btn-dark');
+                }
+                if($('nav#navbar').hasClass('bg-light')){
+                    $('nav#navbar').removeClass('bg-light').addClass('bg-dark');
+                }
+                if($('nav#footer').hasClass('bg-light')){
+                    $('nav#footer').removeClass('bg-light').addClass('bg-dark');
+                }
+                $('h1#h1').css('color', 'white');
+                $('h2#h2').css('color', 'white');
+                $('h3#h3').css('color', 'white');
+                }
+            })
+
+
+
+            fullButton.addEventListener("click", () => {
+                document.documentElement.requestFullscreen().catch((e) => {
+                    console.log(e);
+                });
+            });
+            document.addEventListener("dblclick", () => {
+                toggleFullscreen();
+            });
+            function getFullscreenElement() {
+                return document.fullscreenElement;
+            }
+
+            function toggleFullscreen() {
+                if (getFullscreenElement()) {
+                    document.exitFullscreen();
+                } else { 
+                    document.documentElement.requestFullscreen().catch(console.log);
+                }
+            }
+
+
+        </script>
+        
+    </div>
+    <div class= "container">
+        <div class= "row">
+            <div class= col-md-4>
+            <button type="button" class="btn btn-light back-button" id="back-button" onclick="location.href='./webdevelopment.html'">
+                Back
+            </button>
+            </div>
+        </div>
+    </div>  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!-- Footer -->
+    <footer class= "footer">
+        <div class= "container">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light" id= "footer">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarMenu">
+                        <ul class= "navbar-nav mr-auto">
+                            <li class="nav-item" style="font-size: 20px"><a href="./index.html" class="nav-link"> About</a></li>
+                            <li class="nav-item" style="font-size: 20px"><a href="./portfolio4/index.html" class="nav-link">Portfolio</a></li>
+                            <li class="nav-item" style="font-size: 20px"><a href="./contact.html" class="nav-link"> Contact</a></li>
+                        </ul>
+                        </div>
+            <a href="https://www.facebook.com/profile.php?id=100008295522988" target="_blank">
+                <img class="rounded fbimg" src="./assets/images/Footer-facebook1.png">
+            </a>
+            <a href="https://www.linkedin.com/in/jared--simpson/" target="_blank">
+                <img class="rounded linkedinimg" src="./assets/images/Footer-linkin1.png">
+            </a>
+            <a href="https://twitter.com/jurdsimp" target="_blank">
+                <img class="rounded twitterimg" src="./assets/images/Footer-twitter2.png">
+            </a>
+            <a href="https://www.instagram.com/simpson.482/" target="_blank">
+                <img class="rounded igimg" src="./assets/images/Footer-instagram1.png">
+            </a>
+            </nav>
+        </div>
+    </footer>
+
+
+</body>

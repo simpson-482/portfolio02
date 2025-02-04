@@ -132,7 +132,11 @@
      .wdrow4{
       margin-top: 50px;
       margin-left: 60px;
-  }
+      }
+      .wdrow5{
+      margin-top: 50px;
+      margin-left: 0px; 
+      }
      .smrow1{
          margin-left: 60px;
       }
@@ -295,6 +299,14 @@
          margin-top: 50px;
          margin-left: 0px;
      }
+     .wdrow5{
+         margin-top: 50px;
+         margin-left: 0px;
+      }
+     .wdrow5{
+      margin-top: 50px;
+      margin-left: 0px;
+  }
       .smrow1{
          margin-top: 0px;
          margin-left: 0px;
@@ -625,6 +637,14 @@ input[type="checkbox"].toggle:checked + label::after {
 .label {
    font-size: 35px;
 }
+
+/* Music Section */
+
+.img_jaredmusic {
+      height: 300px;
+}
+
+
 
 /* comment section BeGeos Dev */
 
