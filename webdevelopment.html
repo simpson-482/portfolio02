@@ -473,6 +473,19 @@
             });
             }
 
+            // Music Single Random Change
+            if (document.addEventListener) {
+                img5.addEventListener('contextmenu', function(e) {
+                var randomMusic = Math.floor(Math.random() * musicImages.length);
+                img5.src = musicImages[randomMusic];
+                e.preventDefault();
+                }, false);
+            } else {
+                document.attachEvent('oncontextmenu', function() {
+                alert("You've tried to open context menu");
+                window.event.returnValue = false;
+            });
+            }
     </script>
   
     <!--Footer-->
